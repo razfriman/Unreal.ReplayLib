@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Unreal.ReplayLib.Benchmark</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Unreal.ReplayLib.Fortnite\Unreal.ReplayLib.Fortnite.csproj" />
+    <ProjectReference Include="..\Unreal.ReplayLib\Unreal.ReplayLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Replays" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Replays\chapter2_season6_10.replay" />
+    <Content Include="Replays\chapter2_season6_10.replay">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

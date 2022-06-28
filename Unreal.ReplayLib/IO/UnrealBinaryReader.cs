@@ -114,7 +114,6 @@ public sealed unsafe class UnrealBinaryReader : IDisposable
 
         Span<byte> buffer = stackalloc byte[length];
         _reader.Read(buffer);
-        Console.WriteLine(encoding.GetString(buffer).Trim(' ', '\0'));
         return encoding.GetString(buffer).Trim(' ', '\0');
     }
 

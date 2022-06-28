@@ -76,14 +76,14 @@ public abstract partial class ReplayReader<TReplay, TState>
         if (State.UseCheckpoints && Replay.Checkpoints.Count > 0)
         {
             var checkpoint = Replay.Checkpoints[0];
-            ParseReplayCheckpoint(checkpoint, archive);
+            // ParseReplayCheckpoint(checkpoint, archive);
             time = checkpoint.EndTime;
         }
 
 
         foreach (var replayCheckpoint in Replay.Checkpoints)
         {
-            ParseReplayCheckpoint(replayCheckpoint, archive);
+            // ParseReplayCheckpoint(replayCheckpoint, archive);
         }
 
         foreach (var replayData in Replay.Data)
@@ -97,7 +97,6 @@ public abstract partial class ReplayReader<TReplay, TState>
         archive.Seek(checkpoint.Position);
         using var decryptedReader = Decrypt(archive, checkpoint.Length);
         using var decompressedReader = Decompress(decryptedReader, checkpoint.Length);
-        Console.WriteLine("checkpoint");
     }
 
     private void ParseReplayData(ReplayData data, UnrealBinaryReader archive)
@@ -109,8 +108,6 @@ public abstract partial class ReplayReader<TReplay, TState>
         {
             ParseReplayPacket(decompressedReader);
         }
-
-        Console.WriteLine("data");
     }
 
     private void ParseReplayPacket(UnrealBinaryReader reader)

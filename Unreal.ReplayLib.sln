@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unreal.ReplayLib.Fortnite",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unreal.ReplayLib.Console", "Unreal.ReplayLib.Console\Unreal.ReplayLib.Console.csproj", "{D09C7D46-A752-4044-8358-56FA544F6CB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unreal.ReplayLib.Benchmark", "Unreal.ReplayLib.Benchmark\Unreal.ReplayLib.Benchmark.csproj", "{CCAD7BF8-112A-4410-A392-9E45636F3718}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{D09C7D46-A752-4044-8358-56FA544F6CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D09C7D46-A752-4044-8358-56FA544F6CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D09C7D46-A752-4044-8358-56FA544F6CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAD7BF8-112A-4410-A392-9E45636F3718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAD7BF8-112A-4410-A392-9E45636F3718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAD7BF8-112A-4410-A392-9E45636F3718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAD7BF8-112A-4410-A392-9E45636F3718}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
