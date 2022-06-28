@@ -1,25 +1,38 @@
 using System.Buffers;
 using System.Text;
+using Unreal.ReplayLib.Memory;
 using Unreal.ReplayLib.Models;
 using Unreal.ReplayLib.Models.Enums;
 
 namespace Unreal.ReplayLib.IO;
 
-public class UnrealBinaryReader : IDisposable
+public sealed unsafe class UnrealBinaryReader : IDisposable
 {
     private readonly BinaryReader _reader;
-    private readonly MemoryStream _stream;
+    private readonly Stream _stream;
+    private readonly Dictionary<int, long> _offsetDict = new();
 
     public UnrealBinaryReader(byte[] buffer)
     {
         _stream = new MemoryStream(buffer);
         _reader = new BinaryReader(_stream);
+        EndPosition = _stream.Length;
     }
 
     public UnrealBinaryReader(MemoryStream stream)
     {
         _stream = stream;
         _reader = new BinaryReader(_stream);
+        EndPosition = _stream.Length;
+    }
+
+    public UnrealBinaryReader(int size)
+    {
+        CreateMemory(size);
+        _stream = new UnmanagedMemoryStream((byte*)_owner.PinnedMemory.Pointer, size, size,
+            FileAccess.ReadWrite);
+        _reader = new BinaryReader(_stream);
+        EndPosition = _stream.Length;
     }
 
     public EngineNetworkVersionHistory EngineNetworkVersion { get; set; }
@@ -27,10 +40,11 @@ public class UnrealBinaryReader : IDisposable
     public NetworkVersionHistory NetworkVersion { get; set; }
     public ReplayVersionHistory ReplayVersion { get; set; }
     public NetworkReplayVersion NetworkReplayVersion { get; set; }
+    public long EndPosition { get; set; }
     public long Position => _stream.Position;
-    public long Available => _stream.Length - _stream.Position;
-    public bool AtEnd() => _stream.Position >= _stream.Length;
-    public bool CanRead(int count) => _stream.Position + count < _stream.Length;
+    public long Available => EndPosition - _stream.Position;
+    public bool AtEnd() => _stream.Position >= EndPosition;
+    public bool CanRead(int count) => _stream.Position + count < EndPosition;
 
     public bool ReadBoolean() => _reader.ReadBoolean();
 
@@ -65,6 +79,23 @@ public class UnrealBinaryReader : IDisposable
         }
     }
 
+    public string ReadFName()
+    {
+        var isHardcoded = this.ReadByte();
+
+        if (isHardcoded > 0)
+        {
+            var nameIndex = EngineNetworkVersion < EngineNetworkVersionHistory.HistoryChannelNames
+                ? ReadUInt32()
+                : ReadPackedUInt32();
+            return UnrealNameConstants.Names[nameIndex];
+        }
+
+        var inString = this.ReadFString();
+        SkipBytes(4);
+        return inString;
+    }
+
     public string ReadFString()
     {
         var length = ReadInt32();
@@ -83,6 +114,7 @@ public class UnrealBinaryReader : IDisposable
 
         Span<byte> buffer = stackalloc byte[length];
         _reader.Read(buffer);
+        Console.WriteLine(encoding.GetString(buffer).Trim(' ', '\0'));
         return encoding.GetString(buffer).Trim(' ', '\0');
     }
 
@@ -134,6 +166,7 @@ public class UnrealBinaryReader : IDisposable
         {
             arr[i] = (func1(), func2());
         }
+
         return arr;
     }
 
@@ -192,6 +225,39 @@ public class UnrealBinaryReader : IDisposable
     public bool HasGameSpecificFrameData() =>
         ReplayHeaderFlags.HasFlag(ReplayHeaderFlags.GameSpecificFrameData);
 
+
+    private IPinnedMemoryOwner<byte> _owner;
+    public byte* BasePointer => (byte*)_owner.PinnedMemory.Pointer;
+
+    private void CreateMemory(int count)
+    {
+        if (_owner != null)
+        {
+            throw new InvalidOperationException("Memory object already created");
+        }
+
+        _owner = PinnedMemoryPool<byte>.Shared.Rent(count);
+    }
+
+    public MemoryBuffer GetMemoryBuffer(int count)
+    {
+        //Removes the need for a MemoryPool Rent
+        if (_owner != null)
+        {
+            var buffer = new MemoryBuffer(BasePointer + Position, count);
+
+            _reader.BaseStream.Seek(count, SeekOrigin.Current);
+
+            return buffer;
+        }
+
+        var stream = new MemoryBuffer(count);
+
+        _reader.Read(stream.Memory.Span[..count]);
+
+        return stream;
+    }
+
     public void Dispose() => Dispose(true);
 
     private void Dispose(bool disposing)
@@ -201,5 +267,18 @@ public class UnrealBinaryReader : IDisposable
             _stream?.Dispose();
             _reader?.Dispose();
         }
+    }
+
+    public void PushOffset(int i, long size)
+    {
+        _offsetDict[i] = EndPosition;
+        EndPosition = Position + size;
+    }
+
+    public void PopOffset(int i)
+    {
+        Seek(EndPosition);
+        EndPosition = _offsetDict[i];
+        _offsetDict.Remove(i);
     }
 }

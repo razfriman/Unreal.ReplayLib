@@ -1,7 +1,5 @@
 using System.Diagnostics;
-using System.Security.Cryptography;
 using Microsoft.Extensions.Logging;
-using Unreal.ReplayLib.Exceptions;
 using Unreal.ReplayLib.IO;
 using Unreal.ReplayLib.Models;
 using Unreal.ReplayLib.Models.Enums;
@@ -14,7 +12,6 @@ public abstract partial class ReplayReader<TReplay, TState>
 {
     protected const uint FileMagic = 0x1CA2E27F;
     protected const uint NetworkMagic = 0x2CF5A13D;
-    protected const uint MetadataMagic = 0x3D06B24E;
 
     protected readonly ILogger? Logger;
 
@@ -82,7 +79,7 @@ public abstract partial class ReplayReader<TReplay, TState>
             ParseReplayCheckpoint(checkpoint, archive);
             time = checkpoint.EndTime;
         }
-        
+
 
         foreach (var replayCheckpoint in Replay.Checkpoints)
         {
@@ -98,15 +95,284 @@ public abstract partial class ReplayReader<TReplay, TState>
     private void ParseReplayCheckpoint(ReplayCheckpoint checkpoint, UnrealBinaryReader archive)
     {
         archive.Seek(checkpoint.Position);
-        var decrypted = Decrypt(archive, checkpoint.Length);
+        using var decryptedReader = Decrypt(archive, checkpoint.Length);
+        using var decompressedReader = Decompress(decryptedReader, checkpoint.Length);
         Console.WriteLine("checkpoint");
     }
-    
+
     private void ParseReplayData(ReplayData data, UnrealBinaryReader archive)
     {
         archive.Seek(data.Position);
-        var decrypted = Decrypt(archive, data.CompressedLength);
+        using var decryptedReader = Decrypt(archive, data.CompressedLength);
+        using var decompressedReader = Decompress(decryptedReader, data.DecompressedLength);
+        while (!decompressedReader.AtEnd())
+        {
+            ParseReplayPacket(decompressedReader);
+        }
+
         Console.WriteLine("data");
+    }
+
+    private void ParseReplayPacket(UnrealBinaryReader reader)
+    {
+        if (reader.NetworkVersion >= NetworkVersionHistory.HistoryMultipleLevels)
+        {
+            reader.SkipBytes(4); // current level index
+        }
+
+        var timeSeconds = reader.ReadSingle();
+
+        if (reader.NetworkVersion >= NetworkVersionHistory.HistoryLevelStreamingFixes)
+        {
+            ReadNetFieldExports(reader);
+            ReadNetExportGuids(reader);
+        }
+
+        if (reader.HasLevelStreamingFixes())
+        {
+            var numStreamingLevels = reader.ReadPackedUInt32();
+            for (var i = 0; i < numStreamingLevels; i++)
+            {
+                var level = reader.ReadFString();
+            }
+        }
+
+        if (reader.HasLevelStreamingFixes())
+        {
+            reader.SkipBytes(8);
+        }
+
+        ReadExternalData(reader);
+
+        if (reader.HasGameSpecificFrameData())
+        {
+            var externalOffsetSize = reader.ReadUInt64();
+            if (externalOffsetSize > 0)
+            {
+                reader.SkipBytes((int)externalOffsetSize);
+            }
+        }
+
+        var done = false;
+
+        while (!done)
+        {
+            var packet = ReadPacket(reader);
+            packet.TimeSeconds = timeSeconds;
+            reader.PushOffset(1, packet.Size);
+            if (packet.State == 0)
+            {
+                ReceivedRawPacket(packet, reader);
+            }
+            else
+            {
+                reader.PopOffset(1);
+                return;
+            }
+
+            reader.PopOffset(1);
+        }
+    }
+
+    private void ReceivedRawPacket(object packet, UnrealBinaryReader reader)
+    {
+        // throw new NotImplementedException();
+    }
+
+    public class Packet
+    {
+        public uint StreamingFix { get; set; }
+        public int Size { get; set; }
+        public int State { get; set; }
+        public float TimeSeconds { get; set; }
+    }
+
+    private Packet ReadPacket(UnrealBinaryReader reader)
+    {
+        var packet = new Packet();
+
+        if (reader.HasLevelStreamingFixes())
+        {
+            packet.StreamingFix = reader.ReadPackedUInt32();
+        }
+
+        var bufferSize = reader.ReadInt32();
+
+        packet.Size = bufferSize;
+
+        if (bufferSize == 0)
+        {
+            packet.State = 1;
+            return packet;
+        }
+
+        if (bufferSize > 2048 || bufferSize < 0)
+        {
+            packet.State = 2;
+            return packet;
+        }
+
+        packet.State = 0;
+        return packet;
+    }
+
+    private void ReadExternalData(UnrealBinaryReader reader)
+    {
+        while (true)
+        {
+            var externalDataNumBits = reader.ReadPackedUInt32();
+
+            if (externalDataNumBits == 0)
+            {
+                return;
+            }
+
+            var netGuid = reader.ReadPackedUInt32();
+            var externalDataNumBytes = (externalDataNumBits + 7) >> 3;
+            var handle = reader.ReadByte();
+            var something = reader.ReadByte();
+            var isEncrypted = reader.ReadByte();
+            var payload = reader.ReadBytes(externalDataNumBytes - 3);
+            // globalData.externalData[netGuid] = externalData;
+        }
+    }
+
+    private void ReadNetExportGuids(UnrealBinaryReader reader)
+    {
+        var numGuids = reader.ReadPackedUInt32();
+
+        for (var i = 0; i < numGuids; i++)
+        {
+            var size = reader.ReadInt32();
+            reader.PushOffset(2, size);
+            // internalLoadObject(replay, true, globalData);
+            reader.PopOffset(2);
+        }
+    }
+
+    private void ReadNetFieldExports(UnrealBinaryReader reader)
+    {
+        var numLayoutCmdExports = reader.ReadPackedUInt32();
+
+        for (var i = 0; i < numLayoutCmdExports; i++)
+        {
+            var pathNameIndex = reader.ReadPackedUInt32();
+            var isExported = reader.ReadPackedUInt32() == 1;
+            // NetFieldExportGroup group;
+
+            if (isExported)
+            {
+                var pathname = reader.ReadFString();
+                var numExports = reader.ReadPackedUInt32();
+
+                // group = globalData.netGuidCache.NetFieldExportGroupMap[pathname];
+                //
+                // if (!group)
+                // {
+                //     group = new NetFieldExportGroup();
+                //     group.pathName = pathname;
+                //     group.pathNameIndex = pathNameIndex;
+                //     group.netFieldExportsLength = numExports;
+                //     group.netFieldExports =  []
+                //     ;
+                //
+                //     globalData.netGuidCache.addToExportGroupMap(pathname, group, globalData);
+                // }
+                // else if (!group.netFieldExportsLength)
+                // {
+                //     group.netFieldExportsLength = numExports;
+                //     group.pathNameIndex = pathNameIndex;
+                //     globalData.netGuidCache.NetFieldExportGroupIndexToGroup[pathNameIndex] = pathname;
+                // }
+            }
+            else
+            {
+                // group = globalData.netGuidCache.GetNetFieldExportGroupFromIndex(pathNameIndex);
+            }
+
+            //
+            var netField = ReadNetFieldExport(reader);
+            //
+            // if (netField == null || group == null)
+            // {
+            //     continue;
+            // }
+            //
+            // var netFieldExportGroup = globalData.netFieldParser.getNetFieldExport(group.pathName);
+            //
+            // if (netFieldExportGroup == null)
+            // {
+            //     if (group.parseUnknownHandles || group.pathName == = 'NetworkGameplayTagNodeIndex')
+            //     {
+            //         group.netFieldExports[netField.handle] = netField;
+            //
+            //         continue;
+            //     }
+            //
+            //     addToUnreadGroups(group, netField, globalData);
+            //     continue;
+            // }
+            //
+            // const netFieldExport  = netFieldExportGroup.properties[netField.name];
+            //
+            // if (!netFieldExport)
+            // {
+            //     if (group.parseUnknownHandles || group.pathName == "NetworkGameplayTagNodeIndex")
+            //     {
+            //         group.netFieldExports[netField.handle] = netField;
+            //
+            //         continue;
+            //     }
+            //     addToUnreadGroups(group, netField, globalData);
+            //     continue;
+            // }
+            //
+            // group.netFieldExports[netField.handle] =  {
+            //     ...netFieldExport,
+            //     ...netField,
+            // }
+            // ;
+        }
+    }
+
+    public class NetFieldExport
+    {
+        public string Name { get; set; }
+        public string OrigType { get; set; }
+        public uint Handle { get; set; }
+        public uint CompatibleChecksum { get; set; }
+    }
+
+    private NetFieldExport ReadNetFieldExport(UnrealBinaryReader reader)
+    {
+        var isExported = reader.ReadByte();
+
+        if (isExported > 0)
+        {
+            var fieldExport = new NetFieldExport
+            {
+                Handle = reader.ReadPackedUInt32(),
+                CompatibleChecksum = reader.ReadUInt32(),
+            };
+
+            if (reader.EngineNetworkVersion < EngineNetworkVersionHistory.HistoryNetexportSerialization)
+            {
+                fieldExport.Name = reader.ReadFString();
+                fieldExport.OrigType = reader.ReadFString();
+            }
+            else if (reader.EngineNetworkVersion < EngineNetworkVersionHistory.HistoryNetexportSerializeFix)
+            {
+                fieldExport.Name = reader.ReadFString();
+            }
+            else
+            {
+                fieldExport.Name = reader.ReadFName();
+            }
+
+            return fieldExport;
+        }
+
+        return null;
     }
 
     private void ParseReplayEvents(UnrealBinaryReader archive)
