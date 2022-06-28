@@ -1,4 +1,4 @@
-namespace Unreal.ReplayLib.Enums;
+namespace Unreal.ReplayLib.Models.Enums;
 
 public enum ReplayVersionHistory : uint
 {

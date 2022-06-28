@@ -1,6 +1,6 @@
-namespace Unreal.ReplayLib;
+namespace Unreal.ReplayLib.Models;
 
-public class ReplayCheckpointEvent
+public class ReplayCheckpoint
 {
     public string Id { get; set; }
     public string Group { get; set; }

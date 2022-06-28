@@ -1,6 +1,6 @@
-using Unreal.ReplayLib.Enums;
+using Unreal.ReplayLib.Models.Enums;
 
-namespace Unreal.ReplayLib;
+namespace Unreal.ReplayLib.Models;
 
 public class ReplayHeader
 {

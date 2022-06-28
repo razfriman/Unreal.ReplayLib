@@ -1,7 +1,9 @@
 using System.Buffers;
 using System.Text;
+using Unreal.ReplayLib.Models;
+using Unreal.ReplayLib.Models.Enums;
 
-namespace Unreal.ReplayLib;
+namespace Unreal.ReplayLib.IO;
 
 public class UnrealBinaryReader : IDisposable
 {
@@ -20,6 +22,11 @@ public class UnrealBinaryReader : IDisposable
         _reader = new BinaryReader(_stream);
     }
 
+    public EngineNetworkVersionHistory EngineNetworkVersion { get; set; }
+    public ReplayHeaderFlags ReplayHeaderFlags { get; set; }
+    public NetworkVersionHistory NetworkVersion { get; set; }
+    public ReplayVersionHistory ReplayVersion { get; set; }
+    public NetworkReplayVersion NetworkReplayVersion { get; set; }
     public long Position => _stream.Position;
     public bool AtEnd() => _stream.Position >= _stream.Length;
     public bool CanRead(int count) => _stream.Position + count < _stream.Length;
@@ -124,9 +131,8 @@ public class UnrealBinaryReader : IDisposable
         var arr = new (T, TU)[count];
         for (var i = 0; i < count; i++)
         {
-            arr[i] = (func1.Invoke(), func2.Invoke());
+            arr[i] = (func1(), func2());
         }
-
         return arr;
     }
 
@@ -174,6 +180,14 @@ public class UnrealBinaryReader : IDisposable
         return new FVector(x, y, z);
     }
 
+    public DateTimeOffset ReadDate() => DateTime.FromBinary(ReadInt64()).ToUniversalTime();
+
+    public bool HasLevelStreamingFixes() => ReplayHeaderFlags.HasFlag(ReplayHeaderFlags.HasStreamingFixes);
+
+    public bool HasDeltaCheckpoints() => ReplayHeaderFlags.HasFlag(ReplayHeaderFlags.DeltaCheckpoints);
+
+    public bool HasGameSpecificFrameData() =>
+        ReplayHeaderFlags.HasFlag(ReplayHeaderFlags.GameSpecificFrameData);
 
     public void Dispose() => Dispose(true);
 

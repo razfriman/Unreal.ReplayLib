@@ -1,8 +1,10 @@
 using System.Diagnostics;
 using System.Reflection;
 using Microsoft.Extensions.Logging;
-using Unreal.ReplayLib.Enums;
 using Unreal.ReplayLib.Exceptions;
+using Unreal.ReplayLib.IO;
+using Unreal.ReplayLib.Models;
+using Unreal.ReplayLib.Models.Enums;
 
 namespace Unreal.ReplayLib;
 
@@ -16,6 +18,7 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
 
     protected T Replay { get; set; }
     protected bool IsReading;
+    protected ReplayState State { get; } = new();
 
     protected ReplayReader(ILogger logger) => Logger = logger;
 
@@ -79,18 +82,16 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
         switch (chunkType)
         {
             case ReplayChunkType.Checkpoint:
-                // ReadCheckpoint(archive);
-                archive.Seek(chunkSize, SeekOrigin.Current);
+                ReadCheckpoint(archive);
                 break;
             case ReplayChunkType.Event:
                 ReadEvent(archive);
                 break;
             case ReplayChunkType.ReplayData:
                 ReadReplayData(archive, (uint)chunkSize);
-                archive.Seek(chunkSize, SeekOrigin.Current);
                 break;
             case ReplayChunkType.Header:
-                ReadReplayHeader(archive);
+                ReadHeader(archive);
                 break;
             case ReplayChunkType.Unknown:
                 break;
@@ -107,7 +108,7 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
 
     private void ReadCheckpoint(UnrealBinaryReader archive)
     {
-        var checkpointEvent = new ReplayCheckpointEvent
+        var replayCheckpoint = new ReplayCheckpoint
         {
             Id = archive.ReadFString(),
             Group = archive.ReadFString(),
@@ -117,12 +118,12 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
             SizeInBytes = archive.ReadInt32(),
             Position = archive.Position,
         };
-        Replay.Events.Add(=);
+        Replay.Checkpoints.Add(replayCheckpoint);
     }
 
     protected void ReadEvent(UnrealBinaryReader archive)
     {
-        var infoEvent = new ReplayInfoEvent()
+        var replayEvent = new ReplayEvent()
         {
             Id = archive.ReadFString(),
             Group = archive.ReadFString(),
@@ -132,29 +133,32 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
             SizeInBytes = archive.ReadInt32(),
             Position = archive.Position,
         };
-        Replay.Events.Add(infoEvent);
+        Replay.Events.Add(replayEvent);
     }
 
-    protected void ReadDataEvent(UnrealBinaryReader archive, uint chunkSize = 0)
+    protected void ReadReplayData(UnrealBinaryReader archive, uint chunkSize = 0)
     {
-        var info = new ReplayDataEvent();
+        var replayData = new ReplayData();
         if (archive.ReplayVersion >= ReplayVersionHistory.StreamChunkTimes)
         {
-            info.Start = archive.ReadUInt32();
-            info.End = archive.ReadUInt32();
-            info.Length = archive.ReadUInt32();
+            replayData.Start = archive.ReadUInt32();
+            replayData.End = archive.ReadUInt32();
+            replayData.Length = archive.ReadUInt32();
         }
         else
         {
-            info.Length = chunkSize;
+            replayData.Length = chunkSize;
         }
 
         var memorySizeInBytes = archive.ReplayVersion >= ReplayVersionHistory.Encryption
             ? archive.ReadInt32()
-            : (int)info.Length;
+            : (int)replayData.Length;
+        replayData.Size = memorySizeInBytes;
+
+        Replay.Data.Add(replayData);
     }
 
-    protected void ReadReplayHeader(UnrealBinaryReader archive)
+    protected void ReadHeader(UnrealBinaryReader archive)
     {
         var magic = archive.ReadUInt32();
 
@@ -236,14 +240,6 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
         archive.EngineNetworkVersion = header.EngineNetworkVersion;
         archive.NetworkVersion = header.NetworkVersion;
 
-        PacketReader.EngineNetworkVersion = header.EngineNetworkVersion;
-        PacketReader.NetworkVersion = header.NetworkVersion;
-        PacketReader.ReplayHeaderFlags = header.Flags;
-
-        ExportReader.EngineNetworkVersion = header.EngineNetworkVersion;
-        ExportReader.NetworkVersion = header.NetworkVersion;
-        ExportReader.ReplayHeaderFlags = header.Flags;
-
         Replay.Header = header;
     }
 
@@ -265,7 +261,7 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
             Logger.LogWarning($"Encountered unknown ReplayVersionHistory: {(int)reader.ReplayVersion}");
         }
 
-        var info = new ReplayInfo
+        var replayInfo = new ReplayInfo
         {
             FileVersion = fileVersion,
             LengthInMs = reader.ReadUInt32(),
@@ -277,32 +273,32 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
 
         if (fileVersion >= ReplayVersionHistory.RecordedTimestamp)
         {
-            info.Timestamp = reader.ReadDate();
+            replayInfo.Timestamp = reader.ReadDate();
         }
 
         if (fileVersion >= ReplayVersionHistory.Compression)
         {
-            info.IsCompressed = reader.ReadUInt32AsBoolean();
+            replayInfo.IsCompressed = reader.ReadUInt32AsBoolean();
         }
 
         if (fileVersion >= ReplayVersionHistory.Encryption)
         {
-            info.Encrypted = reader.ReadUInt32AsBoolean();
-            info.EncryptionKey = reader.ReadBytes(reader.ReadInt32());
+            replayInfo.Encrypted = reader.ReadUInt32AsBoolean();
+            replayInfo.EncryptionKey = reader.ReadBytes(reader.ReadInt32());
         }
 
-        if (!info.IsLive && info.Encrypted && info.EncryptionKey.Length == 0)
+        if (!replayInfo.IsLive && replayInfo.Encrypted && replayInfo.EncryptionKey.Length == 0)
         {
             Logger?.LogError("ReadReplayInfo: Completed replay is marked encrypted but has no key!");
             throw new ReplayException("Completed replay is marked encrypted but has no key!");
         }
 
-        if (info.IsLive && info.Encrypted)
+        if (replayInfo.IsLive && replayInfo.Encrypted)
         {
             Logger?.LogError("ReadReplayInfo: Replay is marked encrypted and but not yet marked as completed!");
             throw new ReplayException("Replay is marked encrypted and but not yet marked as completed!");
         }
 
-        Replay.Info = info;
+        Replay.Info = replayInfo;
     }
 }

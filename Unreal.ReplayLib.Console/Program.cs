@@ -12,8 +12,11 @@ public static class Program
         var logger = loggerFactory.CreateLogger("Unreal.ReplayLib.Console");
         var reader = new FortniteReplayReader(logger);
         var replay = reader.ReadReplay("/Users/raz/Desktop/chapter2_season6_10.replay");
-        var json = JsonSerializer.Serialize(replay);
-        System.Console.WriteLine(json);
-        System.Console.WriteLine("Done");
+        var json = JsonSerializer.Serialize(replay, new JsonSerializerOptions()
+        {
+            WriteIndented = true
+        });
+        File.WriteAllText("/Users/raz/RiderProjects/Unreal.ReplayLib/Unreal.ReplayLib.Console/replay.json", json);
+        System.Console.WriteLine($"Done: {replay.ParseTime}ms");
     }
 }

@@ -1,6 +1,6 @@
-namespace Unreal.ReplayLib;
+namespace Unreal.ReplayLib.Models;
 
-public class ReplayInfoEvent
+public class ReplayEvent
 {
     public string Id { get; set; }
     public string Group { get; set; }
