@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unreal.ReplayLib", "Unreal.ReplayLib\Unreal.ReplayLib.csproj", "{CF9D76D3-AB74-41A2-AD74-20295F7E98AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unreal.ReplayLib.Fortnite", "Unreal.ReplayLib.Fortnite\Unreal.ReplayLib.Fortnite.csproj", "{A3F18EAD-ACE1-4B16-BA29-38A98920444E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unreal.ReplayLib.Console", "Unreal.ReplayLib.Console\Unreal.ReplayLib.Console.csproj", "{D09C7D46-A752-4044-8358-56FA544F6CB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF9D76D3-AB74-41A2-AD74-20295F7E98AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF9D76D3-AB74-41A2-AD74-20295F7E98AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF9D76D3-AB74-41A2-AD74-20295F7E98AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF9D76D3-AB74-41A2-AD74-20295F7E98AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F18EAD-ACE1-4B16-BA29-38A98920444E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F18EAD-ACE1-4B16-BA29-38A98920444E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F18EAD-ACE1-4B16-BA29-38A98920444E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F18EAD-ACE1-4B16-BA29-38A98920444E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D09C7D46-A752-4044-8358-56FA544F6CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D09C7D46-A752-4044-8358-56FA544F6CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D09C7D46-A752-4044-8358-56FA544F6CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D09C7D46-A752-4044-8358-56FA544F6CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
