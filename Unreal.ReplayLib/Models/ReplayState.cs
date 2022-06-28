@@ -6,5 +6,6 @@ public class ReplayState
     {
         
     }
-    public bool UseCheckpoints { get; set; }
+
+    public bool UseCheckpoints { get; set; } = true;
 }

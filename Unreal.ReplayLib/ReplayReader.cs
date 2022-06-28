@@ -70,23 +70,50 @@ public abstract partial class ReplayReader<TReplay, TState>
     private void ParseReplayChunks(UnrealBinaryReader archive)
     {
         ParseReplayEvents(archive);
-        ParseReplayData();
+        ParseReplayData(archive);
     }
 
-    private void ParseReplayData()
+    private void ParseReplayData(UnrealBinaryReader archive)
     {
         var time = 0u;
         if (State.UseCheckpoints && Replay.Checkpoints.Count > 0)
         {
             var checkpoint = Replay.Checkpoints[0];
-            // ParseReplayCheckpoint(replay, checkpoint, globalData);
+            ParseReplayCheckpoint(checkpoint, archive);
             time = checkpoint.EndTime;
         }
+        
+
+        foreach (var replayCheckpoint in Replay.Checkpoints)
+        {
+            ParseReplayCheckpoint(replayCheckpoint, archive);
+        }
+
+        foreach (var replayData in Replay.Data)
+        {
+            ParseReplayData(replayData, archive);
+        }
+    }
+
+    private void ParseReplayCheckpoint(ReplayCheckpoint checkpoint, UnrealBinaryReader archive)
+    {
+        archive.Seek(checkpoint.Position);
+        var decrypted = Decrypt(archive, checkpoint.Length);
+        Console.WriteLine("checkpoint");
+    }
+    
+    private void ParseReplayData(ReplayData data, UnrealBinaryReader archive)
+    {
+        archive.Seek(data.Position);
+        var decrypted = Decrypt(archive, data.CompressedLength);
+        Console.WriteLine("data");
     }
 
     private void ParseReplayEvents(UnrealBinaryReader archive)
     {
-        var replayEvents = Replay.Events.OrderBy(x => x.StartTime)
+        var replayEvents = Replay
+            .Events
+            .OrderBy(x => x.StartTime)
             .ToList();
 
         foreach (var replayEvent in replayEvents)

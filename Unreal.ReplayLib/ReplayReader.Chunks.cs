@@ -33,7 +33,7 @@ public abstract partial class ReplayReader<TReplay, TState>
                 ReadEvent(archive);
                 break;
             case ReplayChunkType.ReplayData:
-                ReadReplayData(archive, (uint)chunkSize);
+                ReadReplayData(archive);
                 break;
             case ReplayChunkType.Header:
                 ReadHeader(archive);
@@ -47,7 +47,8 @@ public abstract partial class ReplayReader<TReplay, TState>
         if (archive.Position != offset + chunkSize)
         {
             var available = offset + chunkSize - archive.Position;
-            Logger?.LogError("Chunk {ChunkType} at offset {Offset} not read correctly - {Available}", chunkType, offset, available);
+            Logger?.LogError("Chunk {ChunkType} at offset {Offset} not read correctly - {Available}", chunkType, offset,
+                available);
             archive.Seek(offset + chunkSize);
         }
     }
@@ -61,52 +62,43 @@ public abstract partial class ReplayReader<TReplay, TState>
             Metadata = archive.ReadFString(),
             StartTime = archive.ReadUInt32(),
             EndTime = archive.ReadUInt32(),
-            SizeInBytes = archive.ReadInt32(),
+            Length = archive.ReadInt32(),
             Position = archive.Position,
         };
         Replay.Checkpoints.Add(replayCheckpoint);
-        archive.SkipBytes(replayCheckpoint.SizeInBytes);
+        archive.SkipBytes(replayCheckpoint.Length);
     }
 
     protected void ReadEvent(UnrealBinaryReader archive)
     {
-        var replayEvent = new ReplayEvent()
+        var replayEvent = new ReplayEvent
         {
             Id = archive.ReadFString(),
             Group = archive.ReadFString(),
             Metadata = archive.ReadFString(),
             StartTime = archive.ReadUInt32(),
             EndTime = archive.ReadUInt32(),
-            SizeInBytes = archive.ReadInt32(),
-            Position = archive.Position,
+            Length = archive.ReadInt32(),
+            Position = archive.Position
         };
         Replay.Events.Add(replayEvent);
-        archive.SkipBytes(replayEvent.SizeInBytes);
+        archive.SkipBytes(replayEvent.Length);
     }
 
-    protected void ReadReplayData(UnrealBinaryReader archive, uint chunkSize = 0)
+    protected void ReadReplayData(UnrealBinaryReader archive)
     {
-        var replayData = new ReplayData();
-        if (archive.ReplayVersion >= ReplayVersionHistory.StreamChunkTimes)
+        var replayData = new ReplayData
         {
-            replayData.Start = archive.ReadUInt32();
-            replayData.End = archive.ReadUInt32();
-            replayData.Length = archive.ReadUInt32();
-        }
-        else
-        {
-            replayData.Length = chunkSize;
-        }
-
-        var memorySizeInBytes = archive.ReplayVersion >= ReplayVersionHistory.Encryption
-            ? archive.ReadInt32()
-            : (int)replayData.Length;
-        replayData.Size = memorySizeInBytes;
-
+            Start = archive.ReadUInt32(),
+            End = archive.ReadUInt32(),
+            CompressedLength = archive.ReadInt32(),
+            DecompressedLength = archive.ReadInt32(),
+            Position = archive.Position
+        };
         Replay.Data.Add(replayData);
-        archive.SkipBytes(replayData.Length);
+        archive.SkipBytes(replayData.CompressedLength);
     }
-    
+
     protected void ReadHeader(UnrealBinaryReader archive)
     {
         var magic = archive.ReadUInt32();
@@ -114,7 +106,8 @@ public abstract partial class ReplayReader<TReplay, TState>
         if (magic != NetworkMagic)
         {
             Logger?.LogError(
-                "Header.Magic != NETWORK_DEMO_MAGIC. Header.Magic: {Magic}, NETWORK_DEMO_MAGIC: {NetworkMagic}", magic, NetworkMagic);
+                "Header.Magic != NETWORK_DEMO_MAGIC. Header.Magic: {Magic}, NETWORK_DEMO_MAGIC: {NetworkMagic}", magic,
+                NetworkMagic);
             throw new ReplayException(
                 $"Header.Magic != NETWORK_DEMO_MAGIC. Header.Magic: {magic}, NETWORK_DEMO_MAGIC: {NetworkMagic}");
         }
@@ -126,11 +119,13 @@ public abstract partial class ReplayReader<TReplay, TState>
         switch (header.NetworkVersion)
         {
             case >= NetworkVersionHistory.HistoryPlusOne:
-                Logger?.LogWarning("Encountered unknown NetworkVersionHistory: {NetworkVersionHistory}", (int)header.NetworkVersion);
+                Logger?.LogWarning("Encountered unknown NetworkVersionHistory: {NetworkVersionHistory}",
+                    (int)header.NetworkVersion);
                 break;
             case <= NetworkVersionHistory.HistoryExtraVersion:
                 Logger?.LogError(
-                    "Header.Version < MIN_NETWORK_DEMO_VERSION. Header.Version: {NetworkVersion}, MIN_NETWORK_DEMO_VERSION: {HistoryExtraVersion}", header.NetworkVersion, NetworkVersionHistory.HistoryExtraVersion);
+                    "Header.Version < MIN_NETWORK_DEMO_VERSION. Header.Version: {NetworkVersion}, MIN_NETWORK_DEMO_VERSION: {HistoryExtraVersion}",
+                    header.NetworkVersion, NetworkVersionHistory.HistoryExtraVersion);
                 throw new ReplayException(
                     $"Header.Version < MIN_NETWORK_DEMO_VERSION. Header.Version: {header.NetworkVersion}, MIN_NETWORK_DEMO_VERSION: {NetworkVersionHistory.HistoryExtraVersion}");
         }
@@ -141,7 +136,8 @@ public abstract partial class ReplayReader<TReplay, TState>
         if (header.EngineNetworkVersion >= EngineNetworkVersionHistory.HistoryEnginenetversionPlusOne)
         {
             Logger?.LogWarning(
-                "Encountered unknown EngineNetworkVersionHistory: {EngineNetworkVersionHistory}", (int)header.EngineNetworkVersion);
+                "Encountered unknown EngineNetworkVersionHistory: {EngineNetworkVersionHistory}",
+                (int)header.EngineNetworkVersion);
         }
 
         header.GameNetworkProtocolVersion = archive.ReadUInt32();

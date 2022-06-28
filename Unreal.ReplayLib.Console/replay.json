@@ -19,7 +19,7 @@
       "Metadata": "AthenaMatchStats",
       "StartTime": 1236833,
       "EndTime": 1236833,
-      "SizeInBytes": 64,
+      "Length": 64,
       "Position": 15091695
     }
   },
@@ -32,7 +32,7 @@
       "Metadata": "AthenaMatchTeamStats",
       "StartTime": 1236867,
       "EndTime": 1236867,
-      "SizeInBytes": 16,
+      "Length": 16,
       "Position": 15092067
     }
   },
@@ -44,7 +44,7 @@
       "Metadata": "PlayerStateEncryptionKey",
       "StartTime": 1252804,
       "EndTime": 1252804,
-      "SizeInBytes": 48,
+      "Length": 48,
       "Position": 15091885
     }
   },
@@ -83,7 +83,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 4015,
         "EndTime": 4015,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1057
       }
     },
@@ -121,7 +121,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 34535,
         "EndTime": 34535,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 268854
       }
     },
@@ -159,7 +159,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 95136,
         "EndTime": 95136,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 886084
       }
     },
@@ -197,7 +197,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 96132,
         "EndTime": 96132,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 886337
       }
     },
@@ -235,7 +235,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 100614,
         "EndTime": 100614,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 984918
       }
     },
@@ -273,7 +273,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 109855,
         "EndTime": 109855,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 985171
       }
     },
@@ -311,7 +311,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 109925,
         "EndTime": 109925,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 985424
       }
     },
@@ -349,7 +349,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 112819,
         "EndTime": 112819,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 985677
       }
     },
@@ -387,7 +387,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 118273,
         "EndTime": 118273,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 985930
       }
     },
@@ -425,7 +425,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 129264,
         "EndTime": 129264,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1391960
       }
     },
@@ -463,7 +463,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 130099,
         "EndTime": 130099,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1392213
       }
     },
@@ -501,7 +501,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 136343,
         "EndTime": 136343,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1392466
       }
     },
@@ -539,7 +539,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 136701,
         "EndTime": 136701,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1392719
       }
     },
@@ -577,7 +577,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 136876,
         "EndTime": 136876,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1392972
       }
     },
@@ -615,7 +615,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 137520,
         "EndTime": 137520,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1393225
       }
     },
@@ -653,7 +653,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 138586,
         "EndTime": 138586,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1393478
       }
     },
@@ -691,7 +691,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 139021,
         "EndTime": 139021,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1393731
       }
     },
@@ -729,7 +729,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 139929,
         "EndTime": 139929,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1393984
       }
     },
@@ -767,7 +767,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 141273,
         "EndTime": 141273,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1552389
       }
     },
@@ -805,7 +805,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 141407,
         "EndTime": 141407,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1552642
       }
     },
@@ -843,7 +843,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 142069,
         "EndTime": 142069,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1552895
       }
     },
@@ -881,7 +881,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 147184,
         "EndTime": 147184,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1553148
       }
     },
@@ -919,7 +919,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 147214,
         "EndTime": 147214,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1553401
       }
     },
@@ -957,7 +957,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 148592,
         "EndTime": 148592,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1553654
       }
     },
@@ -995,7 +995,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 149463,
         "EndTime": 149463,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1553907
       }
     },
@@ -1033,7 +1033,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 151500,
         "EndTime": 151500,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1554160
       }
     },
@@ -1071,7 +1071,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 155906,
         "EndTime": 155906,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1554413
       }
     },
@@ -1109,7 +1109,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 158986,
         "EndTime": 158986,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1554666
       }
     },
@@ -1147,7 +1147,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 160554,
         "EndTime": 160554,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1692943
       }
     },
@@ -1185,7 +1185,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 163398,
         "EndTime": 163398,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1693196
       }
     },
@@ -1223,7 +1223,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 163762,
         "EndTime": 163762,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1693449
       }
     },
@@ -1261,7 +1261,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 166162,
         "EndTime": 166162,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1693702
       }
     },
@@ -1299,7 +1299,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 168303,
         "EndTime": 168303,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1693955
       }
     },
@@ -1337,7 +1337,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 170483,
         "EndTime": 170483,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1694208
       }
     },
@@ -1375,7 +1375,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 172780,
         "EndTime": 172780,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1694461
       }
     },
@@ -1413,7 +1413,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 175152,
         "EndTime": 175152,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 1694714
       }
     },
@@ -1451,7 +1451,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 182897,
         "EndTime": 182897,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2129656
       }
     },
@@ -1489,7 +1489,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 187035,
         "EndTime": 187035,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2129909
       }
     },
@@ -1527,7 +1527,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 187938,
         "EndTime": 187938,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2130162
       }
     },
@@ -1565,7 +1565,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 192085,
         "EndTime": 192085,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2130415
       }
     },
@@ -1603,7 +1603,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 192716,
         "EndTime": 192716,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2130668
       }
     },
@@ -1641,7 +1641,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 196156,
         "EndTime": 196156,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2130921
       }
     },
@@ -1679,7 +1679,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 208248,
         "EndTime": 208248,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2254254
       }
     },
@@ -1717,7 +1717,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 210748,
         "EndTime": 210748,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2254507
       }
     },
@@ -1755,7 +1755,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 210823,
         "EndTime": 210823,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2254760
       }
     },
@@ -1793,7 +1793,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 213492,
         "EndTime": 213492,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2255013
       }
     },
@@ -1831,7 +1831,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 220262,
         "EndTime": 220262,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2255266
       }
     },
@@ -1869,7 +1869,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 237495,
         "EndTime": 237495,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2353719
       }
     },
@@ -1907,7 +1907,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 239803,
         "EndTime": 239803,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2353972
       }
     },
@@ -1945,7 +1945,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 242144,
         "EndTime": 242144,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2742339
       }
     },
@@ -1983,7 +1983,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 243309,
         "EndTime": 243309,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2742592
       }
     },
@@ -2021,7 +2021,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 258313,
         "EndTime": 258313,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2742845
       }
     },
@@ -2059,7 +2059,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 270137,
         "EndTime": 270137,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2865378
       }
     },
@@ -2097,7 +2097,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 273879,
         "EndTime": 273879,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2865631
       }
     },
@@ -2135,7 +2135,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 274140,
         "EndTime": 274140,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2865884
       }
     },
@@ -2173,7 +2173,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 286265,
         "EndTime": 286265,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 2979665
       }
     },
@@ -2211,7 +2211,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 314617,
         "EndTime": 314617,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 3381872
       }
     },
@@ -2249,7 +2249,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 320533,
         "EndTime": 320533,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 3485957
       }
     },
@@ -2287,7 +2287,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 376633,
         "EndTime": 376633,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 3958252
       }
     },
@@ -2325,7 +2325,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 378704,
         "EndTime": 378704,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 3958505
       }
     },
@@ -2363,7 +2363,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 421989,
         "EndTime": 421989,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 4685224
       }
     },
@@ -2401,7 +2401,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 424230,
         "EndTime": 424230,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 4685477
       }
     },
@@ -2439,7 +2439,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 442265,
         "EndTime": 442265,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 4807626
       }
     },
@@ -2477,7 +2477,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 470208,
         "EndTime": 470208,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 4948463
       }
     },
@@ -2515,7 +2515,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 478061,
         "EndTime": 478061,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 4948716
       }
     },
@@ -2553,7 +2553,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 483437,
         "EndTime": 483437,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 5444651
       }
     },
@@ -2591,7 +2591,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 505176,
         "EndTime": 505176,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 5569600
       }
     },
@@ -2629,7 +2629,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 519301,
         "EndTime": 519301,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 5569853
       }
     },
@@ -2667,7 +2667,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 524910,
         "EndTime": 524910,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 5695634
       }
     },
@@ -2705,7 +2705,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 529251,
         "EndTime": 529251,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 5695887
       }
     },
@@ -2743,7 +2743,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 548660,
         "EndTime": 548660,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 6231870
       }
     },
@@ -2781,7 +2781,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 555667,
         "EndTime": 555667,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 6232123
       }
     },
@@ -2819,7 +2819,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 556339,
         "EndTime": 556339,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 6232376
       }
     },
@@ -2857,7 +2857,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 558242,
         "EndTime": 558242,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 6232629
       }
     },
@@ -2895,7 +2895,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 582892,
         "EndTime": 582892,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 6490450
       }
     },
@@ -2933,7 +2933,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 582985,
         "EndTime": 582985,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 6490703
       }
     },
@@ -2971,7 +2971,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 602764,
         "EndTime": 602764,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 7026622
       }
     },
@@ -3009,7 +3009,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 609336,
         "EndTime": 609336,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 7026875
       }
     },
@@ -3047,7 +3047,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 629708,
         "EndTime": 629708,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 7144464
       }
     },
@@ -3085,7 +3085,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 647881,
         "EndTime": 647881,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 7237541
       }
     },
@@ -3123,7 +3123,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 725429,
         "EndTime": 725429,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 8552120
       }
     },
@@ -3161,7 +3161,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 737648,
         "EndTime": 737648,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 8552373
       }
     },
@@ -3199,7 +3199,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 756386,
         "EndTime": 756386,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 8718314
       }
     },
@@ -3237,7 +3237,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 765203,
         "EndTime": 765203,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 8853487
       }
     },
@@ -3275,7 +3275,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 866898,
         "EndTime": 866898,
-        "SizeInBytes": 112,
+        "Length": 112,
         "Position": 10439882
       }
     },
@@ -3313,7 +3313,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 875311,
         "EndTime": 875311,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 10440119
       }
     },
@@ -3351,7 +3351,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 877515,
         "EndTime": 877515,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 10440372
       }
     },
@@ -3389,7 +3389,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 880192,
         "EndTime": 880192,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 10440625
       }
     },
@@ -3427,7 +3427,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 886630,
         "EndTime": 886630,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 10582838
       }
     },
@@ -3465,7 +3465,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 921601,
         "EndTime": 921601,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 11342462
       }
     },
@@ -3503,7 +3503,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 945149,
         "EndTime": 945149,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 11473283
       }
     },
@@ -3541,7 +3541,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 961008,
         "EndTime": 961008,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 11584136
       }
     },
@@ -3579,7 +3579,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 994608,
         "EndTime": 994608,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 12207576
       }
     },
@@ -3617,7 +3617,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 1034263,
         "EndTime": 1034263,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 12931168
       }
     },
@@ -3655,7 +3655,7 @@
         "Metadata": "versionedEvent",
         "StartTime": 1236997,
         "EndTime": 1236997,
-        "SizeInBytes": 128,
+        "Length": 128,
         "Position": 15092208
       }
     }
@@ -3710,7 +3710,7 @@
       "Metadata": "AdditionGFPEvent",
       "StartTime": 0,
       "EndTime": 0,
-      "SizeInBytes": 16,
+      "Length": 16,
       "Position": 716
     },
     {
@@ -3719,7 +3719,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 4015,
       "EndTime": 4015,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1057
     },
     {
@@ -3728,7 +3728,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 34535,
       "EndTime": 34535,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 268854
     },
     {
@@ -3737,7 +3737,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 95136,
       "EndTime": 95136,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 886084
     },
     {
@@ -3746,7 +3746,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 96132,
       "EndTime": 96132,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 886337
     },
     {
@@ -3755,7 +3755,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 100614,
       "EndTime": 100614,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 984918
     },
     {
@@ -3764,7 +3764,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 109855,
       "EndTime": 109855,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 985171
     },
     {
@@ -3773,7 +3773,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 109925,
       "EndTime": 109925,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 985424
     },
     {
@@ -3782,7 +3782,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 112819,
       "EndTime": 112819,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 985677
     },
     {
@@ -3791,7 +3791,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 118273,
       "EndTime": 118273,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 985930
     },
     {
@@ -3800,7 +3800,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 129264,
       "EndTime": 129264,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1391960
     },
     {
@@ -3809,7 +3809,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 130099,
       "EndTime": 130099,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1392213
     },
     {
@@ -3818,7 +3818,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 136343,
       "EndTime": 136343,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1392466
     },
     {
@@ -3827,7 +3827,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 136701,
       "EndTime": 136701,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1392719
     },
     {
@@ -3836,7 +3836,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 136876,
       "EndTime": 136876,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1392972
     },
     {
@@ -3845,7 +3845,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 137520,
       "EndTime": 137520,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1393225
     },
     {
@@ -3854,7 +3854,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 138586,
       "EndTime": 138586,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1393478
     },
     {
@@ -3863,7 +3863,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 139021,
       "EndTime": 139021,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1393731
     },
     {
@@ -3872,7 +3872,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 139929,
       "EndTime": 139929,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1393984
     },
     {
@@ -3881,7 +3881,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 141273,
       "EndTime": 141273,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1552389
     },
     {
@@ -3890,7 +3890,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 141407,
       "EndTime": 141407,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1552642
     },
     {
@@ -3899,7 +3899,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 142069,
       "EndTime": 142069,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1552895
     },
     {
@@ -3908,7 +3908,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 147184,
       "EndTime": 147184,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1553148
     },
     {
@@ -3917,7 +3917,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 147214,
       "EndTime": 147214,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1553401
     },
     {
@@ -3926,7 +3926,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 148592,
       "EndTime": 148592,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1553654
     },
     {
@@ -3935,7 +3935,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 149463,
       "EndTime": 149463,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1553907
     },
     {
@@ -3944,7 +3944,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 151500,
       "EndTime": 151500,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1554160
     },
     {
@@ -3953,7 +3953,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 155906,
       "EndTime": 155906,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1554413
     },
     {
@@ -3962,7 +3962,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 158986,
       "EndTime": 158986,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1554666
     },
     {
@@ -3971,7 +3971,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 160554,
       "EndTime": 160554,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1692943
     },
     {
@@ -3980,7 +3980,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 163398,
       "EndTime": 163398,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1693196
     },
     {
@@ -3989,7 +3989,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 163762,
       "EndTime": 163762,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1693449
     },
     {
@@ -3998,7 +3998,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 166162,
       "EndTime": 166162,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1693702
     },
     {
@@ -4007,7 +4007,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 168303,
       "EndTime": 168303,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1693955
     },
     {
@@ -4016,7 +4016,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 170483,
       "EndTime": 170483,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1694208
     },
     {
@@ -4025,7 +4025,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 172780,
       "EndTime": 172780,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1694461
     },
     {
@@ -4034,7 +4034,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 175152,
       "EndTime": 175152,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 1694714
     },
     {
@@ -4043,7 +4043,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 182897,
       "EndTime": 182897,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2129656
     },
     {
@@ -4052,7 +4052,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 187035,
       "EndTime": 187035,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2129909
     },
     {
@@ -4061,7 +4061,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 187938,
       "EndTime": 187938,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2130162
     },
     {
@@ -4070,7 +4070,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 192085,
       "EndTime": 192085,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2130415
     },
     {
@@ -4079,7 +4079,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 192716,
       "EndTime": 192716,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2130668
     },
     {
@@ -4088,7 +4088,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 196156,
       "EndTime": 196156,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2130921
     },
     {
@@ -4097,7 +4097,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 208248,
       "EndTime": 208248,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2254254
     },
     {
@@ -4106,7 +4106,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 210748,
       "EndTime": 210748,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2254507
     },
     {
@@ -4115,7 +4115,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 210823,
       "EndTime": 210823,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2254760
     },
     {
@@ -4124,7 +4124,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 213492,
       "EndTime": 213492,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2255013
     },
     {
@@ -4133,7 +4133,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 220262,
       "EndTime": 220262,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2255266
     },
     {
@@ -4142,7 +4142,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 237495,
       "EndTime": 237495,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2353719
     },
     {
@@ -4151,7 +4151,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 239803,
       "EndTime": 239803,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2353972
     },
     {
@@ -4160,7 +4160,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 242144,
       "EndTime": 242144,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2742339
     },
     {
@@ -4169,7 +4169,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 243309,
       "EndTime": 243309,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2742592
     },
     {
@@ -4178,7 +4178,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 258313,
       "EndTime": 258313,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2742845
     },
     {
@@ -4187,7 +4187,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 270137,
       "EndTime": 270137,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2865378
     },
     {
@@ -4196,7 +4196,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 273879,
       "EndTime": 273879,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2865631
     },
     {
@@ -4205,7 +4205,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 274140,
       "EndTime": 274140,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2865884
     },
     {
@@ -4214,7 +4214,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 286265,
       "EndTime": 286265,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 2979665
     },
     {
@@ -4223,7 +4223,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 314617,
       "EndTime": 314617,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 3381872
     },
     {
@@ -4232,7 +4232,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 320533,
       "EndTime": 320533,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 3485957
     },
     {
@@ -4241,7 +4241,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 376633,
       "EndTime": 376633,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 3958252
     },
     {
@@ -4250,7 +4250,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 378704,
       "EndTime": 378704,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 3958505
     },
     {
@@ -4259,7 +4259,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 421989,
       "EndTime": 421989,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 4685224
     },
     {
@@ -4268,7 +4268,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 424230,
       "EndTime": 424230,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 4685477
     },
     {
@@ -4277,7 +4277,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 442265,
       "EndTime": 442265,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 4807626
     },
     {
@@ -4286,7 +4286,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 470208,
       "EndTime": 470208,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 4948463
     },
     {
@@ -4295,7 +4295,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 478061,
       "EndTime": 478061,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 4948716
     },
     {
@@ -4304,7 +4304,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 483437,
       "EndTime": 483437,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 5444651
     },
     {
@@ -4313,7 +4313,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 505176,
       "EndTime": 505176,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 5569600
     },
     {
@@ -4322,7 +4322,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 519301,
       "EndTime": 519301,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 5569853
     },
     {
@@ -4331,7 +4331,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 524910,
       "EndTime": 524910,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 5695634
     },
     {
@@ -4340,7 +4340,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 529251,
       "EndTime": 529251,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 5695887
     },
     {
@@ -4349,7 +4349,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 548660,
       "EndTime": 548660,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 6231870
     },
     {
@@ -4358,7 +4358,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 555667,
       "EndTime": 555667,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 6232123
     },
     {
@@ -4367,7 +4367,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 556339,
       "EndTime": 556339,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 6232376
     },
     {
@@ -4376,7 +4376,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 558242,
       "EndTime": 558242,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 6232629
     },
     {
@@ -4385,7 +4385,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 582892,
       "EndTime": 582892,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 6490450
     },
     {
@@ -4394,7 +4394,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 582985,
       "EndTime": 582985,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 6490703
     },
     {
@@ -4403,7 +4403,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 602764,
       "EndTime": 602764,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 7026622
     },
     {
@@ -4412,7 +4412,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 609336,
       "EndTime": 609336,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 7026875
     },
     {
@@ -4421,7 +4421,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 629708,
       "EndTime": 629708,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 7144464
     },
     {
@@ -4430,7 +4430,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 647881,
       "EndTime": 647881,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 7237541
     },
     {
@@ -4439,7 +4439,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 725429,
       "EndTime": 725429,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 8552120
     },
     {
@@ -4448,7 +4448,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 737648,
       "EndTime": 737648,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 8552373
     },
     {
@@ -4457,7 +4457,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 756386,
       "EndTime": 756386,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 8718314
     },
     {
@@ -4466,7 +4466,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 765203,
       "EndTime": 765203,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 8853487
     },
     {
@@ -4475,7 +4475,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 866898,
       "EndTime": 866898,
-      "SizeInBytes": 112,
+      "Length": 112,
       "Position": 10439882
     },
     {
@@ -4484,7 +4484,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 875311,
       "EndTime": 875311,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 10440119
     },
     {
@@ -4493,7 +4493,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 877515,
       "EndTime": 877515,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 10440372
     },
     {
@@ -4502,7 +4502,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 880192,
       "EndTime": 880192,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 10440625
     },
     {
@@ -4511,7 +4511,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 886630,
       "EndTime": 886630,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 10582838
     },
     {
@@ -4520,7 +4520,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 921601,
       "EndTime": 921601,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 11342462
     },
     {
@@ -4529,7 +4529,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 945149,
       "EndTime": 945149,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 11473283
     },
     {
@@ -4538,7 +4538,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 961008,
       "EndTime": 961008,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 11584136
     },
     {
@@ -4547,7 +4547,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 994608,
       "EndTime": 994608,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 12207576
     },
     {
@@ -4556,7 +4556,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 1034263,
       "EndTime": 1034263,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 12931168
     },
     {
@@ -4565,7 +4565,7 @@
       "Metadata": "AthenaMatchStats",
       "StartTime": 1236833,
       "EndTime": 1236833,
-      "SizeInBytes": 64,
+      "Length": 64,
       "Position": 15091695
     },
     {
@@ -4574,7 +4574,7 @@
       "Metadata": "PlayerStateEncryptionKey",
       "StartTime": 1252804,
       "EndTime": 1252804,
-      "SizeInBytes": 48,
+      "Length": 48,
       "Position": 15091885
     },
     {
@@ -4583,7 +4583,7 @@
       "Metadata": "AthenaMatchTeamStats",
       "StartTime": 1236867,
       "EndTime": 1236867,
-      "SizeInBytes": 16,
+      "Length": 16,
       "Position": 15092067
     },
     {
@@ -4592,7 +4592,7 @@
       "Metadata": "versionedEvent",
       "StartTime": 1236997,
       "EndTime": 1236997,
-      "SizeInBytes": 128,
+      "Length": 128,
       "Position": 15092208
     }
   ],
@@ -4600,380 +4600,443 @@
     {
       "Start": 0,
       "End": 20223,
-      "Length": 267520,
-      "Size": 768886
+      "DecompressedLength": 768886,
+      "CompressedLength": 267520,
+      "Position": 1209
     },
     {
       "Start": 20223,
       "End": 40227,
-      "Length": 122816,
-      "Size": 335052
+      "DecompressedLength": 335052,
+      "CompressedLength": 122816,
+      "Position": 269006
     },
     {
       "Start": 40227,
       "End": 60233,
-      "Length": 140880,
-      "Size": 353383
+      "DecompressedLength": 353383,
+      "CompressedLength": 140880,
+      "Position": 391846
     },
     {
       "Start": 60233,
       "End": 80235,
-      "Length": 144944,
-      "Size": 438124
+      "DecompressedLength": 438124,
+      "CompressedLength": 144944,
+      "Position": 741015
     },
     {
       "Start": 80235,
       "End": 100242,
-      "Length": 98304,
-      "Size": 259117
+      "DecompressedLength": 259117,
+      "CompressedLength": 98304,
+      "Position": 886489
     },
     {
       "Start": 100242,
       "End": 120247,
-      "Length": 128640,
-      "Size": 308455
+      "DecompressedLength": 308455,
+      "CompressedLength": 128640,
+      "Position": 986082
     },
     {
       "Start": 120247,
       "End": 140248,
-      "Length": 158128,
-      "Size": 375937
+      "DecompressedLength": 375937,
+      "CompressedLength": 158128,
+      "Position": 1394136
     },
     {
       "Start": 140248,
       "End": 160251,
-      "Length": 138000,
-      "Size": 357798
+      "DecompressedLength": 357798,
+      "CompressedLength": 138000,
+      "Position": 1554818
     },
     {
       "Start": 160251,
       "End": 180256,
-      "Length": 130144,
-      "Size": 341933
+      "DecompressedLength": 341933,
+      "CompressedLength": 130144,
+      "Position": 1694866
     },
     {
       "Start": 180256,
       "End": 200260,
-      "Length": 123056,
-      "Size": 338872
+      "DecompressedLength": 338872,
+      "CompressedLength": 123056,
+      "Position": 2131073
     },
     {
       "Start": 200260,
       "End": 220272,
-      "Length": 98176,
-      "Size": 281169
+      "DecompressedLength": 281169,
+      "CompressedLength": 98176,
+      "Position": 2255418
     },
     {
       "Start": 220272,
       "End": 240288,
-      "Length": 92528,
-      "Size": 253097
+      "DecompressedLength": 253097,
+      "CompressedLength": 92528,
+      "Position": 2354124
     },
     {
       "Start": 240288,
       "End": 260298,
-      "Length": 122256,
-      "Size": 300872
+      "DecompressedLength": 300872,
+      "CompressedLength": 122256,
+      "Position": 2742997
     },
     {
       "Start": 260298,
       "End": 280297,
-      "Length": 113504,
-      "Size": 306813
+      "DecompressedLength": 306813,
+      "CompressedLength": 113504,
+      "Position": 2866036
     },
     {
       "Start": 280297,
       "End": 300298,
-      "Length": 93840,
-      "Size": 268296
+      "DecompressedLength": 268296,
+      "CompressedLength": 93840,
+      "Position": 2979817
     },
     {
       "Start": 300298,
       "End": 320297,
-      "Length": 103808,
-      "Size": 285288
+      "DecompressedLength": 285288,
+      "CompressedLength": 103808,
+      "Position": 3382024
     },
     {
       "Start": 320297,
       "End": 340303,
-      "Length": 80944,
-      "Size": 227435
+      "DecompressedLength": 227435,
+      "CompressedLength": 80944,
+      "Position": 3486109
     },
     {
       "Start": 340303,
       "End": 360309,
-      "Length": 77888,
-      "Size": 206124
+      "DecompressedLength": 206124,
+      "CompressedLength": 77888,
+      "Position": 3567077
     },
     {
       "Start": 360309,
       "End": 380307,
-      "Length": 151280,
-      "Size": 373203
+      "DecompressedLength": 373203,
+      "CompressedLength": 151280,
+      "Position": 3958657
     },
     {
       "Start": 380307,
       "End": 400322,
-      "Length": 131024,
-      "Size": 290141
+      "DecompressedLength": 290141,
+      "CompressedLength": 131024,
+      "Position": 4109961
     },
     {
       "Start": 400322,
       "End": 420326,
-      "Length": 106160,
-      "Size": 257212
+      "DecompressedLength": 257212,
+      "CompressedLength": 106160,
+      "Position": 4241009
     },
     {
       "Start": 420326,
       "End": 440331,
-      "Length": 121872,
-      "Size": 314189
+      "DecompressedLength": 314189,
+      "CompressedLength": 121872,
+      "Position": 4685629
     },
     {
       "Start": 440331,
       "End": 460342,
-      "Length": 140560,
-      "Size": 360593
+      "DecompressedLength": 360593,
+      "CompressedLength": 140560,
+      "Position": 4807778
     },
     {
       "Start": 460342,
       "End": 480340,
-      "Length": 98848,
-      "Size": 272513
+      "DecompressedLength": 272513,
+      "CompressedLength": 98848,
+      "Position": 4948868
     },
     {
       "Start": 480340,
       "End": 500349,
-      "Length": 124672,
-      "Size": 315935
+      "DecompressedLength": 315935,
+      "CompressedLength": 124672,
+      "Position": 5444803
     },
     {
       "Start": 500349,
       "End": 520348,
-      "Length": 125504,
-      "Size": 329024
+      "DecompressedLength": 329024,
+      "CompressedLength": 125504,
+      "Position": 5570005
     },
     {
       "Start": 520348,
       "End": 540346,
-      "Length": 134560,
-      "Size": 344477
+      "DecompressedLength": 344477,
+      "CompressedLength": 134560,
+      "Position": 5696039
     },
     {
       "Start": 540346,
       "End": 560353,
-      "Length": 122352,
-      "Size": 318048
+      "DecompressedLength": 318048,
+      "CompressedLength": 122352,
+      "Position": 6232781
     },
     {
       "Start": 560353,
       "End": 580357,
-      "Length": 135168,
-      "Size": 317447
+      "DecompressedLength": 317447,
+      "CompressedLength": 135168,
+      "Position": 6355157
     },
     {
       "Start": 580357,
       "End": 600369,
-      "Length": 126592,
-      "Size": 300331
+      "DecompressedLength": 300331,
+      "CompressedLength": 126592,
+      "Position": 6490855
     },
     {
       "Start": 600369,
       "End": 620378,
-      "Length": 117312,
-      "Size": 303886
+      "DecompressedLength": 303886,
+      "CompressedLength": 117312,
+      "Position": 7027027
     },
     {
       "Start": 620378,
       "End": 640384,
-      "Length": 92800,
-      "Size": 265681
+      "DecompressedLength": 265681,
+      "CompressedLength": 92800,
+      "Position": 7144616
     },
     {
       "Start": 640384,
       "End": 660386,
-      "Length": 85632,
-      "Size": 243522
+      "DecompressedLength": 243522,
+      "CompressedLength": 85632,
+      "Position": 7237693
     },
     {
       "Start": 660386,
       "End": 680394,
-      "Length": 99504,
-      "Size": 283283
+      "DecompressedLength": 283283,
+      "CompressedLength": 99504,
+      "Position": 7725680
     },
     {
       "Start": 680394,
       "End": 700394,
-      "Length": 155696,
-      "Size": 403214
+      "DecompressedLength": 403214,
+      "CompressedLength": 155696,
+      "Position": 7825208
     },
     {
       "Start": 700394,
       "End": 720400,
-      "Length": 142352,
-      "Size": 360391
+      "DecompressedLength": 360391,
+      "CompressedLength": 142352,
+      "Position": 7980928
     },
     {
       "Start": 720400,
       "End": 740394,
-      "Length": 165664,
-      "Size": 394643
+      "DecompressedLength": 394643,
+      "CompressedLength": 165664,
+      "Position": 8552525
     },
     {
       "Start": 740394,
       "End": 760406,
-      "Length": 134896,
-      "Size": 345435
+      "DecompressedLength": 345435,
+      "CompressedLength": 134896,
+      "Position": 8718466
     },
     {
       "Start": 760406,
       "End": 780406,
-      "Length": 114672,
-      "Size": 295527
+      "DecompressedLength": 295527,
+      "CompressedLength": 114672,
+      "Position": 8853639
     },
     {
       "Start": 780406,
       "End": 800412,
-      "Length": 102112,
-      "Size": 294771
+      "DecompressedLength": 294771,
+      "CompressedLength": 102112,
+      "Position": 9397034
     },
     {
       "Start": 800412,
       "End": 820419,
-      "Length": 127184,
-      "Size": 382453
+      "DecompressedLength": 382453,
+      "CompressedLength": 127184,
+      "Position": 9499170
     },
     {
       "Start": 820419,
       "End": 840422,
-      "Length": 164736,
-      "Size": 445421
+      "DecompressedLength": 445421,
+      "CompressedLength": 164736,
+      "Position": 9626378
     },
     {
       "Start": 840422,
       "End": 860427,
-      "Length": 163232,
-      "Size": 420538
+      "DecompressedLength": 420538,
+      "CompressedLength": 163232,
+      "Position": 10276525
     },
     {
       "Start": 860427,
       "End": 880428,
-      "Length": 141936,
-      "Size": 342114
+      "DecompressedLength": 342114,
+      "CompressedLength": 141936,
+      "Position": 10440777
     },
     {
       "Start": 880428,
       "End": 900431,
-      "Length": 107248,
-      "Size": 295985
+      "DecompressedLength": 295985,
+      "CompressedLength": 107248,
+      "Position": 10582990
     },
     {
       "Start": 900431,
       "End": 920430,
-      "Length": 143616,
-      "Size": 389488
+      "DecompressedLength": 389488,
+      "CompressedLength": 143616,
+      "Position": 11198721
     },
     {
       "Start": 920430,
       "End": 940436,
-      "Length": 130544,
-      "Size": 318571
+      "DecompressedLength": 318571,
+      "CompressedLength": 130544,
+      "Position": 11342614
     },
     {
       "Start": 940436,
       "End": 960440,
-      "Length": 110576,
-      "Size": 286781
+      "DecompressedLength": 286781,
+      "CompressedLength": 110576,
+      "Position": 11473435
     },
     {
       "Start": 960440,
       "End": 980444,
-      "Length": 103696,
-      "Size": 278832
+      "DecompressedLength": 278832,
+      "CompressedLength": 103696,
+      "Position": 12103755
     },
     {
       "Start": 980444,
       "End": 1000447,
-      "Length": 100624,
-      "Size": 260432
+      "DecompressedLength": 260432,
+      "CompressedLength": 100624,
+      "Position": 12207728
     },
     {
       "Start": 1000447,
       "End": 1020453,
-      "Length": 87760,
-      "Size": 237675
+      "DecompressedLength": 237675,
+      "CompressedLength": 87760,
+      "Position": 12308376
     },
     {
       "Start": 1020453,
       "End": 1040453,
-      "Length": 87856,
-      "Size": 230528
+      "DecompressedLength": 230528,
+      "CompressedLength": 87856,
+      "Position": 12931320
     },
     {
       "Start": 1040453,
       "End": 1060462,
-      "Length": 47696,
-      "Size": 159362
+      "DecompressedLength": 159362,
+      "CompressedLength": 47696,
+      "Position": 13019200
     },
     {
       "Start": 1060462,
       "End": 1080466,
-      "Length": 58208,
-      "Size": 166088
+      "DecompressedLength": 166088,
+      "CompressedLength": 58208,
+      "Position": 13066920
     },
     {
       "Start": 1080466,
       "End": 1100474,
-      "Length": 77296,
-      "Size": 196418
+      "DecompressedLength": 196418,
+      "CompressedLength": 77296,
+      "Position": 13653371
     },
     {
       "Start": 1100474,
       "End": 1120475,
-      "Length": 57440,
-      "Size": 167791
+      "DecompressedLength": 167791,
+      "CompressedLength": 57440,
+      "Position": 13730691
     },
     {
       "Start": 1120475,
       "End": 1140486,
-      "Length": 58576,
-      "Size": 168627
+      "DecompressedLength": 168627,
+      "CompressedLength": 58576,
+      "Position": 13788155
     },
     {
       "Start": 1140486,
       "End": 1160493,
-      "Length": 51696,
-      "Size": 157389
+      "DecompressedLength": 157389,
+      "CompressedLength": 51696,
+      "Position": 14371006
     },
     {
       "Start": 1160493,
       "End": 1180527,
-      "Length": 52432,
-      "Size": 151039
+      "DecompressedLength": 151039,
+      "CompressedLength": 52432,
+      "Position": 14422726
     },
     {
       "Start": 1180527,
       "End": 1200536,
-      "Length": 42752,
-      "Size": 133247
+      "DecompressedLength": 133247,
+      "CompressedLength": 42752,
+      "Position": 14475182
     },
     {
       "Start": 1200536,
       "End": 1220534,
-      "Length": 49984,
-      "Size": 152926
+      "DecompressedLength": 152926,
+      "CompressedLength": 49984,
+      "Position": 15041585
     },
     {
       "Start": 1220534,
       "End": 1238505,
-      "Length": 56480,
-      "Size": 163342
+      "DecompressedLength": 163342,
+      "CompressedLength": 56480,
+      "Position": 15092360
     },
     {
       "Start": 1238505,
       "End": 1252886,
-      "Length": 14912,
-      "Size": 77075
+      "DecompressedLength": 77075,
+      "CompressedLength": 14912,
+      "Position": 15148864
     }
   ],
   "Checkpoints": [
@@ -4983,7 +5046,7 @@
       "Metadata": "3",
       "StartTime": 60233,
       "EndTime": 60233,
-      "SizeInBytes": 208208,
+      "Length": 208208,
       "Position": 532783
     },
     {
@@ -4992,7 +5055,7 @@
       "Metadata": "6",
       "StartTime": 120247,
       "EndTime": 120247,
-      "SizeInBytes": 277056,
+      "Length": 277056,
       "Position": 1114779
     },
     {
@@ -5001,7 +5064,7 @@
       "Metadata": "9",
       "StartTime": 180256,
       "EndTime": 180256,
-      "SizeInBytes": 304464,
+      "Length": 304464,
       "Position": 1825067
     },
     {
@@ -5010,7 +5073,7 @@
       "Metadata": "12",
       "StartTime": 240288,
       "EndTime": 240288,
-      "SizeInBytes": 295504,
+      "Length": 295504,
       "Position": 2446710
     },
     {
@@ -5019,7 +5082,7 @@
       "Metadata": "15",
       "StartTime": 300298,
       "EndTime": 300298,
-      "SizeInBytes": 308032,
+      "Length": 308032,
       "Position": 3073715
     },
     {
@@ -5028,7 +5091,7 @@
       "Metadata": "18",
       "StartTime": 360309,
       "EndTime": 360309,
-      "SizeInBytes": 313104,
+      "Length": 313104,
       "Position": 3645023
     },
     {
@@ -5037,7 +5100,7 @@
       "Metadata": "21",
       "StartTime": 420326,
       "EndTime": 420326,
-      "SizeInBytes": 337872,
+      "Length": 337872,
       "Position": 4347227
     },
     {
@@ -5046,7 +5109,7 @@
       "Metadata": "24",
       "StartTime": 480340,
       "EndTime": 480340,
-      "SizeInBytes": 396752,
+      "Length": 396752,
       "Position": 5047774
     },
     {
@@ -5055,7 +5118,7 @@
       "Metadata": "27",
       "StartTime": 540346,
       "EndTime": 540346,
-      "SizeInBytes": 401088,
+      "Length": 401088,
       "Position": 5830657
     },
     {
@@ -5064,7 +5127,7 @@
       "Metadata": "30",
       "StartTime": 600369,
       "EndTime": 600369,
-      "SizeInBytes": 408992,
+      "Length": 408992,
       "Position": 6617505
     },
     {
@@ -5073,7 +5136,7 @@
       "Metadata": "33",
       "StartTime": 660386,
       "EndTime": 660386,
-      "SizeInBytes": 402272,
+      "Length": 402272,
       "Position": 7323384
     },
     {
@@ -5082,7 +5145,7 @@
       "Metadata": "36",
       "StartTime": 720400,
       "EndTime": 720400,
-      "SizeInBytes": 428656,
+      "Length": 428656,
       "Position": 8123339
     },
     {
@@ -5091,7 +5154,7 @@
       "Metadata": "39",
       "StartTime": 780406,
       "EndTime": 780406,
-      "SizeInBytes": 428640,
+      "Length": 428640,
       "Position": 8968370
     },
     {
@@ -5100,7 +5163,7 @@
       "Metadata": "42",
       "StartTime": 840422,
       "EndTime": 840422,
-      "SizeInBytes": 485328,
+      "Length": 485328,
       "Position": 9791173
     },
     {
@@ -5109,7 +5172,7 @@
       "Metadata": "45",
       "StartTime": 900431,
       "EndTime": 900431,
-      "SizeInBytes": 508400,
+      "Length": 508400,
       "Position": 10690297
     },
     {
@@ -5118,7 +5181,7 @@
       "Metadata": "48",
       "StartTime": 960440,
       "EndTime": 960440,
-      "SizeInBytes": 519408,
+      "Length": 519408,
       "Position": 11584323
     },
     {
@@ -5127,7 +5190,7 @@
       "Metadata": "51",
       "StartTime": 1020453,
       "EndTime": 1020453,
-      "SizeInBytes": 534848,
+      "Length": 534848,
       "Position": 12396195
     },
     {
@@ -5136,7 +5199,7 @@
       "Metadata": "54",
       "StartTime": 1080466,
       "EndTime": 1080466,
-      "SizeInBytes": 528160,
+      "Length": 528160,
       "Position": 13125187
     },
     {
@@ -5145,7 +5208,7 @@
       "Metadata": "57",
       "StartTime": 1140486,
       "EndTime": 1140486,
-      "SizeInBytes": 524192,
+      "Length": 524192,
       "Position": 13846790
     },
     {
@@ -5154,9 +5217,9 @@
       "Metadata": "60",
       "StartTime": 1200536,
       "EndTime": 1200536,
-      "SizeInBytes": 523568,
+      "Length": 523568,
       "Position": 14517993
     }
   ],
-  "ParseTime": 31
+  "ParseTime": 51
 }

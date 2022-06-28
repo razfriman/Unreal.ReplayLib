@@ -19,7 +19,7 @@ public class FortniteReplayReader : ReplayReader<FortniteReplay, FortniteReplayS
         try
         {
             archive.Seek(replayEvent.Position);
-            var decryptedReader = Decrypt(archive, replayEvent.SizeInBytes);
+            var decryptedReader = Decrypt(archive, replayEvent.Length);
 
             switch (replayEvent.Group)
             {
@@ -70,7 +70,7 @@ public class FortniteReplayReader : ReplayReader<FortniteReplay, FortniteReplayS
                 default:
                 {
                     Logger?.LogWarning(
-                        "Unknown event: {Group} - {Metadata} of size {SizeInBytes}", replayEvent.Group, replayEvent.Metadata, replayEvent.SizeInBytes);
+                        "Unknown event: {Group} - {Metadata} of size {Length}", replayEvent.Group, replayEvent.Metadata, replayEvent.Length);
                     break;
                 }
             }

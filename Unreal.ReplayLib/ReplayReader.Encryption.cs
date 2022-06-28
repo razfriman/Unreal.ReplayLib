@@ -23,13 +23,11 @@ public abstract partial class ReplayReader<TReplay, TState>
             return decryptedReader;
         }
 
-        var key = Replay.Info.EncryptionKey;
-            
         using var aes = Aes.Create();
-        aes.Key = key;
+        aes.Key = Replay.Info.EncryptionKey;
         var encryptedBytes = archive.ReadBytes(size);
         var decryptedBytes = aes.DecryptEcb(encryptedBytes, PaddingMode.PKCS7);
-        var decrypted = new UnrealBinaryReader(new MemoryStream(decryptedBytes))
+        var decrypted = new UnrealBinaryReader(decryptedBytes)
         {
             EngineNetworkVersion = Replay.Header.EngineNetworkVersion,
             NetworkVersion = Replay.Header.NetworkVersion,
