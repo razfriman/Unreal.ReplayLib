@@ -17,5 +17,12 @@ public class ReplayHeader
     public (string level, uint time)[] LevelNamesAndTimes { get; set; }
     public ReplayHeaderFlags Flags { get; set; }
     public string[] GameSpecificData { get; set; }
+    public float MinRecordHz { get; set; }
+    public float MaxRecordHz { get; set; }
+    public float FrameLimitInMs { get; set; }
+    public float CheckpointLimitInMs { get; set; }
+    public string Platform { get; set; }
+    public BuildConfiguration BuildConfig { get; set; }
+    public BuildTargetType BuildTarget { get; set; }
     public bool HasLevelStreamingFixes() => Flags.HasFlag(ReplayHeaderFlags.HasStreamingFixes);
 }

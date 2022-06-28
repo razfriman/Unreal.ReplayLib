@@ -17,9 +17,10 @@ public enum NetworkVersionHistory
     HistoryCharacterMovement = 13, // Change to using replicated movement and not interpolation
     HistoryCharacterMovementNointerp = 14, // No longer recording interpolated movement samples
     HistoryGuidNametable = 15, // Added a string table for exported guids
-
     HistoryGuidcacheChecksums =
         16, // Removing guid export checksums from saved data, they are ignored during playback
+    HistorySavePackageVersionUe = 17,		// Save engine and licensee package version as well, in case serialization functions need them for compatibility
+    HistoryRecordingMetadata = 18,			// Adding additional record-time information to the header
 
     HistoryPlusOne,
     HistoryLatest = HistoryPlusOne - 1

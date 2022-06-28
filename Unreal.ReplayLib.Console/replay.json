@@ -29,7 +29,14 @@
     "Flags": 11,
     "GameSpecificData": [
       "SubGame=Athena"
-    ]
+    ],
+    "MinRecordHz": 0,
+    "MaxRecordHz": 0,
+    "FrameLimitInMs": 0,
+    "CheckpointLimitInMs": 0,
+    "Platform": null,
+    "BuildConfig": 0,
+    "BuildTarget": 0
   },
   "Events": [
     {
@@ -2062,5 +2069,5 @@
       "Position": 17266715
     }
   ],
-  "ParseTime": 25
+  "ParseTime": 33
 }

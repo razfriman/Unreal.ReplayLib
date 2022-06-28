@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using System.Reflection;
 using Microsoft.Extensions.Logging;
 using Unreal.ReplayLib.Exceptions;
 using Unreal.ReplayLib.IO;
@@ -224,9 +223,33 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
             header.Changelist = archive.ReadUInt32();
         }
 
+        if (header.NetworkVersion >= NetworkVersionHistory.HistorySavePackageVersionUe)
+        {
+            // Engine package version on which the replay was recorded
+            //FPackageFileVersion PackageVersionUE;
+            var ue4Version = archive.ReadInt32();
+            var ue5Version = archive.ReadUInt32AsEnum<UnrealEngineObjectUe5Version>();
+            // int32 PackageVersionLicenseeUE;					// Licensee package version on which the replay was recorded
+            int packageVersionLicenseeUe = archive.ReadInt32();
+        }
+        
+
         if (header.NetworkVersion > NetworkVersionHistory.HistoryMultipleLevels)
         {
             header.LevelNamesAndTimes = archive.ReadTupleArray(archive.ReadFString, archive.ReadUInt32);
+        }
+        else if (header.NetworkVersion == NetworkVersionHistory.HistoryMultipleLevels)
+        {
+            var levelNames = archive.ReadArray(archive.ReadFString);
+            header.LevelNamesAndTimes = levelNames.Select(x => (x, 0u)).ToArray();
+        }
+        else
+        {
+            var levelName = archive.ReadFString();
+            header.LevelNamesAndTimes = new (string level, uint time)[]
+            {
+                (levelName, 0u)
+            };
         }
 
         if (header.NetworkVersion >= NetworkVersionHistory.HistoryHeaderFlags)
@@ -236,11 +259,21 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
         }
 
         header.GameSpecificData = archive.ReadArray(archive.ReadFString);
-
+        
+        if (header.NetworkVersion >= NetworkVersionHistory.HistoryRecordingMetadata)
+        {
+            header.MinRecordHz = archive.ReadSingle();
+            header.MaxRecordHz = archive.ReadSingle();
+            header.FrameLimitInMs = archive.ReadSingle();
+            header.CheckpointLimitInMs = archive.ReadSingle();
+            header.Platform = archive.ReadFString();
+            header.BuildConfig = archive.ReadByteAsEnum<BuildConfiguration>();
+            header.BuildTarget = archive.ReadByteAsEnum<BuildTargetType>();
+        }
+        
+        Replay.Header = header;
         archive.EngineNetworkVersion = header.EngineNetworkVersion;
         archive.NetworkVersion = header.NetworkVersion;
-
-        Replay.Header = header;
     }
 
     protected void ReadReplayInfo(UnrealBinaryReader reader)
