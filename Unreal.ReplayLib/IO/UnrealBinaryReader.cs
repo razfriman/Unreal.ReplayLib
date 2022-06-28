@@ -28,6 +28,7 @@ public class UnrealBinaryReader : IDisposable
     public ReplayVersionHistory ReplayVersion { get; set; }
     public NetworkReplayVersion NetworkReplayVersion { get; set; }
     public long Position => _stream.Position;
+    public long Available => _stream.Length - _stream.Position;
     public bool AtEnd() => _stream.Position >= _stream.Length;
     public bool CanRead(int count) => _stream.Position + count < _stream.Length;
 
@@ -164,6 +165,8 @@ public class UnrealBinaryReader : IDisposable
     public void SkipBytes(uint byteCount) => _stream.Seek(byteCount, SeekOrigin.Current);
 
     public void SkipBytes(int byteCount) => _stream.Seek(byteCount, SeekOrigin.Current);
+
+    public FVector ReadFVector() => new(ReadSingle(), ReadSingle(), ReadSingle());
 
     public FVector ReadQuantizedVector()
     {

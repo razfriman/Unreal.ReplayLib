@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Security.Cryptography;
 using Microsoft.Extensions.Logging;
 using Unreal.ReplayLib.Exceptions;
 using Unreal.ReplayLib.IO;
@@ -7,36 +8,42 @@ using Unreal.ReplayLib.Models.Enums;
 
 namespace Unreal.ReplayLib;
 
-public abstract partial class ReplayReader<T> where T : Replay, new()
+public abstract partial class ReplayReader<TReplay, TState>
+    where TReplay : Replay, new()
+    where TState : ReplayState, new()
 {
     protected const uint FileMagic = 0x1CA2E27F;
     protected const uint NetworkMagic = 0x2CF5A13D;
     protected const uint MetadataMagic = 0x3D06B24E;
 
-    protected readonly ILogger Logger;
+    protected readonly ILogger? Logger;
 
-    protected T Replay { get; set; }
+    protected TReplay Replay { get; set; }
     protected bool IsReading;
-    protected ReplayState State { get; } = new();
+    protected TState State { get; set; } = new();
 
     protected ReplayReader(ILogger logger) => Logger = logger;
 
-    private void Reset() => Replay = new T();
+    private void Reset()
+    {
+        Replay = new TReplay();
+        State = new TState();
+    }
 
-    public T ReadReplay(string fileName)
+    public TReplay ReadReplay(string fileName)
     {
         var bytes = File.ReadAllBytes(fileName);
         using var ms = new MemoryStream(bytes);
         return ReadReplay(ms);
     }
 
-    public T ReadReplay(MemoryStream stream)
+    public TReplay ReadReplay(MemoryStream stream)
     {
         using var archive = new UnrealBinaryReader(stream);
         return ReadReplay(archive);
     }
 
-    public T ReadReplay(UnrealBinaryReader archive)
+    public TReplay ReadReplay(UnrealBinaryReader archive)
     {
         if (IsReading)
         {
@@ -50,7 +57,7 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
             IsReading = true;
             ReadReplayInfo(archive);
             ReadReplayChunks(archive);
-            Cleanup();
+            ParseReplayChunks(archive);
             Replay.ParseTime = sw.ElapsedMilliseconds;
             return Replay;
         }
@@ -60,278 +67,42 @@ public abstract partial class ReplayReader<T> where T : Replay, new()
         }
     }
 
-    protected void Cleanup()
+    private void ParseReplayChunks(UnrealBinaryReader archive)
     {
+        ParseReplayEvents(archive);
+        ParseReplayData();
     }
 
-    protected virtual void ReadReplayChunks(UnrealBinaryReader archive)
+    private void ParseReplayData()
     {
-        while (!archive.AtEnd())
+        var time = 0u;
+        if (State.UseCheckpoints && Replay.Checkpoints.Count > 0)
         {
-            ReadReplayChunk(archive);
-        }
-    }
-
-    protected void ReadReplayChunk(UnrealBinaryReader archive)
-    {
-        var chunkType = archive.ReadUInt32AsEnum<ReplayChunkType>();
-        var chunkSize = archive.ReadInt32();
-        var offset = archive.Position;
-
-        switch (chunkType)
-        {
-            case ReplayChunkType.Checkpoint:
-                ReadCheckpoint(archive);
-                break;
-            case ReplayChunkType.Event:
-                ReadEvent(archive);
-                break;
-            case ReplayChunkType.ReplayData:
-                ReadReplayData(archive, (uint)chunkSize);
-                break;
-            case ReplayChunkType.Header:
-                ReadHeader(archive);
-                break;
-            case ReplayChunkType.Unknown:
-                break;
-            default:
-                throw new ArgumentOutOfRangeException(nameof(chunkType), chunkType, "Unknown chunk type");
-        }
-
-        if (archive.Position != offset + chunkSize)
-        {
-            Logger?.LogError($"Chunk ({chunkType}) at offset {offset} not correctly read...");
-            archive.Seek(offset + chunkSize);
+            var checkpoint = Replay.Checkpoints[0];
+            // ParseReplayCheckpoint(replay, checkpoint, globalData);
+            time = checkpoint.EndTime;
         }
     }
 
-    private void ReadCheckpoint(UnrealBinaryReader archive)
+    private void ParseReplayEvents(UnrealBinaryReader archive)
     {
-        var replayCheckpoint = new ReplayCheckpoint
+        var replayEvents = Replay.Events.OrderBy(x => x.StartTime)
+            .ToList();
+
+        foreach (var replayEvent in replayEvents)
         {
-            Id = archive.ReadFString(),
-            Group = archive.ReadFString(),
-            Metadata = archive.ReadFString(),
-            StartTime = archive.ReadUInt32(),
-            EndTime = archive.ReadUInt32(),
-            SizeInBytes = archive.ReadInt32(),
-            Position = archive.Position,
-        };
-        Replay.Checkpoints.Add(replayCheckpoint);
-    }
-
-    protected void ReadEvent(UnrealBinaryReader archive)
-    {
-        var replayEvent = new ReplayEvent()
-        {
-            Id = archive.ReadFString(),
-            Group = archive.ReadFString(),
-            Metadata = archive.ReadFString(),
-            StartTime = archive.ReadUInt32(),
-            EndTime = archive.ReadUInt32(),
-            SizeInBytes = archive.ReadInt32(),
-            Position = archive.Position,
-        };
-        Replay.Events.Add(replayEvent);
-    }
-
-    protected void ReadReplayData(UnrealBinaryReader archive, uint chunkSize = 0)
-    {
-        var replayData = new ReplayData();
-        if (archive.ReplayVersion >= ReplayVersionHistory.StreamChunkTimes)
-        {
-            replayData.Start = archive.ReadUInt32();
-            replayData.End = archive.ReadUInt32();
-            replayData.Length = archive.ReadUInt32();
-        }
-        else
-        {
-            replayData.Length = chunkSize;
-        }
-
-        var memorySizeInBytes = archive.ReplayVersion >= ReplayVersionHistory.Encryption
-            ? archive.ReadInt32()
-            : (int)replayData.Length;
-        replayData.Size = memorySizeInBytes;
-
-        Replay.Data.Add(replayData);
-    }
-
-    protected void ReadHeader(UnrealBinaryReader archive)
-    {
-        var magic = archive.ReadUInt32();
-
-        if (magic != NetworkMagic)
-        {
-            Logger?.LogError(
-                $"Header.Magic != NETWORK_DEMO_MAGIC. Header.Magic: {magic}, NETWORK_DEMO_MAGIC: {NetworkMagic}");
-            throw new ReplayException(
-                $"Header.Magic != NETWORK_DEMO_MAGIC. Header.Magic: {magic}, NETWORK_DEMO_MAGIC: {NetworkMagic}");
-        }
-
-        var header = new ReplayHeader
-        {
-            NetworkVersion = archive.ReadUInt32AsEnum<NetworkVersionHistory>()
-        };
-        switch (header.NetworkVersion)
-        {
-            case >= NetworkVersionHistory.HistoryPlusOne:
-                Logger.LogWarning($"Encountered unknown NetworkVersionHistory: {(int)header.NetworkVersion}");
-                break;
-            case <= NetworkVersionHistory.HistoryExtraVersion:
-                Logger?.LogError(
-                    $"Header.Version < MIN_NETWORK_DEMO_VERSION. Header.Version: {header.NetworkVersion}, MIN_NETWORK_DEMO_VERSION: {NetworkVersionHistory.HistoryExtraVersion}");
-                throw new ReplayException(
-                    $"Header.Version < MIN_NETWORK_DEMO_VERSION. Header.Version: {header.NetworkVersion}, MIN_NETWORK_DEMO_VERSION: {NetworkVersionHistory.HistoryExtraVersion}");
-        }
-
-        header.NetworkChecksum = archive.ReadUInt32();
-        header.EngineNetworkVersion = archive.ReadUInt32AsEnum<EngineNetworkVersionHistory>();
-
-        if (header.EngineNetworkVersion >= EngineNetworkVersionHistory.HistoryEnginenetversionPlusOne)
-        {
-            Logger.LogWarning(
-                $"Encountered unknown EngineNetworkVersionHistory: {(int)header.EngineNetworkVersion}");
-        }
-
-        header.GameNetworkProtocolVersion = archive.ReadUInt32();
-
-        if (header.NetworkVersion >= NetworkVersionHistory.HistoryHeaderGuid)
-        {
-            header.Guid = archive.ReadGuid();
-        }
-
-        if (header.NetworkVersion >= NetworkVersionHistory.HistorySaveFullEngineVersion)
-        {
-            header.Major = archive.ReadUInt16();
-            header.Minor = archive.ReadUInt16();
-            header.Patch = archive.ReadUInt16();
-            header.Changelist = archive.ReadUInt32();
-            header.Branch = archive.ReadFString();
-
-            archive.NetworkReplayVersion = new NetworkReplayVersion
+            try
             {
-                Major = header.Major,
-                Minor = header.Minor,
-                Patch = header.Patch,
-                Changelist = header.Changelist,
-                Branch = header.Branch
-            };
-        }
-        else
-        {
-            header.Changelist = archive.ReadUInt32();
-        }
-
-        if (header.NetworkVersion >= NetworkVersionHistory.HistorySavePackageVersionUe)
-        {
-            // Engine package version on which the replay was recorded
-            //FPackageFileVersion PackageVersionUE;
-            var ue4Version = archive.ReadInt32();
-            var ue5Version = archive.ReadUInt32AsEnum<UnrealEngineObjectUe5Version>();
-            // int32 PackageVersionLicenseeUE;					// Licensee package version on which the replay was recorded
-            int packageVersionLicenseeUe = archive.ReadInt32();
-        }
-        
-
-        if (header.NetworkVersion > NetworkVersionHistory.HistoryMultipleLevels)
-        {
-            header.LevelNamesAndTimes = archive.ReadTupleArray(archive.ReadFString, archive.ReadUInt32);
-        }
-        else if (header.NetworkVersion == NetworkVersionHistory.HistoryMultipleLevels)
-        {
-            var levelNames = archive.ReadArray(archive.ReadFString);
-            header.LevelNamesAndTimes = levelNames.Select(x => (x, 0u)).ToArray();
-        }
-        else
-        {
-            var levelName = archive.ReadFString();
-            header.LevelNamesAndTimes = new (string level, uint time)[]
+                OnParseReplayEvent(replayEvent, archive);
+            }
+            catch (Exception e)
             {
-                (levelName, 0u)
-            };
+                Logger?.LogError(e, "Error while handling event chunk");
+            }
         }
-
-        if (header.NetworkVersion >= NetworkVersionHistory.HistoryHeaderFlags)
-        {
-            header.Flags = archive.ReadUInt32AsEnum<ReplayHeaderFlags>();
-            archive.ReplayHeaderFlags = header.Flags;
-        }
-
-        header.GameSpecificData = archive.ReadArray(archive.ReadFString);
-        
-        if (header.NetworkVersion >= NetworkVersionHistory.HistoryRecordingMetadata)
-        {
-            header.MinRecordHz = archive.ReadSingle();
-            header.MaxRecordHz = archive.ReadSingle();
-            header.FrameLimitInMs = archive.ReadSingle();
-            header.CheckpointLimitInMs = archive.ReadSingle();
-            header.Platform = archive.ReadFString();
-            header.BuildConfig = archive.ReadByteAsEnum<BuildConfiguration>();
-            header.BuildTarget = archive.ReadByteAsEnum<BuildTargetType>();
-        }
-        
-        Replay.Header = header;
-        archive.EngineNetworkVersion = header.EngineNetworkVersion;
-        archive.NetworkVersion = header.NetworkVersion;
     }
 
-    protected void ReadReplayInfo(UnrealBinaryReader reader)
+    public virtual void OnParseReplayEvent(ReplayEvent replayEvent, UnrealBinaryReader archive)
     {
-        var magicNumber = reader.ReadUInt32();
-
-        if (magicNumber != FileMagic)
-        {
-            Logger?.LogError("Invalid replay file");
-            throw new ReplayException("Invalid replay file");
-        }
-
-        var fileVersion = reader.ReadUInt32AsEnum<ReplayVersionHistory>();
-        reader.ReplayVersion = fileVersion;
-
-        if (reader.ReplayVersion >= ReplayVersionHistory.NewVersion)
-        {
-            Logger.LogWarning($"Encountered unknown ReplayVersionHistory: {(int)reader.ReplayVersion}");
-        }
-
-        var replayInfo = new ReplayInfo
-        {
-            FileVersion = fileVersion,
-            LengthInMs = reader.ReadUInt32(),
-            NetworkVersion = reader.ReadUInt32(),
-            Changelist = reader.ReadUInt32(),
-            FriendlyName = reader.ReadFString(),
-            IsLive = reader.ReadUInt32AsBoolean()
-        };
-
-        if (fileVersion >= ReplayVersionHistory.RecordedTimestamp)
-        {
-            replayInfo.Timestamp = reader.ReadDate();
-        }
-
-        if (fileVersion >= ReplayVersionHistory.Compression)
-        {
-            replayInfo.IsCompressed = reader.ReadUInt32AsBoolean();
-        }
-
-        if (fileVersion >= ReplayVersionHistory.Encryption)
-        {
-            replayInfo.Encrypted = reader.ReadUInt32AsBoolean();
-            replayInfo.EncryptionKey = reader.ReadBytes(reader.ReadInt32());
-        }
-
-        if (!replayInfo.IsLive && replayInfo.Encrypted && replayInfo.EncryptionKey.Length == 0)
-        {
-            Logger?.LogError("ReadReplayInfo: Completed replay is marked encrypted but has no key!");
-            throw new ReplayException("Completed replay is marked encrypted but has no key!");
-        }
-
-        if (replayInfo.IsLive && replayInfo.Encrypted)
-        {
-            Logger?.LogError("ReadReplayInfo: Replay is marked encrypted and but not yet marked as completed!");
-            throw new ReplayException("Replay is marked encrypted and but not yet marked as completed!");
-        }
-
-        Replay.Info = replayInfo;
     }
 }

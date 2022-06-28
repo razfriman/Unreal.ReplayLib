@@ -1,1908 +1,4979 @@
 {
+  "GameInformation": {},
+  "StatsEvent": {
+    "Eliminations": 9,
+    "Accuracy": 0.16983695,
+    "Assists": 0,
+    "WeaponDamage": 1273,
+    "OtherDamage": 412,
+    "DamageToPlayers": 1685,
+    "Revives": 0,
+    "DamageTaken": 225,
+    "DamageToStructures": 12567,
+    "MaterialsGathered": 3845,
+    "MaterialsUsed": 1960,
+    "TotalTraveled": 419630,
+    "ReplayEvent": {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_AthenaMatchStats",
+      "Group": "AthenaReplayBrowserEvents",
+      "Metadata": "AthenaMatchStats",
+      "StartTime": 1236833,
+      "EndTime": 1236833,
+      "SizeInBytes": 64,
+      "Position": 15091695
+    }
+  },
+  "TeamStatsEvent": {
+    "Position": 1,
+    "TotalPlayers": 97,
+    "ReplayEvent": {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_AthenaMatchTeamStats",
+      "Group": "AthenaReplayBrowserEvents",
+      "Metadata": "AthenaMatchTeamStats",
+      "StartTime": 1236867,
+      "EndTime": 1236867,
+      "SizeInBytes": 16,
+      "Position": 15092067
+    }
+  },
+  "PlayerStateEncryptionKeyEvent": {
+    "Key": "5510163E0BD1443F313B273F93D4BF3E01030C3FBC401B3FCDFFB03E0794C73E",
+    "ReplayEvent": {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_ReplayKey",
+      "Group": "PlayerStateEncryptionKey",
+      "Metadata": "PlayerStateEncryptionKey",
+      "StartTime": 1252804,
+      "EndTime": 1252804,
+      "SizeInBytes": 48,
+      "Position": 15091885
+    }
+  },
+  "Eliminations": [
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "fbdadbe451bf4714a58817443f96f853",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "fbdadbe451bf4714a58817443f96f853",
+        "IsBot": false
+      },
+      "Eliminated": "fbdadbe451bf4714a58817443f96f853",
+      "Eliminator": "fbdadbe451bf4714a58817443f96f853",
+      "GunType": 50,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": true,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_94566FCD4D886EF59BA918B11E0E25EF",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 4015,
+        "EndTime": 4015,
+        "SizeInBytes": 128,
+        "Position": 1057
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8487fed307ba4901ae4a0e4e54e3777f",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8487fed307ba4901ae4a0e4e54e3777f",
+        "IsBot": false
+      },
+      "Eliminated": "8487fed307ba4901ae4a0e4e54e3777f",
+      "Eliminator": "8487fed307ba4901ae4a0e4e54e3777f",
+      "GunType": 50,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": true,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_ED2988A14FC96B35BDCFE3B360C0B029",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 34535,
+        "EndTime": 34535,
+        "SizeInBytes": 128,
+        "Position": 268854
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "b6c410c0f8484ed5a8d1965314053773",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "9067700012384175aa77f86eb65f0f7e",
+        "IsBot": false
+      },
+      "Eliminated": "b6c410c0f8484ed5a8d1965314053773",
+      "Eliminator": "9067700012384175aa77f86eb65f0f7e",
+      "GunType": 50,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_680FA68E49A909C86289E2A9AB28603E",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 95136,
+        "EndTime": 95136,
+        "SizeInBytes": 128,
+        "Position": 886084
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "f91bd40930844ae7886a60044c24bfce",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a41d5587764f406ab93d8dba03273378",
+        "IsBot": false
+      },
+      "Eliminated": "f91bd40930844ae7886a60044c24bfce",
+      "Eliminator": "a41d5587764f406ab93d8dba03273378",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_1B836055412825B675D7BF8023086816",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 96132,
+        "EndTime": 96132,
+        "SizeInBytes": 128,
+        "Position": 886337
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d9f75d543831425e9fe39cc37c63cbe2",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "2f3218da25ca4220876fb4fe07863522",
+        "IsBot": false
+      },
+      "Eliminated": "d9f75d543831425e9fe39cc37c63cbe2",
+      "Eliminator": "2f3218da25ca4220876fb4fe07863522",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_5D1176894BEF3C0207467BA5A0578790",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 100614,
+        "EndTime": 100614,
+        "SizeInBytes": 128,
+        "Position": 984918
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "97b9f8e104754129859809f591b24b69",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8b30d6ffece046eabfb69e011db85376",
+        "IsBot": false
+      },
+      "Eliminated": "97b9f8e104754129859809f591b24b69",
+      "Eliminator": "8b30d6ffece046eabfb69e011db85376",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_D9FCF9AF4B7BB66A08AD14A0DE88DE03",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 109855,
+        "EndTime": 109855,
+        "SizeInBytes": 128,
+        "Position": 985171
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "1b6d02841f674b92878fbd587c087734",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "4c3f875ce63f4ccab4275d21df37adde",
+        "IsBot": false
+      },
+      "Eliminated": "1b6d02841f674b92878fbd587c087734",
+      "Eliminator": "4c3f875ce63f4ccab4275d21df37adde",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_CBC5E92747A41831B77BC989111D8FE5",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 109925,
+        "EndTime": 109925,
+        "SizeInBytes": 128,
+        "Position": 985424
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "e6bff9441249465c9f6d1f4d2d7346e3",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8b30d6ffece046eabfb69e011db85376",
+        "IsBot": false
+      },
+      "Eliminated": "e6bff9441249465c9f6d1f4d2d7346e3",
+      "Eliminator": "8b30d6ffece046eabfb69e011db85376",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_5FE682454BE1C2DE93EFBF9B5E0B453A",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 112819,
+        "EndTime": 112819,
+        "SizeInBytes": 128,
+        "Position": 985677
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "e7c62d9f54334d0eb06180745950709e",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "48bd5a029c264b2ba699a4b33fb18d95",
+        "IsBot": false
+      },
+      "Eliminated": "e7c62d9f54334d0eb06180745950709e",
+      "Eliminator": "48bd5a029c264b2ba699a4b33fb18d95",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_B00683614C2CBA84A22DF39CE388CAA9",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 118273,
+        "EndTime": 118273,
+        "SizeInBytes": 128,
+        "Position": 985930
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "22a81b23f5e74569a4cc072f6b9f223d",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a1878004622944e5a135e63cce084c54",
+        "IsBot": false
+      },
+      "Eliminated": "22a81b23f5e74569a4cc072f6b9f223d",
+      "Eliminator": "a1878004622944e5a135e63cce084c54",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_EF4A331E40154011E3DB31A8BD58E143",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 129264,
+        "EndTime": 129264,
+        "SizeInBytes": 128,
+        "Position": 1391960
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "b2d72bda623d42f1a5bf874cef1b6e73",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d1e1999496e74c50aa7e0c94cdd4e395",
+        "IsBot": false
+      },
+      "Eliminated": "b2d72bda623d42f1a5bf874cef1b6e73",
+      "Eliminator": "d1e1999496e74c50aa7e0c94cdd4e395",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_8D22F3F748CB6EC8B6CC199E3EF85E98",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 130099,
+        "EndTime": 130099,
+        "SizeInBytes": 128,
+        "Position": 1392213
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "4432cc2ccf7b45b687fb6674452d6d6a",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a8c2447e4ff7495c9a750a4c2440e6ce",
+        "IsBot": false
+      },
+      "Eliminated": "4432cc2ccf7b45b687fb6674452d6d6a",
+      "Eliminator": "a8c2447e4ff7495c9a750a4c2440e6ce",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_8CFEC0334D9890FC70B443B284DFCF81",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 136343,
+        "EndTime": 136343,
+        "SizeInBytes": 128,
+        "Position": 1392466
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "e120fa7c064640dc97c3d2b3a78e337e",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "3880d391366d4ff4ad38644a7811b2dc",
+        "IsBot": false
+      },
+      "Eliminated": "e120fa7c064640dc97c3d2b3a78e337e",
+      "Eliminator": "3880d391366d4ff4ad38644a7811b2dc",
+      "GunType": 2,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_6AF7479B48266929A8A48DB71161531C",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 136701,
+        "EndTime": 136701,
+        "SizeInBytes": 128,
+        "Position": 1392719
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d850ec99ce7d486ea41b5003a35fb932",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "2f3218da25ca4220876fb4fe07863522",
+        "IsBot": false
+      },
+      "Eliminated": "d850ec99ce7d486ea41b5003a35fb932",
+      "Eliminator": "2f3218da25ca4220876fb4fe07863522",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_3179986E4AD1F64C573DF490ED6E098B",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 136876,
+        "EndTime": 136876,
+        "SizeInBytes": 128,
+        "Position": 1392972
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "74a19663c3f144818442fc694d44be38",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a41d5587764f406ab93d8dba03273378",
+        "IsBot": false
+      },
+      "Eliminated": "74a19663c3f144818442fc694d44be38",
+      "Eliminator": "a41d5587764f406ab93d8dba03273378",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_3A5577F84F4D54370F1FCEBEB71BDF40",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 137520,
+        "EndTime": 137520,
+        "SizeInBytes": 128,
+        "Position": 1393225
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "68dc8bb53ef2479999b3ea9b37c314e3",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8b30d6ffece046eabfb69e011db85376",
+        "IsBot": false
+      },
+      "Eliminated": "68dc8bb53ef2479999b3ea9b37c314e3",
+      "Eliminator": "8b30d6ffece046eabfb69e011db85376",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_6EBB40AB469C50227D5064865CBD5C39",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 138586,
+        "EndTime": 138586,
+        "SizeInBytes": 128,
+        "Position": 1393478
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a41d5587764f406ab93d8dba03273378",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "16102828a4b4403eaee8164d483f129e",
+        "IsBot": false
+      },
+      "Eliminated": "a41d5587764f406ab93d8dba03273378",
+      "Eliminator": "16102828a4b4403eaee8164d483f129e",
+      "GunType": 10,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_359AF09A4D8E51FC3FC2428527E6CECB",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 139021,
+        "EndTime": 139021,
+        "SizeInBytes": 128,
+        "Position": 1393731
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "906da5e9ce5b4a528c853097b5ce3185",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "f5e954c9f9fe42c3b70dabfc06c64b6a",
+        "IsBot": false
+      },
+      "Eliminated": "906da5e9ce5b4a528c853097b5ce3185",
+      "Eliminator": "f5e954c9f9fe42c3b70dabfc06c64b6a",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_0A53FE654E310758A75F3B97509FBA6E",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 139929,
+        "EndTime": 139929,
+        "SizeInBytes": 128,
+        "Position": 1393984
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "498b1cb09bd44419bf94248493510637",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "162ddacb49914daf95dc18f3a2bcd2c5",
+        "IsBot": false
+      },
+      "Eliminated": "498b1cb09bd44419bf94248493510637",
+      "Eliminator": "162ddacb49914daf95dc18f3a2bcd2c5",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_F39DF3D44299C30697E76189C3D14734",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 141273,
+        "EndTime": 141273,
+        "SizeInBytes": 128,
+        "Position": 1552389
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "6b75b57e91ba4e9ba80fe4046b685dbf",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "39d1de1ae15440f380c35e0791460d77",
+        "IsBot": false
+      },
+      "Eliminated": "6b75b57e91ba4e9ba80fe4046b685dbf",
+      "Eliminator": "39d1de1ae15440f380c35e0791460d77",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_7BB2084F48DD9CFC0CB37CA526860B51",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 141407,
+        "EndTime": 141407,
+        "SizeInBytes": 128,
+        "Position": 1552642
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a66d9573e1ca4222b42491e59f0b7eea",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "48bd5a029c264b2ba699a4b33fb18d95",
+        "IsBot": false
+      },
+      "Eliminated": "a66d9573e1ca4222b42491e59f0b7eea",
+      "Eliminator": "48bd5a029c264b2ba699a4b33fb18d95",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_829184A2467D7BA294AFD0A16B51DCB9",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 142069,
+        "EndTime": 142069,
+        "SizeInBytes": 128,
+        "Position": 1552895
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "6bbcdc3d688f452e8235608ee8f732d5",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a8c2447e4ff7495c9a750a4c2440e6ce",
+        "IsBot": false
+      },
+      "Eliminated": "6bbcdc3d688f452e8235608ee8f732d5",
+      "Eliminator": "a8c2447e4ff7495c9a750a4c2440e6ce",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_30AB993A43B1978B3BED4DB53F7A56CB",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 147184,
+        "EndTime": 147184,
+        "SizeInBytes": 128,
+        "Position": 1553148
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "f021042a417447ca8bb50985191817dc",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d1e1999496e74c50aa7e0c94cdd4e395",
+        "IsBot": false
+      },
+      "Eliminated": "f021042a417447ca8bb50985191817dc",
+      "Eliminator": "d1e1999496e74c50aa7e0c94cdd4e395",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_237DDEA04A4C39A6DDB811BBBAED5D78",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 147214,
+        "EndTime": 147214,
+        "SizeInBytes": 128,
+        "Position": 1553401
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "1ddcf77ab95b4e36ab456a944ca607b3",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d3be195ea8f74af9b9380ed74df89657",
+        "IsBot": false
+      },
+      "Eliminated": "1ddcf77ab95b4e36ab456a944ca607b3",
+      "Eliminator": "d3be195ea8f74af9b9380ed74df89657",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_481B0E2A4083098850A5BE8B16269990",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 148592,
+        "EndTime": 148592,
+        "SizeInBytes": 128,
+        "Position": 1553654
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "eedb61d081134b0c9e58495a743b7696",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "162ddacb49914daf95dc18f3a2bcd2c5",
+        "IsBot": false
+      },
+      "Eliminated": "eedb61d081134b0c9e58495a743b7696",
+      "Eliminator": "162ddacb49914daf95dc18f3a2bcd2c5",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_2D8F45A7408DFE7EAE0C22BE6BD7573C",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 149463,
+        "EndTime": 149463,
+        "SizeInBytes": 128,
+        "Position": 1553907
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "1d5502d825b040c288c533458db1040a",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "162ddacb49914daf95dc18f3a2bcd2c5",
+        "IsBot": false
+      },
+      "Eliminated": "1d5502d825b040c288c533458db1040a",
+      "Eliminator": "162ddacb49914daf95dc18f3a2bcd2c5",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_3671D4C1468FFBC5F5A88A95FE0EEEF0",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 151500,
+        "EndTime": 151500,
+        "SizeInBytes": 128,
+        "Position": 1554160
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "b2e56089a7a1482c82fa7cbfbce0f8ca",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d3be195ea8f74af9b9380ed74df89657",
+        "IsBot": false
+      },
+      "Eliminated": "b2e56089a7a1482c82fa7cbfbce0f8ca",
+      "Eliminator": "d3be195ea8f74af9b9380ed74df89657",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_6DDC03614AB3CC45C1A2C4931A545264",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 155906,
+        "EndTime": 155906,
+        "SizeInBytes": 128,
+        "Position": 1554413
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "6bdaa8acfa19433883e465fb147d256a",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "beb8a181217744f48887608f5321d6c8",
+        "IsBot": false
+      },
+      "Eliminated": "6bdaa8acfa19433883e465fb147d256a",
+      "Eliminator": "beb8a181217744f48887608f5321d6c8",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_9BE131584C3143A194A13BA64521987D",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 158986,
+        "EndTime": 158986,
+        "SizeInBytes": 128,
+        "Position": 1554666
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "e318f41b8fe34c9f8447fb18e2f100ae",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8acb22c057154a208b9de3a834c4f5e4",
+        "IsBot": false
+      },
+      "Eliminated": "e318f41b8fe34c9f8447fb18e2f100ae",
+      "Eliminator": "8acb22c057154a208b9de3a834c4f5e4",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_410372D14178D232C26943B96EF97034",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 160554,
+        "EndTime": 160554,
+        "SizeInBytes": 128,
+        "Position": 1692943
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "dd72d2a24c3b4cf28bd42be56bbb0e87",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "76e412db2c824efeb829238ad0fcb9e3",
+        "IsBot": false
+      },
+      "Eliminated": "dd72d2a24c3b4cf28bd42be56bbb0e87",
+      "Eliminator": "76e412db2c824efeb829238ad0fcb9e3",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_F4BDE5D748393CA112C0FDA7D7A70040",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 163398,
+        "EndTime": 163398,
+        "SizeInBytes": 128,
+        "Position": 1693196
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d0f88b3c85ed445c969cf87e825ee62a",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "5ac094a9684347df8c8b52de32061778",
+        "IsBot": false
+      },
+      "Eliminated": "d0f88b3c85ed445c969cf87e825ee62a",
+      "Eliminator": "5ac094a9684347df8c8b52de32061778",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_93731136466C5EAB9CFC3BAD251CE0C9",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 163762,
+        "EndTime": 163762,
+        "SizeInBytes": 128,
+        "Position": 1693449
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "df7208d75df44f9290af909fcd24dfc9",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "0da3f837d60c40fb90b292e5b154d9fd",
+        "IsBot": false
+      },
+      "Eliminated": "df7208d75df44f9290af909fcd24dfc9",
+      "Eliminator": "0da3f837d60c40fb90b292e5b154d9fd",
+      "GunType": 2,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_0CB8154B49D6C1423137D4A04ED1CEE2",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 166162,
+        "EndTime": 166162,
+        "SizeInBytes": 128,
+        "Position": 1693702
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "87420bc377464bba82c782c587ab422c",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "562a06c603284f4181ac3c81f88c2ad8",
+        "IsBot": false
+      },
+      "Eliminated": "87420bc377464bba82c782c587ab422c",
+      "Eliminator": "562a06c603284f4181ac3c81f88c2ad8",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_8513DCE3419637D847D19BB3030ACEA5",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 168303,
+        "EndTime": 168303,
+        "SizeInBytes": 128,
+        "Position": 1693955
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d1e1999496e74c50aa7e0c94cdd4e395",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "2f3218da25ca4220876fb4fe07863522",
+        "IsBot": false
+      },
+      "Eliminated": "d1e1999496e74c50aa7e0c94cdd4e395",
+      "Eliminator": "2f3218da25ca4220876fb4fe07863522",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_B8EB502C423EF791ECF3B094C4FC1BCF",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 170483,
+        "EndTime": 170483,
+        "SizeInBytes": 128,
+        "Position": 1694208
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "e1fa00e5daf0410bb2aaa31da93feecc",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "bf7e182a2d064aec9620ecdfe69aa255",
+        "IsBot": false
+      },
+      "Eliminated": "e1fa00e5daf0410bb2aaa31da93feecc",
+      "Eliminator": "bf7e182a2d064aec9620ecdfe69aa255",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_4119710C49792A15DAF69A9A3C6017E3",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 172780,
+        "EndTime": 172780,
+        "SizeInBytes": 128,
+        "Position": 1694461
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a8545d6a1075430487af1dc199eb09cc",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "1ebddc84cf964622a56419ed0e35aebf",
+        "IsBot": false
+      },
+      "Eliminated": "a8545d6a1075430487af1dc199eb09cc",
+      "Eliminator": "1ebddc84cf964622a56419ed0e35aebf",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_99BDA75740C0AF1E39DBCFA4A13CCE4A",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 175152,
+        "EndTime": 175152,
+        "SizeInBytes": 128,
+        "Position": 1694714
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "e6c1a9e46bb243c3ba64f9d9c7d9181b",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a1878004622944e5a135e63cce084c54",
+        "IsBot": false
+      },
+      "Eliminated": "e6c1a9e46bb243c3ba64f9d9c7d9181b",
+      "Eliminator": "a1878004622944e5a135e63cce084c54",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_3ACE3ADD4BDB21F9E3774784F158534B",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 182897,
+        "EndTime": 182897,
+        "SizeInBytes": 128,
+        "Position": 2129656
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "fd65a2bb590d44968ba9e5f76f034f52",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8431b096eb5649d09852d655de5a0242",
+        "IsBot": false
+      },
+      "Eliminated": "fd65a2bb590d44968ba9e5f76f034f52",
+      "Eliminator": "8431b096eb5649d09852d655de5a0242",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_32CD6B1B4368104BDB97CCAD04A8AA1D",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 187035,
+        "EndTime": 187035,
+        "SizeInBytes": 128,
+        "Position": 2129909
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8acb22c057154a208b9de3a834c4f5e4",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "0da3f837d60c40fb90b292e5b154d9fd",
+        "IsBot": false
+      },
+      "Eliminated": "8acb22c057154a208b9de3a834c4f5e4",
+      "Eliminator": "0da3f837d60c40fb90b292e5b154d9fd",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_77CC6BA749D990D25C472DBD1AC0FEC6",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 187938,
+        "EndTime": 187938,
+        "SizeInBytes": 128,
+        "Position": 2130162
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "1ebddc84cf964622a56419ed0e35aebf",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8b30d6ffece046eabfb69e011db85376",
+        "IsBot": false
+      },
+      "Eliminated": "1ebddc84cf964622a56419ed0e35aebf",
+      "Eliminator": "8b30d6ffece046eabfb69e011db85376",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_F1721B32462835414B42BEB79EBD1CA4",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 192085,
+        "EndTime": 192085,
+        "SizeInBytes": 128,
+        "Position": 2130415
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "09374cca63844e8ba83027a6e985de09",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "39d1de1ae15440f380c35e0791460d77",
+        "IsBot": false
+      },
+      "Eliminated": "09374cca63844e8ba83027a6e985de09",
+      "Eliminator": "39d1de1ae15440f380c35e0791460d77",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_1122C0AF470E3C37EA7FE8A5529B9FAF",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 192716,
+        "EndTime": 192716,
+        "SizeInBytes": 128,
+        "Position": 2130668
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "162ddacb49914daf95dc18f3a2bcd2c5",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "c41d01c2059c4fd78008b6109d22feeb",
+        "IsBot": false
+      },
+      "Eliminated": "162ddacb49914daf95dc18f3a2bcd2c5",
+      "Eliminator": "c41d01c2059c4fd78008b6109d22feeb",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_8353EB884D280FD2EC92559FAA9B92EC",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 196156,
+        "EndTime": 196156,
+        "SizeInBytes": 128,
+        "Position": 2130921
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "70963c51aab047568b4f26423dd2b8cc",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "ed8cbddc4b034658987cf3d80db25a45",
+        "IsBot": false
+      },
+      "Eliminated": "70963c51aab047568b4f26423dd2b8cc",
+      "Eliminator": "ed8cbddc4b034658987cf3d80db25a45",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_7DDCC3CE4B343BD135DA97875BEF8809",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 208248,
+        "EndTime": 208248,
+        "SizeInBytes": 128,
+        "Position": 2254254
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "32394d6822b9447ea37433166c7e3bb4",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d7d114e76ba045f4a0655fc7d2acf9f6",
+        "IsBot": false
+      },
+      "Eliminated": "32394d6822b9447ea37433166c7e3bb4",
+      "Eliminator": "d7d114e76ba045f4a0655fc7d2acf9f6",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_59C0BE4D41E194A7C34D7A98B940DF7E",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 210748,
+        "EndTime": 210748,
+        "SizeInBytes": 128,
+        "Position": 2254507
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "4ef4105cab06469694717a18f46ed42b",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "04107422a67141839dd729fb3f592e95",
+        "IsBot": false
+      },
+      "Eliminated": "4ef4105cab06469694717a18f46ed42b",
+      "Eliminator": "04107422a67141839dd729fb3f592e95",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_4C9461444FCF76905F60359E37B0C5AC",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 210823,
+        "EndTime": 210823,
+        "SizeInBytes": 128,
+        "Position": 2254760
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "e5a956ba09e64491a0be3de0a8736b33",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "e5a956ba09e64491a0be3de0a8736b33",
+        "IsBot": false
+      },
+      "Eliminated": "e5a956ba09e64491a0be3de0a8736b33",
+      "Eliminator": "e5a956ba09e64491a0be3de0a8736b33",
+      "GunType": 50,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": true,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_E5D6B6F24CF5057CCFEFBFA70DD6E33D",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 213492,
+        "EndTime": 213492,
+        "SizeInBytes": 128,
+        "Position": 2255013
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "ca10ced664b24eb48c1fdc34654a25e4",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "c41d01c2059c4fd78008b6109d22feeb",
+        "IsBot": false
+      },
+      "Eliminated": "ca10ced664b24eb48c1fdc34654a25e4",
+      "Eliminator": "c41d01c2059c4fd78008b6109d22feeb",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_9DF5DE254AF61F75D89ABEB7E0A10724",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 220262,
+        "EndTime": 220262,
+        "SizeInBytes": 128,
+        "Position": 2255266
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "4c3f875ce63f4ccab4275d21df37adde",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "5f0d07e220db4c7a99c2800222e840f6",
+        "IsBot": false
+      },
+      "Eliminated": "4c3f875ce63f4ccab4275d21df37adde",
+      "Eliminator": "5f0d07e220db4c7a99c2800222e840f6",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_66062C3146C65D9EF0F4609E61359663",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 237495,
+        "EndTime": 237495,
+        "SizeInBytes": 128,
+        "Position": 2353719
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "5f0d07e220db4c7a99c2800222e840f6",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "c41d01c2059c4fd78008b6109d22feeb",
+        "IsBot": false
+      },
+      "Eliminated": "5f0d07e220db4c7a99c2800222e840f6",
+      "Eliminator": "c41d01c2059c4fd78008b6109d22feeb",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_D83356084449DAAE6075D1BE7965EF4E",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 239803,
+        "EndTime": 239803,
+        "SizeInBytes": 128,
+        "Position": 2353972
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "5ac094a9684347df8c8b52de32061778",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "eb4ae7a90b5445a1b538a6d6b3f0c3c0",
+        "IsBot": false
+      },
+      "Eliminated": "5ac094a9684347df8c8b52de32061778",
+      "Eliminator": "eb4ae7a90b5445a1b538a6d6b3f0c3c0",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_A6B53A2342948C13B54E3AADBB81E5B8",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 242144,
+        "EndTime": 242144,
+        "SizeInBytes": 128,
+        "Position": 2742339
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "9067700012384175aa77f86eb65f0f7e",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8b30d6ffece046eabfb69e011db85376",
+        "IsBot": false
+      },
+      "Eliminated": "9067700012384175aa77f86eb65f0f7e",
+      "Eliminator": "8b30d6ffece046eabfb69e011db85376",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_C2A61DEB4F389506E4888CBC61268F16",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 243309,
+        "EndTime": 243309,
+        "SizeInBytes": 128,
+        "Position": 2742592
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "9ccd5384125f42fab83623ec2cc41c95",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d3be195ea8f74af9b9380ed74df89657",
+        "IsBot": false
+      },
+      "Eliminated": "9ccd5384125f42fab83623ec2cc41c95",
+      "Eliminator": "d3be195ea8f74af9b9380ed74df89657",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_0F5D1ACA4B79EA070A5FC8A9F10D0D03",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 258313,
+        "EndTime": 258313,
+        "SizeInBytes": 128,
+        "Position": 2742845
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "41c43954b5e14b5f82e5dfec2edc2162",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "562a06c603284f4181ac3c81f88c2ad8",
+        "IsBot": false
+      },
+      "Eliminated": "41c43954b5e14b5f82e5dfec2edc2162",
+      "Eliminator": "562a06c603284f4181ac3c81f88c2ad8",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_0259ADF7465FA3F617C092AD2429348A",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 270137,
+        "EndTime": 270137,
+        "SizeInBytes": 128,
+        "Position": 2865378
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "86da536dd73d4cec9fb46a95ecd3c4f4",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "b2f6c3521bd3479e8329e0b08fc0cecd",
+        "IsBot": false
+      },
+      "Eliminated": "86da536dd73d4cec9fb46a95ecd3c4f4",
+      "Eliminator": "b2f6c3521bd3479e8329e0b08fc0cecd",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_6F6D33D44CEA4C05A78F5D93EE44CA93",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 273879,
+        "EndTime": 273879,
+        "SizeInBytes": 128,
+        "Position": 2865631
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "7139fc0da1a34ba8af46d91c4ff8f561",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a8c2447e4ff7495c9a750a4c2440e6ce",
+        "IsBot": false
+      },
+      "Eliminated": "7139fc0da1a34ba8af46d91c4ff8f561",
+      "Eliminator": "a8c2447e4ff7495c9a750a4c2440e6ce",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_0510489B41D6EBC05FE7CFB773AAB07E",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 274140,
+        "EndTime": 274140,
+        "SizeInBytes": 128,
+        "Position": 2865884
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "b496bf3cedf34d3aabe91d61989bad13",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "15ff933482bc44589f29d3e9a295d083",
+        "IsBot": false
+      },
+      "Eliminated": "b496bf3cedf34d3aabe91d61989bad13",
+      "Eliminator": "15ff933482bc44589f29d3e9a295d083",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_604FA86C42A4126BB812E5A5FB114973",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 286265,
+        "EndTime": 286265,
+        "SizeInBytes": 128,
+        "Position": 2979665
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "aca86614c6bd4b9ca147c25ddaadfcc4",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d3be195ea8f74af9b9380ed74df89657",
+        "IsBot": false
+      },
+      "Eliminated": "aca86614c6bd4b9ca147c25ddaadfcc4",
+      "Eliminator": "d3be195ea8f74af9b9380ed74df89657",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_4223128E42035F44C66C2EB8E9F21AB6",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 314617,
+        "EndTime": 314617,
+        "SizeInBytes": 128,
+        "Position": 3381872
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d3be195ea8f74af9b9380ed74df89657",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "c41d01c2059c4fd78008b6109d22feeb",
+        "IsBot": false
+      },
+      "Eliminated": "d3be195ea8f74af9b9380ed74df89657",
+      "Eliminator": "c41d01c2059c4fd78008b6109d22feeb",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_4F6B83C3489EF520A7FFF89AD10C4FF5",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 320533,
+        "EndTime": 320533,
+        "SizeInBytes": 128,
+        "Position": 3485957
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "9f1e438cc9324d04aaff8bdc8c69637d",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "76e412db2c824efeb829238ad0fcb9e3",
+        "IsBot": false
+      },
+      "Eliminated": "9f1e438cc9324d04aaff8bdc8c69637d",
+      "Eliminator": "76e412db2c824efeb829238ad0fcb9e3",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_E8E30F0B46AAC9984D3DD3A1D7EE852E",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 376633,
+        "EndTime": 376633,
+        "SizeInBytes": 128,
+        "Position": 3958252
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "f4df15d20d404c33ae5f588266c46bbd",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8a64e3b543c4497e917665aa44ae1e47",
+        "IsBot": false
+      },
+      "Eliminated": "f4df15d20d404c33ae5f588266c46bbd",
+      "Eliminator": "8a64e3b543c4497e917665aa44ae1e47",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_A632FA3645B5C7C20C58F195E1803D62",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 378704,
+        "EndTime": 378704,
+        "SizeInBytes": 128,
+        "Position": 3958505
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "bf7e182a2d064aec9620ecdfe69aa255",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a1878004622944e5a135e63cce084c54",
+        "IsBot": false
+      },
+      "Eliminated": "bf7e182a2d064aec9620ecdfe69aa255",
+      "Eliminator": "a1878004622944e5a135e63cce084c54",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_717C19E74437CDB914DBC682A0115FF3",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 421989,
+        "EndTime": 421989,
+        "SizeInBytes": 128,
+        "Position": 4685224
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "0da3f837d60c40fb90b292e5b154d9fd",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a8c2447e4ff7495c9a750a4c2440e6ce",
+        "IsBot": false
+      },
+      "Eliminated": "0da3f837d60c40fb90b292e5b154d9fd",
+      "Eliminator": "a8c2447e4ff7495c9a750a4c2440e6ce",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_E2D4975B4DF4B542BEAEC9B2A21A7F7C",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 424230,
+        "EndTime": 424230,
+        "SizeInBytes": 128,
+        "Position": 4685477
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "1595f46bc8b2408fb94d261707e3c899",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "2f3218da25ca4220876fb4fe07863522",
+        "IsBot": false
+      },
+      "Eliminated": "1595f46bc8b2408fb94d261707e3c899",
+      "Eliminator": "2f3218da25ca4220876fb4fe07863522",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_2FE833E14C8E39E2D3CE949E0D066F79",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 442265,
+        "EndTime": 442265,
+        "SizeInBytes": 128,
+        "Position": 4807626
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "76e412db2c824efeb829238ad0fcb9e3",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "2f3218da25ca4220876fb4fe07863522",
+        "IsBot": false
+      },
+      "Eliminated": "76e412db2c824efeb829238ad0fcb9e3",
+      "Eliminator": "2f3218da25ca4220876fb4fe07863522",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_45E27EB74AC69AB6E86C7FAEF12CE5CE",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 470208,
+        "EndTime": 470208,
+        "SizeInBytes": 128,
+        "Position": 4948463
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "202364e7624f462986295b70261ba2d6",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8b30d6ffece046eabfb69e011db85376",
+        "IsBot": false
+      },
+      "Eliminated": "202364e7624f462986295b70261ba2d6",
+      "Eliminator": "8b30d6ffece046eabfb69e011db85376",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_F00FF64044EE578E733AB7825676AC09",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 478061,
+        "EndTime": 478061,
+        "SizeInBytes": 128,
+        "Position": 4948716
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "097bd70f6df44f19ade5663ad4d479fb",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "097bd70f6df44f19ade5663ad4d479fb",
+        "IsBot": false
+      },
+      "Eliminated": "097bd70f6df44f19ade5663ad4d479fb",
+      "Eliminator": "097bd70f6df44f19ade5663ad4d479fb",
+      "GunType": 0,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": true,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_B228161C4280362B791D30AE3B0A3948",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 483437,
+        "EndTime": 483437,
+        "SizeInBytes": 128,
+        "Position": 5444651
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8a64e3b543c4497e917665aa44ae1e47",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a8c2447e4ff7495c9a750a4c2440e6ce",
+        "IsBot": false
+      },
+      "Eliminated": "8a64e3b543c4497e917665aa44ae1e47",
+      "Eliminator": "a8c2447e4ff7495c9a750a4c2440e6ce",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_0E9A11DF49D74BD3EEF4459C453971C2",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 505176,
+        "EndTime": 505176,
+        "SizeInBytes": 128,
+        "Position": 5569600
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "562a06c603284f4181ac3c81f88c2ad8",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "04107422a67141839dd729fb3f592e95",
+        "IsBot": false
+      },
+      "Eliminated": "562a06c603284f4181ac3c81f88c2ad8",
+      "Eliminator": "04107422a67141839dd729fb3f592e95",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_C56C843644FCFD47B1EF549EAE0F1D44",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 519301,
+        "EndTime": 519301,
+        "SizeInBytes": 128,
+        "Position": 5569853
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "61395215bce94b318f16bf339cb1fd33",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "15ff933482bc44589f29d3e9a295d083",
+        "IsBot": false
+      },
+      "Eliminated": "61395215bce94b318f16bf339cb1fd33",
+      "Eliminator": "15ff933482bc44589f29d3e9a295d083",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_51019E5748ED0CBEC8DC549DEC422498",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 524910,
+        "EndTime": 524910,
+        "SizeInBytes": 128,
+        "Position": 5695634
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "96072651124043f69ec76039470dc824",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "48bd5a029c264b2ba699a4b33fb18d95",
+        "IsBot": false
+      },
+      "Eliminated": "96072651124043f69ec76039470dc824",
+      "Eliminator": "48bd5a029c264b2ba699a4b33fb18d95",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_3D4BEE3B486803BA69624BA20F86B1FB",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 529251,
+        "EndTime": 529251,
+        "SizeInBytes": 128,
+        "Position": 5695887
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8431b096eb5649d09852d655de5a0242",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "16102828a4b4403eaee8164d483f129e",
+        "IsBot": false
+      },
+      "Eliminated": "8431b096eb5649d09852d655de5a0242",
+      "Eliminator": "16102828a4b4403eaee8164d483f129e",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_AD14FAFE4EBB55289B8687A89DE0AA6B",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 548660,
+        "EndTime": 548660,
+        "SizeInBytes": 128,
+        "Position": 6231870
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "e7fd580d7ff44251b9e666c08b0b9d24",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "78cb36b07e3148e7850c6cec0617dfa2",
+        "IsBot": false
+      },
+      "Eliminated": "e7fd580d7ff44251b9e666c08b0b9d24",
+      "Eliminator": "78cb36b07e3148e7850c6cec0617dfa2",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_F0F8876D4A5690EC91161BB8571E2F83",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 555667,
+        "EndTime": 555667,
+        "SizeInBytes": 128,
+        "Position": 6232123
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "1a0c55bca06c4150b23e6bdb45b65c19",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d7d114e76ba045f4a0655fc7d2acf9f6",
+        "IsBot": false
+      },
+      "Eliminated": "1a0c55bca06c4150b23e6bdb45b65c19",
+      "Eliminator": "d7d114e76ba045f4a0655fc7d2acf9f6",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_513A7DBD49C0C4F6DD20A2ADA71EFE73",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 556339,
+        "EndTime": 556339,
+        "SizeInBytes": 128,
+        "Position": 6232376
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "b2f6c3521bd3479e8329e0b08fc0cecd",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "ed8cbddc4b034658987cf3d80db25a45",
+        "IsBot": false
+      },
+      "Eliminated": "b2f6c3521bd3479e8329e0b08fc0cecd",
+      "Eliminator": "ed8cbddc4b034658987cf3d80db25a45",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_7B6C035841583C475D3EF38E4232BE44",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 558242,
+        "EndTime": 558242,
+        "SizeInBytes": 128,
+        "Position": 6232629
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "04107422a67141839dd729fb3f592e95",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "ed8cbddc4b034658987cf3d80db25a45",
+        "IsBot": false
+      },
+      "Eliminated": "04107422a67141839dd729fb3f592e95",
+      "Eliminator": "ed8cbddc4b034658987cf3d80db25a45",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_0C83DF7D4E790C79F5F8A2A19FD0EFAE",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 582892,
+        "EndTime": 582892,
+        "SizeInBytes": 128,
+        "Position": 6490450
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "4184c417da0a4c95b16033598db69318",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "f5e954c9f9fe42c3b70dabfc06c64b6a",
+        "IsBot": false
+      },
+      "Eliminated": "4184c417da0a4c95b16033598db69318",
+      "Eliminator": "f5e954c9f9fe42c3b70dabfc06c64b6a",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_CA028A454B29ACE0F2EF1D8B0A0A5193",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 582985,
+        "EndTime": 582985,
+        "SizeInBytes": 128,
+        "Position": 6490703
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "c41d01c2059c4fd78008b6109d22feeb",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "48bd5a029c264b2ba699a4b33fb18d95",
+        "IsBot": false
+      },
+      "Eliminated": "c41d01c2059c4fd78008b6109d22feeb",
+      "Eliminator": "48bd5a029c264b2ba699a4b33fb18d95",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_BA0163284A9976F9738D6B98489B2BF2",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 602764,
+        "EndTime": 602764,
+        "SizeInBytes": 128,
+        "Position": 7026622
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "d7d114e76ba045f4a0655fc7d2acf9f6",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "83a30e88352c4651963543ed857dab98",
+        "IsBot": false
+      },
+      "Eliminated": "d7d114e76ba045f4a0655fc7d2acf9f6",
+      "Eliminator": "83a30e88352c4651963543ed857dab98",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_9EE48FB741147F39B7B746AC52AF9EEB",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 609336,
+        "EndTime": 609336,
+        "SizeInBytes": 128,
+        "Position": 7026875
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "78cb36b07e3148e7850c6cec0617dfa2",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "ed8cbddc4b034658987cf3d80db25a45",
+        "IsBot": false
+      },
+      "Eliminated": "78cb36b07e3148e7850c6cec0617dfa2",
+      "Eliminator": "ed8cbddc4b034658987cf3d80db25a45",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_BF8C97C14690AB28C5D19BA00A1CF827",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 629708,
+        "EndTime": 629708,
+        "SizeInBytes": 128,
+        "Position": 7144464
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a1878004622944e5a135e63cce084c54",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "559480612e7342528fb77970c34cbfb9",
+        "IsBot": false
+      },
+      "Eliminated": "a1878004622944e5a135e63cce084c54",
+      "Eliminator": "559480612e7342528fb77970c34cbfb9",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_2C34877846D3D912F08AC0B1A59954EA",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 647881,
+        "EndTime": 647881,
+        "SizeInBytes": 128,
+        "Position": 7237541
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "2f3218da25ca4220876fb4fe07863522",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "16102828a4b4403eaee8164d483f129e",
+        "IsBot": false
+      },
+      "Eliminated": "2f3218da25ca4220876fb4fe07863522",
+      "Eliminator": "16102828a4b4403eaee8164d483f129e",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_69345069491C30C2D0692A9445622764",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 725429,
+        "EndTime": 725429,
+        "SizeInBytes": 128,
+        "Position": 8552120
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "adc483a0ba3a42c1ad454b880142a270",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "48bd5a029c264b2ba699a4b33fb18d95",
+        "IsBot": false
+      },
+      "Eliminated": "adc483a0ba3a42c1ad454b880142a270",
+      "Eliminator": "48bd5a029c264b2ba699a4b33fb18d95",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_C87BA067466F36C43402ECA5ECCD9A9F",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 737648,
+        "EndTime": 737648,
+        "SizeInBytes": 128,
+        "Position": 8552373
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "a8c2447e4ff7495c9a750a4c2440e6ce",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "48bd5a029c264b2ba699a4b33fb18d95",
+        "IsBot": false
+      },
+      "Eliminated": "a8c2447e4ff7495c9a750a4c2440e6ce",
+      "Eliminator": "48bd5a029c264b2ba699a4b33fb18d95",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_7AAD04A04E0978D78565B89845C3560A",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 756386,
+        "EndTime": 756386,
+        "SizeInBytes": 128,
+        "Position": 8718314
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "3880d391366d4ff4ad38644a7811b2dc",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8b30d6ffece046eabfb69e011db85376",
+        "IsBot": false
+      },
+      "Eliminated": "3880d391366d4ff4ad38644a7811b2dc",
+      "Eliminator": "8b30d6ffece046eabfb69e011db85376",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_03C960D54CCB0AD41EADD683FA0A9F90",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 765203,
+        "EndTime": 765203,
+        "SizeInBytes": 128,
+        "Position": 8853487
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "fd6f990d17d5426496822d821860185d",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 3,
+        "Id": null,
+        "IsBot": true
+      },
+      "Eliminated": "fd6f990d17d5426496822d821860185d",
+      "Eliminator": null,
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_CB2AC2FC4585D22089A0B3A1F8FCEDD1",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 866898,
+        "EndTime": 866898,
+        "SizeInBytes": 112,
+        "Position": 10439882
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "f5e954c9f9fe42c3b70dabfc06c64b6a",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "16102828a4b4403eaee8164d483f129e",
+        "IsBot": false
+      },
+      "Eliminated": "f5e954c9f9fe42c3b70dabfc06c64b6a",
+      "Eliminator": "16102828a4b4403eaee8164d483f129e",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_AAC49FC3434A5E29A305AA9268E171DD",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 875311,
+        "EndTime": 875311,
+        "SizeInBytes": 128,
+        "Position": 10440119
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "ed8cbddc4b034658987cf3d80db25a45",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "48bd5a029c264b2ba699a4b33fb18d95",
+        "IsBot": false
+      },
+      "Eliminated": "ed8cbddc4b034658987cf3d80db25a45",
+      "Eliminator": "48bd5a029c264b2ba699a4b33fb18d95",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_3CB9C55D48892FFDF4F781A85E895CD9",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 877515,
+        "EndTime": 877515,
+        "SizeInBytes": 128,
+        "Position": 10440372
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "559480612e7342528fb77970c34cbfb9",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "16102828a4b4403eaee8164d483f129e",
+        "IsBot": false
+      },
+      "Eliminated": "559480612e7342528fb77970c34cbfb9",
+      "Eliminator": "16102828a4b4403eaee8164d483f129e",
+      "GunType": 5,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_028B467448C5CDD78FF441936758D93B",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 880192,
+        "EndTime": 880192,
+        "SizeInBytes": 128,
+        "Position": 10440625
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "eb4ae7a90b5445a1b538a6d6b3f0c3c0",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "beb8a181217744f48887608f5321d6c8",
+        "IsBot": false
+      },
+      "Eliminated": "eb4ae7a90b5445a1b538a6d6b3f0c3c0",
+      "Eliminator": "beb8a181217744f48887608f5321d6c8",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_F7A910B34E77D36A4B2633863F19E1D3",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 886630,
+        "EndTime": 886630,
+        "SizeInBytes": 128,
+        "Position": 10582838
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "beb8a181217744f48887608f5321d6c8",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8b30d6ffece046eabfb69e011db85376",
+        "IsBot": false
+      },
+      "Eliminated": "beb8a181217744f48887608f5321d6c8",
+      "Eliminator": "8b30d6ffece046eabfb69e011db85376",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_B481448146E6FE53E83239A51C73AE7F",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 921601,
+        "EndTime": 921601,
+        "SizeInBytes": 128,
+        "Position": 11342462
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "83a30e88352c4651963543ed857dab98",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "16102828a4b4403eaee8164d483f129e",
+        "IsBot": false
+      },
+      "Eliminated": "83a30e88352c4651963543ed857dab98",
+      "Eliminator": "16102828a4b4403eaee8164d483f129e",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_BFA721564E530BB0904C8A95EB353146",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 945149,
+        "EndTime": 945149,
+        "SizeInBytes": 128,
+        "Position": 11473283
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "3a44ab25126b4c2fb1337980e405ed03",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "16102828a4b4403eaee8164d483f129e",
+        "IsBot": false
+      },
+      "Eliminated": "3a44ab25126b4c2fb1337980e405ed03",
+      "Eliminator": "16102828a4b4403eaee8164d483f129e",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_14676A7943417B7FA2EE75851239B4B3",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 961008,
+        "EndTime": 961008,
+        "SizeInBytes": 128,
+        "Position": 11584136
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "15ff933482bc44589f29d3e9a295d083",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "48bd5a029c264b2ba699a4b33fb18d95",
+        "IsBot": false
+      },
+      "Eliminated": "15ff933482bc44589f29d3e9a295d083",
+      "Eliminator": "48bd5a029c264b2ba699a4b33fb18d95",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_47DD514C4A5DA2665C07539E1C01B27D",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 994608,
+        "EndTime": 994608,
+        "SizeInBytes": 128,
+        "Position": 12207576
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "8b30d6ffece046eabfb69e011db85376",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "16102828a4b4403eaee8164d483f129e",
+        "IsBot": false
+      },
+      "Eliminated": "8b30d6ffece046eabfb69e011db85376",
+      "Eliminator": "16102828a4b4403eaee8164d483f129e",
+      "GunType": 3,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_DC3DF1E147A3359E16344AA7B88BCA81",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 1034263,
+        "EndTime": 1034263,
+        "SizeInBytes": 128,
+        "Position": 12931168
+      }
+    },
+    {
+      "EliminatedInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "16102828a4b4403eaee8164d483f129e",
+        "IsBot": false
+      },
+      "EliminatorInfo": {
+        "Location": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "PlayerType": 17,
+        "Id": "48bd5a029c264b2ba699a4b33fb18d95",
+        "IsBot": false
+      },
+      "Eliminated": "16102828a4b4403eaee8164d483f129e",
+      "Eliminator": "48bd5a029c264b2ba699a4b33fb18d95",
+      "GunType": 4,
+      "Timestamp": 0,
+      "Knocked": false,
+      "SelfElimination": false,
+      "Distance": 0,
+      "ReplayEvent": {
+        "Id": "UnsavedReplay-2022.06.28-15.05.43_7C0A699B44C85365398FFB8C34FFC364",
+        "Group": "playerElim",
+        "Metadata": "versionedEvent",
+        "StartTime": 1236997,
+        "EndTime": 1236997,
+        "SizeInBytes": 128,
+        "Position": 15092208
+      }
+    }
+  ],
+  "ZoneUpdateEvents": [],
+  "CharacterSampleEvents": [],
+  "ActorPositionEvents": [],
+  "TimecodeEvent": null,
   "Info": {
-    "LengthInMs": 1088610,
+    "LengthInMs": 1252886,
     "NetworkVersion": 2,
-    "Changelist": 15862581,
+    "Changelist": 20777648,
     "FriendlyName": "Unsaved Replay",
-    "Timestamp": "2021-03-31T21:03:19.292+00:00",
+    "Timestamp": "2022-06-28T05:05:43.167+00:00",
     "IsLive": false,
     "IsCompressed": true,
     "Encrypted": true,
-    "EncryptionKey": "aoH9P+oPsOoOJOSH73UmTsHRu1xKGdezBgYSf+Hpg6s=",
+    "EncryptionKey": "uaHGyGQURvLTL98yJFieyrTDXs1L02ppYerjGTu5BIU=",
     "FileVersion": 6,
     "ValidEncryptionStatus": true
   },
   "Header": {
-    "NetworkVersion": 15,
-    "NetworkChecksum": 391992329,
-    "EngineNetworkVersion": 16,
+    "NetworkVersion": 17,
+    "NetworkChecksum": 1743475923,
+    "EngineNetworkVersion": 22,
     "GameNetworkProtocolVersion": 0,
-    "Guid": "08D7BE051E708D49A1FBD327C4D76F57",
-    "Major": 4,
-    "Minor": 26,
+    "Guid": "065423E53C6A2245B5559ABB5193A483",
+    "Major": 5,
+    "Minor": 0,
     "Patch": 1,
-    "Changelist": 15862581,
-    "Branch": "\u002B\u002BFortnite\u002BRelease-16.10",
+    "Changelist": 20777648,
+    "Branch": "\u002B\u002BFortnite\u002BRelease-21.10",
     "LevelNamesAndTimes": [
       {}
     ],
-    "Flags": 11,
+    "Flags": 139,
     "GameSpecificData": [
       "SubGame=Athena"
     ],
     "MinRecordHz": 0,
-    "MaxRecordHz": 0,
-    "FrameLimitInMs": 0,
-    "CheckpointLimitInMs": 0,
-    "Platform": null,
-    "BuildConfig": 0,
-    "BuildTarget": 0
+    "MaxRecordHz": 8,
+    "FrameLimitInMs": -1,
+    "CheckpointLimitInMs": -1,
+    "Platform": "WindowsClient",
+    "BuildConfig": 4,
+    "BuildTarget": 3
   },
   "Events": [
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_ACC0A9FB434C09EFF310CFBBF7A2D985",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 6287,
-      "EndTime": 6287,
-      "SizeInBytes": 128,
-      "Position": 881
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_AdditionGFPEvent",
+      "Group": "AdditionGFPEventGroup",
+      "Metadata": "AdditionGFPEvent",
+      "StartTime": 0,
+      "EndTime": 0,
+      "SizeInBytes": 16,
+      "Position": 716
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_E3E6290A4B381945748D9585BC44EB09",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_94566FCD4D886EF59BA918B11E0E25EF",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 26182,
-      "EndTime": 26182,
+      "StartTime": 4015,
+      "EndTime": 4015,
       "SizeInBytes": 128,
-      "Position": 425526
+      "Position": 1057
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B5EAA7674252430C25DE77946CC3F13F",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_ED2988A14FC96B35BDCFE3B360C0B029",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 70893,
-      "EndTime": 70893,
+      "StartTime": 34535,
+      "EndTime": 34535,
       "SizeInBytes": 128,
-      "Position": 1067372
+      "Position": 268854
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_51E12EB3413DD4D07B9A0E86DC4C5218",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_680FA68E49A909C86289E2A9AB28603E",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 90461,
-      "EndTime": 90461,
+      "StartTime": 95136,
+      "EndTime": 95136,
       "SizeInBytes": 128,
-      "Position": 1312625
+      "Position": 886084
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_1B3509484C795167E8C66BA4801C42F9",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_1B836055412825B675D7BF8023086816",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 91945,
-      "EndTime": 91945,
+      "StartTime": 96132,
+      "EndTime": 96132,
       "SizeInBytes": 128,
-      "Position": 1312878
+      "Position": 886337
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_332FD99A43C64D3BF77118BC5E4889AC",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_5D1176894BEF3C0207467BA5A0578790",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 92587,
-      "EndTime": 92587,
+      "StartTime": 100614,
+      "EndTime": 100614,
+      "SizeInBytes": 128,
+      "Position": 984918
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_D9FCF9AF4B7BB66A08AD14A0DE88DE03",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 109855,
+      "EndTime": 109855,
+      "SizeInBytes": 128,
+      "Position": 985171
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_CBC5E92747A41831B77BC989111D8FE5",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 109925,
+      "EndTime": 109925,
+      "SizeInBytes": 128,
+      "Position": 985424
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_5FE682454BE1C2DE93EFBF9B5E0B453A",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 112819,
+      "EndTime": 112819,
+      "SizeInBytes": 128,
+      "Position": 985677
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_B00683614C2CBA84A22DF39CE388CAA9",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 118273,
+      "EndTime": 118273,
+      "SizeInBytes": 128,
+      "Position": 985930
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_EF4A331E40154011E3DB31A8BD58E143",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 129264,
+      "EndTime": 129264,
+      "SizeInBytes": 128,
+      "Position": 1391960
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_8D22F3F748CB6EC8B6CC199E3EF85E98",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 130099,
+      "EndTime": 130099,
+      "SizeInBytes": 128,
+      "Position": 1392213
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_8CFEC0334D9890FC70B443B284DFCF81",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 136343,
+      "EndTime": 136343,
+      "SizeInBytes": 128,
+      "Position": 1392466
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_6AF7479B48266929A8A48DB71161531C",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 136701,
+      "EndTime": 136701,
+      "SizeInBytes": 128,
+      "Position": 1392719
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_3179986E4AD1F64C573DF490ED6E098B",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 136876,
+      "EndTime": 136876,
+      "SizeInBytes": 128,
+      "Position": 1392972
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_3A5577F84F4D54370F1FCEBEB71BDF40",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 137520,
+      "EndTime": 137520,
+      "SizeInBytes": 128,
+      "Position": 1393225
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_6EBB40AB469C50227D5064865CBD5C39",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 138586,
+      "EndTime": 138586,
+      "SizeInBytes": 128,
+      "Position": 1393478
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_359AF09A4D8E51FC3FC2428527E6CECB",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 139021,
+      "EndTime": 139021,
+      "SizeInBytes": 128,
+      "Position": 1393731
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_0A53FE654E310758A75F3B97509FBA6E",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 139929,
+      "EndTime": 139929,
+      "SizeInBytes": 128,
+      "Position": 1393984
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_F39DF3D44299C30697E76189C3D14734",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 141273,
+      "EndTime": 141273,
+      "SizeInBytes": 128,
+      "Position": 1552389
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_7BB2084F48DD9CFC0CB37CA526860B51",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 141407,
+      "EndTime": 141407,
+      "SizeInBytes": 128,
+      "Position": 1552642
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_829184A2467D7BA294AFD0A16B51DCB9",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 142069,
+      "EndTime": 142069,
+      "SizeInBytes": 128,
+      "Position": 1552895
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_30AB993A43B1978B3BED4DB53F7A56CB",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 147184,
+      "EndTime": 147184,
+      "SizeInBytes": 128,
+      "Position": 1553148
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_237DDEA04A4C39A6DDB811BBBAED5D78",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 147214,
+      "EndTime": 147214,
+      "SizeInBytes": 128,
+      "Position": 1553401
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_481B0E2A4083098850A5BE8B16269990",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 148592,
+      "EndTime": 148592,
+      "SizeInBytes": 128,
+      "Position": 1553654
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_2D8F45A7408DFE7EAE0C22BE6BD7573C",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 149463,
+      "EndTime": 149463,
+      "SizeInBytes": 128,
+      "Position": 1553907
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_3671D4C1468FFBC5F5A88A95FE0EEEF0",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 151500,
+      "EndTime": 151500,
+      "SizeInBytes": 128,
+      "Position": 1554160
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_6DDC03614AB3CC45C1A2C4931A545264",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 155906,
+      "EndTime": 155906,
+      "SizeInBytes": 128,
+      "Position": 1554413
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_9BE131584C3143A194A13BA64521987D",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 158986,
+      "EndTime": 158986,
+      "SizeInBytes": 128,
+      "Position": 1554666
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_410372D14178D232C26943B96EF97034",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 160554,
+      "EndTime": 160554,
+      "SizeInBytes": 128,
+      "Position": 1692943
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_F4BDE5D748393CA112C0FDA7D7A70040",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 163398,
+      "EndTime": 163398,
+      "SizeInBytes": 128,
+      "Position": 1693196
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_93731136466C5EAB9CFC3BAD251CE0C9",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 163762,
+      "EndTime": 163762,
+      "SizeInBytes": 128,
+      "Position": 1693449
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_0CB8154B49D6C1423137D4A04ED1CEE2",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 166162,
+      "EndTime": 166162,
+      "SizeInBytes": 128,
+      "Position": 1693702
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_8513DCE3419637D847D19BB3030ACEA5",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 168303,
+      "EndTime": 168303,
+      "SizeInBytes": 128,
+      "Position": 1693955
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_B8EB502C423EF791ECF3B094C4FC1BCF",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 170483,
+      "EndTime": 170483,
+      "SizeInBytes": 128,
+      "Position": 1694208
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_4119710C49792A15DAF69A9A3C6017E3",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 172780,
+      "EndTime": 172780,
+      "SizeInBytes": 128,
+      "Position": 1694461
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_99BDA75740C0AF1E39DBCFA4A13CCE4A",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 175152,
+      "EndTime": 175152,
+      "SizeInBytes": 128,
+      "Position": 1694714
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_3ACE3ADD4BDB21F9E3774784F158534B",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 182897,
+      "EndTime": 182897,
+      "SizeInBytes": 128,
+      "Position": 2129656
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_32CD6B1B4368104BDB97CCAD04A8AA1D",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 187035,
+      "EndTime": 187035,
+      "SizeInBytes": 128,
+      "Position": 2129909
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_77CC6BA749D990D25C472DBD1AC0FEC6",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 187938,
+      "EndTime": 187938,
+      "SizeInBytes": 128,
+      "Position": 2130162
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_F1721B32462835414B42BEB79EBD1CA4",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 192085,
+      "EndTime": 192085,
+      "SizeInBytes": 128,
+      "Position": 2130415
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_1122C0AF470E3C37EA7FE8A5529B9FAF",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 192716,
+      "EndTime": 192716,
+      "SizeInBytes": 128,
+      "Position": 2130668
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_8353EB884D280FD2EC92559FAA9B92EC",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 196156,
+      "EndTime": 196156,
+      "SizeInBytes": 128,
+      "Position": 2130921
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_7DDCC3CE4B343BD135DA97875BEF8809",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 208248,
+      "EndTime": 208248,
+      "SizeInBytes": 128,
+      "Position": 2254254
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_59C0BE4D41E194A7C34D7A98B940DF7E",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 210748,
+      "EndTime": 210748,
+      "SizeInBytes": 128,
+      "Position": 2254507
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_4C9461444FCF76905F60359E37B0C5AC",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 210823,
+      "EndTime": 210823,
+      "SizeInBytes": 128,
+      "Position": 2254760
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_E5D6B6F24CF5057CCFEFBFA70DD6E33D",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 213492,
+      "EndTime": 213492,
+      "SizeInBytes": 128,
+      "Position": 2255013
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_9DF5DE254AF61F75D89ABEB7E0A10724",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 220262,
+      "EndTime": 220262,
+      "SizeInBytes": 128,
+      "Position": 2255266
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_66062C3146C65D9EF0F4609E61359663",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 237495,
+      "EndTime": 237495,
+      "SizeInBytes": 128,
+      "Position": 2353719
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_D83356084449DAAE6075D1BE7965EF4E",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 239803,
+      "EndTime": 239803,
+      "SizeInBytes": 128,
+      "Position": 2353972
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_A6B53A2342948C13B54E3AADBB81E5B8",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 242144,
+      "EndTime": 242144,
+      "SizeInBytes": 128,
+      "Position": 2742339
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_C2A61DEB4F389506E4888CBC61268F16",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 243309,
+      "EndTime": 243309,
+      "SizeInBytes": 128,
+      "Position": 2742592
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_0F5D1ACA4B79EA070A5FC8A9F10D0D03",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 258313,
+      "EndTime": 258313,
+      "SizeInBytes": 128,
+      "Position": 2742845
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_0259ADF7465FA3F617C092AD2429348A",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 270137,
+      "EndTime": 270137,
+      "SizeInBytes": 128,
+      "Position": 2865378
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_6F6D33D44CEA4C05A78F5D93EE44CA93",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 273879,
+      "EndTime": 273879,
+      "SizeInBytes": 128,
+      "Position": 2865631
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_0510489B41D6EBC05FE7CFB773AAB07E",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 274140,
+      "EndTime": 274140,
+      "SizeInBytes": 128,
+      "Position": 2865884
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_604FA86C42A4126BB812E5A5FB114973",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 286265,
+      "EndTime": 286265,
+      "SizeInBytes": 128,
+      "Position": 2979665
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_4223128E42035F44C66C2EB8E9F21AB6",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 314617,
+      "EndTime": 314617,
+      "SizeInBytes": 128,
+      "Position": 3381872
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_4F6B83C3489EF520A7FFF89AD10C4FF5",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 320533,
+      "EndTime": 320533,
+      "SizeInBytes": 128,
+      "Position": 3485957
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_E8E30F0B46AAC9984D3DD3A1D7EE852E",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 376633,
+      "EndTime": 376633,
+      "SizeInBytes": 128,
+      "Position": 3958252
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_A632FA3645B5C7C20C58F195E1803D62",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 378704,
+      "EndTime": 378704,
+      "SizeInBytes": 128,
+      "Position": 3958505
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_717C19E74437CDB914DBC682A0115FF3",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 421989,
+      "EndTime": 421989,
+      "SizeInBytes": 128,
+      "Position": 4685224
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_E2D4975B4DF4B542BEAEC9B2A21A7F7C",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 424230,
+      "EndTime": 424230,
+      "SizeInBytes": 128,
+      "Position": 4685477
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_2FE833E14C8E39E2D3CE949E0D066F79",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 442265,
+      "EndTime": 442265,
+      "SizeInBytes": 128,
+      "Position": 4807626
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_45E27EB74AC69AB6E86C7FAEF12CE5CE",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 470208,
+      "EndTime": 470208,
+      "SizeInBytes": 128,
+      "Position": 4948463
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_F00FF64044EE578E733AB7825676AC09",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 478061,
+      "EndTime": 478061,
+      "SizeInBytes": 128,
+      "Position": 4948716
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_B228161C4280362B791D30AE3B0A3948",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 483437,
+      "EndTime": 483437,
+      "SizeInBytes": 128,
+      "Position": 5444651
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_0E9A11DF49D74BD3EEF4459C453971C2",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 505176,
+      "EndTime": 505176,
+      "SizeInBytes": 128,
+      "Position": 5569600
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_C56C843644FCFD47B1EF549EAE0F1D44",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 519301,
+      "EndTime": 519301,
+      "SizeInBytes": 128,
+      "Position": 5569853
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_51019E5748ED0CBEC8DC549DEC422498",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 524910,
+      "EndTime": 524910,
+      "SizeInBytes": 128,
+      "Position": 5695634
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_3D4BEE3B486803BA69624BA20F86B1FB",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 529251,
+      "EndTime": 529251,
+      "SizeInBytes": 128,
+      "Position": 5695887
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_AD14FAFE4EBB55289B8687A89DE0AA6B",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 548660,
+      "EndTime": 548660,
+      "SizeInBytes": 128,
+      "Position": 6231870
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_F0F8876D4A5690EC91161BB8571E2F83",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 555667,
+      "EndTime": 555667,
+      "SizeInBytes": 128,
+      "Position": 6232123
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_513A7DBD49C0C4F6DD20A2ADA71EFE73",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 556339,
+      "EndTime": 556339,
+      "SizeInBytes": 128,
+      "Position": 6232376
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_7B6C035841583C475D3EF38E4232BE44",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 558242,
+      "EndTime": 558242,
+      "SizeInBytes": 128,
+      "Position": 6232629
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_0C83DF7D4E790C79F5F8A2A19FD0EFAE",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 582892,
+      "EndTime": 582892,
+      "SizeInBytes": 128,
+      "Position": 6490450
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_CA028A454B29ACE0F2EF1D8B0A0A5193",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 582985,
+      "EndTime": 582985,
+      "SizeInBytes": 128,
+      "Position": 6490703
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_BA0163284A9976F9738D6B98489B2BF2",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 602764,
+      "EndTime": 602764,
+      "SizeInBytes": 128,
+      "Position": 7026622
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_9EE48FB741147F39B7B746AC52AF9EEB",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 609336,
+      "EndTime": 609336,
+      "SizeInBytes": 128,
+      "Position": 7026875
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_BF8C97C14690AB28C5D19BA00A1CF827",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 629708,
+      "EndTime": 629708,
+      "SizeInBytes": 128,
+      "Position": 7144464
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_2C34877846D3D912F08AC0B1A59954EA",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 647881,
+      "EndTime": 647881,
+      "SizeInBytes": 128,
+      "Position": 7237541
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_69345069491C30C2D0692A9445622764",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 725429,
+      "EndTime": 725429,
+      "SizeInBytes": 128,
+      "Position": 8552120
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_C87BA067466F36C43402ECA5ECCD9A9F",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 737648,
+      "EndTime": 737648,
+      "SizeInBytes": 128,
+      "Position": 8552373
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_7AAD04A04E0978D78565B89845C3560A",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 756386,
+      "EndTime": 756386,
+      "SizeInBytes": 128,
+      "Position": 8718314
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_03C960D54CCB0AD41EADD683FA0A9F90",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 765203,
+      "EndTime": 765203,
+      "SizeInBytes": 128,
+      "Position": 8853487
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_CB2AC2FC4585D22089A0B3A1F8FCEDD1",
+      "Group": "playerElim",
+      "Metadata": "versionedEvent",
+      "StartTime": 866898,
+      "EndTime": 866898,
       "SizeInBytes": 112,
-      "Position": 1313131
+      "Position": 10439882
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_068055C042ABC8603277E08EC5A97C6B",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_AAC49FC3434A5E29A305AA9268E171DD",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 99876,
-      "EndTime": 99876,
+      "StartTime": 875311,
+      "EndTime": 875311,
       "SizeInBytes": 128,
-      "Position": 1313368
+      "Position": 10440119
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_5BE0881C4D1E15F061D97D931953D6EE",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_3CB9C55D48892FFDF4F781A85E895CD9",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 105072,
-      "EndTime": 105072,
+      "StartTime": 877515,
+      "EndTime": 877515,
       "SizeInBytes": 128,
-      "Position": 1612285
+      "Position": 10440372
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_AD3AA3614393143658A0E58826E766F3",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_028B467448C5CDD78FF441936758D93B",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 109438,
-      "EndTime": 109438,
+      "StartTime": 880192,
+      "EndTime": 880192,
       "SizeInBytes": 128,
-      "Position": 1612538
+      "Position": 10440625
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_E981421D4D8AB6787C0DB9AB8C85B948",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_F7A910B34E77D36A4B2633863F19E1D3",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 110580,
-      "EndTime": 110580,
+      "StartTime": 886630,
+      "EndTime": 886630,
       "SizeInBytes": 128,
-      "Position": 1612791
+      "Position": 10582838
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_D6F7430549E6AD1954727BA9714854AA",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_B481448146E6FE53E83239A51C73AE7F",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 111247,
-      "EndTime": 111247,
+      "StartTime": 921601,
+      "EndTime": 921601,
       "SizeInBytes": 128,
-      "Position": 1613044
+      "Position": 11342462
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_2AA35ACE4252417C192B8699042C448F",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_BFA721564E530BB0904C8A95EB353146",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 113862,
-      "EndTime": 113862,
+      "StartTime": 945149,
+      "EndTime": 945149,
       "SizeInBytes": 128,
-      "Position": 1613297
+      "Position": 11473283
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_E33BD3374F97DBB6E8159C8A4D352BAC",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_14676A7943417B7FA2EE75851239B4B3",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 114093,
-      "EndTime": 114093,
+      "StartTime": 961008,
+      "EndTime": 961008,
       "SizeInBytes": 128,
-      "Position": 1613550
+      "Position": 11584136
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_25E67A474AFEE5EE91C59C94B6495CCA",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_47DD514C4A5DA2665C07539E1C01B27D",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 114655,
-      "EndTime": 114655,
+      "StartTime": 994608,
+      "EndTime": 994608,
       "SizeInBytes": 128,
-      "Position": 1613803
+      "Position": 12207576
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_90B40CF5418CEC2A366F1E997BD9DB9A",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_DC3DF1E147A3359E16344AA7B88BCA81",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 115000,
-      "EndTime": 115000,
+      "StartTime": 1034263,
+      "EndTime": 1034263,
       "SizeInBytes": 128,
-      "Position": 1614056
+      "Position": 12931168
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_3666E4014E9E8A519AF1029A096472BA",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 116647,
-      "EndTime": 116647,
-      "SizeInBytes": 128,
-      "Position": 1614309
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_5422F05646654D84C8E7F28081AB636E",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 122202,
-      "EndTime": 122202,
-      "SizeInBytes": 128,
-      "Position": 2244403
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_186C4012407256D7BF7B1D8A8CBB51B3",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 122460,
-      "EndTime": 122460,
-      "SizeInBytes": 128,
-      "Position": 2244656
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_FB3D76154D2230882A3CF58BFA9FD388",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 124193,
-      "EndTime": 124193,
-      "SizeInBytes": 128,
-      "Position": 2244909
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_D554E3964CE29F4528EC67BC6781F369",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 125468,
-      "EndTime": 125468,
-      "SizeInBytes": 128,
-      "Position": 2245162
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_9E8860D744F77DBDBF9FE2BF59D288B2",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 127397,
-      "EndTime": 127397,
-      "SizeInBytes": 128,
-      "Position": 2245415
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_DD955D2948CDD5C5988317B9469EE29E",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 130182,
-      "EndTime": 130182,
-      "SizeInBytes": 112,
-      "Position": 2245668
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_087CC06F44070960594FD3B29F0DCDAB",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 130520,
-      "EndTime": 130520,
-      "SizeInBytes": 128,
-      "Position": 2245905
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_1E9AC0284B3BF04D2335B49D1C3580D1",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 132708,
-      "EndTime": 132708,
-      "SizeInBytes": 128,
-      "Position": 2246158
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_4A6F08784C2703CD7958CD86EC043739",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 135973,
-      "EndTime": 135973,
-      "SizeInBytes": 128,
-      "Position": 2246411
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_54D1FE2F48090ED20261F5B610C81146",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 138235,
-      "EndTime": 138235,
-      "SizeInBytes": 128,
-      "Position": 2246664
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_9FAFE2F94298E216520417BA03BC4DC5",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 140545,
-      "EndTime": 140545,
-      "SizeInBytes": 128,
-      "Position": 2598845
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_160AF554420A49EE0BCF168D2628F30C",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 140807,
-      "EndTime": 140807,
-      "SizeInBytes": 128,
-      "Position": 2599098
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_A7565C1747B86016087F978CA2548719",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 143298,
-      "EndTime": 143298,
-      "SizeInBytes": 128,
-      "Position": 2599351
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B31718804D83A0347D5425BB826E618F",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 143454,
-      "EndTime": 143454,
-      "SizeInBytes": 128,
-      "Position": 2599604
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_64422CEB44B7B60314D528BF275BDAB9",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 143488,
-      "EndTime": 143488,
-      "SizeInBytes": 128,
-      "Position": 2599857
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_D498528C427A88AA239BC5BD09D1A27F",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 145821,
-      "EndTime": 145821,
-      "SizeInBytes": 128,
-      "Position": 2600110
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B6AD3E834DE3D5DC4C257FBCC24BBC77",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 145991,
-      "EndTime": 145991,
-      "SizeInBytes": 128,
-      "Position": 2600363
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_ED33A5B149E26233B051319DC817A0C2",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 148171,
-      "EndTime": 148171,
-      "SizeInBytes": 112,
-      "Position": 2600616
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_392640A54751AAD199E6B180AB75BD9F",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 148773,
-      "EndTime": 148773,
-      "SizeInBytes": 128,
-      "Position": 2600853
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_21C805B1439ADDDB6144F9BEF929A319",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 149217,
-      "EndTime": 149217,
-      "SizeInBytes": 128,
-      "Position": 2601106
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_A71D3F9040A2EA5F8314EE9B087865E1",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 149325,
-      "EndTime": 149325,
-      "SizeInBytes": 128,
-      "Position": 2601359
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_3A8F5D534419D50BCD19AFA7CCEB9684",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 149358,
-      "EndTime": 149358,
-      "SizeInBytes": 128,
-      "Position": 2601612
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_3ECAB3014CB0A76513286992783612A4",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 151443,
-      "EndTime": 151443,
-      "SizeInBytes": 128,
-      "Position": 2601865
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_80CE4DF141C9ADD1A12378A1EFFA45D7",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 154755,
-      "EndTime": 154755,
-      "SizeInBytes": 128,
-      "Position": 2602118
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_F5070A6E4EAB005156D599BA42E77BD1",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 156801,
-      "EndTime": 156801,
-      "SizeInBytes": 128,
-      "Position": 2602371
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_0541E1E04C26A439FC8BA9A5E27C9C7F",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 156877,
-      "EndTime": 156877,
-      "SizeInBytes": 128,
-      "Position": 2602624
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_59AB79D34F7B3A27F3703580B606EBFD",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 156877,
-      "EndTime": 156877,
-      "SizeInBytes": 128,
-      "Position": 2602877
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_2260271B4EC20B0CEBCA68B0DDB6B22F",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 159106,
-      "EndTime": 159106,
-      "SizeInBytes": 128,
-      "Position": 2603130
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_55FD2E3A45E9FCD533C5FE9B888CF1A9",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 159347,
-      "EndTime": 159347,
-      "SizeInBytes": 128,
-      "Position": 2603383
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B8DBFE65449B765168E9E5A32E552CE5",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 161921,
-      "EndTime": 161921,
-      "SizeInBytes": 128,
-      "Position": 2937084
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_618B5FA549EA90D90C23BF963B90BE0C",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 163741,
-      "EndTime": 163741,
-      "SizeInBytes": 128,
-      "Position": 2937337
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_286D7D494450E3DF94C2E6B12DB6C54C",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 164335,
-      "EndTime": 164335,
-      "SizeInBytes": 128,
-      "Position": 2937590
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_CDF137A049A1B04F75B1089754FA25FA",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 167535,
-      "EndTime": 167535,
-      "SizeInBytes": 128,
-      "Position": 2937843
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_9519475E465A3374D28FAC85C949B628",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 167848,
-      "EndTime": 167848,
-      "SizeInBytes": 128,
-      "Position": 2938096
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_14B18E1D4983AA2765231BAE67409BF7",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 169800,
-      "EndTime": 169800,
-      "SizeInBytes": 128,
-      "Position": 2938349
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_EDCDF08E4EA94BD45688619449E18275",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 170471,
-      "EndTime": 170471,
-      "SizeInBytes": 128,
-      "Position": 2938602
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_5D85DCE340BBAA970D0F2E85F681C97E",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 172435,
-      "EndTime": 172435,
-      "SizeInBytes": 128,
-      "Position": 2938855
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_79F964F74B81263BA2DD0FB7A4A27D2C",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 172534,
-      "EndTime": 172534,
-      "SizeInBytes": 128,
-      "Position": 2939108
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_6FAE672141AFE179B5ED19A2376A0E32",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 173027,
-      "EndTime": 173027,
-      "SizeInBytes": 128,
-      "Position": 2939361
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_63ECCCF14257C941603DD68E517776FD",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 175448,
-      "EndTime": 175448,
-      "SizeInBytes": 128,
-      "Position": 2939614
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B3BE3471407C6F5A9EC2B282A084478D",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 175550,
-      "EndTime": 175550,
-      "SizeInBytes": 128,
-      "Position": 2939867
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B2189AE64E314CE043C419AE456D168B",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 178200,
-      "EndTime": 178200,
-      "SizeInBytes": 128,
-      "Position": 2940120
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_6125D086494B50445762A694372DBD7E",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 180420,
-      "EndTime": 180420,
-      "SizeInBytes": 128,
-      "Position": 3499942
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_7D281B6E4C94C32E0EFED495DBF9BF83",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 180803,
-      "EndTime": 180803,
-      "SizeInBytes": 128,
-      "Position": 3500195
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_7AF659074DB6EBA46F4A44ABAA8BF027",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 180875,
-      "EndTime": 180875,
-      "SizeInBytes": 128,
-      "Position": 3500448
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_66AA05CF4E4DF5DE02128084E99CB130",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 184820,
-      "EndTime": 184820,
-      "SizeInBytes": 128,
-      "Position": 3500701
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_9E53A6E74543F1EE077A1E960378B8A2",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 185918,
-      "EndTime": 185918,
-      "SizeInBytes": 128,
-      "Position": 3500954
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_08616E114AF3A2588BA88FB64E613E93",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 188296,
-      "EndTime": 188296,
-      "SizeInBytes": 128,
-      "Position": 3501207
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_2E611DC54C3970437C068BBAC6F4CE06",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 190008,
-      "EndTime": 190008,
-      "SizeInBytes": 128,
-      "Position": 3501460
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_CB302CDC427D0F655C7BF78D2B5BD676",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 193610,
-      "EndTime": 193610,
-      "SizeInBytes": 128,
-      "Position": 3501713
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B5B2710F451035074104BFBED4F1E564",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 196257,
-      "EndTime": 196257,
-      "SizeInBytes": 128,
-      "Position": 3501966
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_4FF7AB5E4976627481854CBADF9CAA01",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 197555,
-      "EndTime": 197555,
-      "SizeInBytes": 128,
-      "Position": 3502219
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_A7FB8A884AA1D3F989C03EA99FDFBF5B",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 198524,
-      "EndTime": 198524,
-      "SizeInBytes": 128,
-      "Position": 3502472
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B109A0B642E78FAD681C37B1D17B91BB",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 200275,
-      "EndTime": 200275,
-      "SizeInBytes": 128,
-      "Position": 3735677
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_2812F3F043BAFF0ABD7534B383AB33D7",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 200847,
-      "EndTime": 200847,
-      "SizeInBytes": 128,
-      "Position": 3735930
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_F190946F4F2DB4BF18B24A9A3405EF52",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 200912,
-      "EndTime": 200912,
-      "SizeInBytes": 128,
-      "Position": 3736183
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_388693984A5101FD439D2C9650A8D3E4",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 203378,
-      "EndTime": 203378,
-      "SizeInBytes": 128,
-      "Position": 3736436
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_DDA6052A48AACFC3AA5FC38022226900",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 205046,
-      "EndTime": 205046,
-      "SizeInBytes": 128,
-      "Position": 3736689
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_04D597B742C23285AF43DBA30A1AC3FE",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 206029,
-      "EndTime": 206029,
-      "SizeInBytes": 128,
-      "Position": 3736942
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_A2FA8EE54BCD615409E7209B039E85E9",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 206194,
-      "EndTime": 206194,
-      "SizeInBytes": 128,
-      "Position": 3737195
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_DC43C0764E4478FE983608A4399B79EC",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 208771,
-      "EndTime": 208771,
-      "SizeInBytes": 128,
-      "Position": 3737448
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_3C7455FB4A60643765B5058B5C074594",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 215308,
-      "EndTime": 215308,
-      "SizeInBytes": 128,
-      "Position": 3737701
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_3E624AF04DFC39A0129BACA5FEF7C831",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 215408,
-      "EndTime": 215408,
-      "SizeInBytes": 128,
-      "Position": 3737954
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_C811B3994B4A749C542E6498CBDB52F8",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 215875,
-      "EndTime": 215875,
-      "SizeInBytes": 128,
-      "Position": 3738207
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_A54275B24D8D1F5F876CCFBB8BBDFCF0",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 215938,
-      "EndTime": 215938,
-      "SizeInBytes": 128,
-      "Position": 3738460
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_BD3CEB4044B2C280131FB2849B6E07D4",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 215938,
-      "EndTime": 215938,
-      "SizeInBytes": 128,
-      "Position": 3738713
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_8EBF432744BEA0F7151B8C85FA1517CB",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 216112,
-      "EndTime": 216112,
-      "SizeInBytes": 128,
-      "Position": 3738966
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_6CF47F9B4C7A8BE0E45C8F8D29884C40",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 217548,
-      "EndTime": 217548,
-      "SizeInBytes": 128,
-      "Position": 3739219
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_D6768D464341EC16C7C07D81818575A1",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 217728,
-      "EndTime": 217728,
-      "SizeInBytes": 128,
-      "Position": 3739472
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_12E5CCFB4BF4A3A939B2A3996CB0AA62",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 217829,
-      "EndTime": 217829,
-      "SizeInBytes": 128,
-      "Position": 3739725
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_A75F39954C194A1BD31DFFA89305D655",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 217935,
-      "EndTime": 217935,
-      "SizeInBytes": 128,
-      "Position": 3739978
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_160451884307BA790F9507819F3CAE3D",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 225601,
-      "EndTime": 225601,
-      "SizeInBytes": 128,
-      "Position": 3997855
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_523CD2564432C0CE97B13ABE15C80AC2",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 228151,
-      "EndTime": 228151,
-      "SizeInBytes": 128,
-      "Position": 3998108
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_302A2E1149DD8F4F17BE0182021347FC",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 228184,
-      "EndTime": 228184,
-      "SizeInBytes": 128,
-      "Position": 3998361
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_399666054B61AE2F173F758D22EB7E6D",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 236888,
-      "EndTime": 236888,
-      "SizeInBytes": 128,
-      "Position": 3998614
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_1BBFD2414EBD2A80F747CF881D2774A1",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 250095,
-      "EndTime": 250095,
-      "SizeInBytes": 128,
-      "Position": 4456309
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_2D0C8E1848688F76FD79A98C1D795A41",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 252370,
-      "EndTime": 252370,
-      "SizeInBytes": 128,
-      "Position": 4456562
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_9ECF05B64A7BC222292BF4B7B0B704F4",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 256163,
-      "EndTime": 256163,
-      "SizeInBytes": 128,
-      "Position": 4456815
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_89D7BF7D46FF1F53F0DD75B5760828B9",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 256359,
-      "EndTime": 256359,
-      "SizeInBytes": 128,
-      "Position": 4457068
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_AC0E9D8A4AC5225BC014F2AFC0BCD1DB",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 314335,
-      "EndTime": 314335,
-      "SizeInBytes": 128,
-      "Position": 5341179
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_F08454EA45E89A898A2CA49EA0120621",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 314830,
-      "EndTime": 314830,
-      "SizeInBytes": 128,
-      "Position": 5341432
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_34B8CE5649ACB614FD58B09E360BBF02",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 316618,
-      "EndTime": 316618,
-      "SizeInBytes": 128,
-      "Position": 5341685
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_49CF4678400C8C96FDF4E9BE2B0AEDCA",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 339337,
-      "EndTime": 339337,
-      "SizeInBytes": 128,
-      "Position": 5543818
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B959B9F343BD4FC679240B962B2CCB7C",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 341645,
-      "EndTime": 341645,
-      "SizeInBytes": 128,
-      "Position": 5709935
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_9BE10718404F09844F75B3A1EC9CAE43",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 341880,
-      "EndTime": 341880,
-      "SizeInBytes": 128,
-      "Position": 5710188
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_1B86009A4F9D71A52407799B6C78CF1B",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 344281,
-      "EndTime": 344281,
-      "SizeInBytes": 128,
-      "Position": 5710441
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_61F6C5AF44DDE78546BB4B9BCD5BAB4A",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 348832,
-      "EndTime": 348832,
-      "SizeInBytes": 128,
-      "Position": 5710694
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_21524AE74D1A113FF920139CC8C9CC2F",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 364914,
-      "EndTime": 364914,
-      "SizeInBytes": 128,
-      "Position": 6198517
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_225E2D3D424A8EC34346478668B63359",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 390386,
-      "EndTime": 390386,
-      "SizeInBytes": 128,
-      "Position": 6343674
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_272D278741E03E0C78856F9730EE21A8",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 396537,
-      "EndTime": 396537,
-      "SizeInBytes": 128,
-      "Position": 6343927
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_68436D004A7E6CCEA0F4C79220F90D0D",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 399456,
-      "EndTime": 399456,
-      "SizeInBytes": 128,
-      "Position": 6344180
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_2481018744B061117D8642B174728A33",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 404010,
-      "EndTime": 404010,
-      "SizeInBytes": 128,
-      "Position": 6466473
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_092F3FA14BB92758778E959CBECDC825",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 404048,
-      "EndTime": 404048,
-      "SizeInBytes": 128,
-      "Position": 6466726
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_8345036B47783DC9A7F999952932ECC2",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 408601,
-      "EndTime": 408601,
-      "SizeInBytes": 128,
-      "Position": 6466979
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_0F22626F4DF0BE1A5FF5FA8C2323D127",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 415338,
-      "EndTime": 415338,
-      "SizeInBytes": 128,
-      "Position": 6467232
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_6CEA0C8C40A490AB69382C8A3D8ED13D",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 417722,
-      "EndTime": 417722,
-      "SizeInBytes": 128,
-      "Position": 6467485
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_4540C72A498F74A0640424A42E5C53D6",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 417752,
-      "EndTime": 417752,
-      "SizeInBytes": 128,
-      "Position": 6467738
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_68B731CA40659D5CB6AB63A01C5AA383",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 422181,
-      "EndTime": 422181,
-      "SizeInBytes": 128,
-      "Position": 6869545
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_D9FE4DCD49E94F168363C9BAC19FC7EF",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 439631,
-      "EndTime": 439631,
-      "SizeInBytes": 128,
-      "Position": 6869798
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B9126C1D428C4ACD4DF8D9906C49F344",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 442898,
-      "EndTime": 442898,
-      "SizeInBytes": 128,
-      "Position": 7054875
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_1168E33344F14B84B9DB8393065835BD",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 446459,
-      "EndTime": 446459,
-      "SizeInBytes": 128,
-      "Position": 7055128
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_373072B443C5B395DB0E8B93A3A32B7D",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 448831,
-      "EndTime": 448831,
-      "SizeInBytes": 128,
-      "Position": 7055381
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_60D7BF3D4FB9B757EC86FDBB402DA8EA",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 457691,
-      "EndTime": 457691,
-      "SizeInBytes": 128,
-      "Position": 7055634
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_8319F99E4B9D4992FBFE439B6FC36484",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 459970,
-      "EndTime": 459970,
-      "SizeInBytes": 128,
-      "Position": 7055887
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_9ECD77FF437591D53E7EEA81B0330B7B",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 460672,
-      "EndTime": 460672,
-      "SizeInBytes": 128,
-      "Position": 7295284
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_053246C848AC078DDEFE23A2125FA571",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 465186,
-      "EndTime": 465186,
-      "SizeInBytes": 128,
-      "Position": 7295537
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_F172D9D14456852286C321A56534F273",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 495715,
-      "EndTime": 495715,
-      "SizeInBytes": 128,
-      "Position": 7884784
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_48B529C34465A44E65BDD6A5D3F7373A",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 497951,
-      "EndTime": 497951,
-      "SizeInBytes": 128,
-      "Position": 7885037
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_F10B5A854020550B156F6F9006AB8DC8",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 498529,
-      "EndTime": 498529,
-      "SizeInBytes": 128,
-      "Position": 7885290
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_4DDE6725473043C23C04E39F5671BC02",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 500436,
-      "EndTime": 500436,
-      "SizeInBytes": 128,
-      "Position": 8136623
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_C94BFC6043E6EBBAE78C018E8ECB798E",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 500604,
-      "EndTime": 500604,
-      "SizeInBytes": 128,
-      "Position": 8136876
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_2A660F894A56E712CC50AA84059089FC",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 505687,
-      "EndTime": 505687,
-      "SizeInBytes": 128,
-      "Position": 8137129
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_571ED73D40C69F68C7E71E830BA48350",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 535267,
-      "EndTime": 535267,
-      "SizeInBytes": 128,
-      "Position": 8333454
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_9C510B6B43B491CB98018A902CD54927",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 537837,
-      "EndTime": 537837,
-      "SizeInBytes": 128,
-      "Position": 8333707
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_EDCC885A4E1A0E7CA6CF71BFEB94386B",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 546145,
-      "EndTime": 546145,
-      "SizeInBytes": 128,
-      "Position": 8904234
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_156A508E449BB7256F72AFB870ED3B92",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 546383,
-      "EndTime": 546383,
-      "SizeInBytes": 128,
-      "Position": 8904487
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_2E6B1B194A745B80B7BAC1A8F31CE97E",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 548089,
-      "EndTime": 548089,
-      "SizeInBytes": 128,
-      "Position": 8904740
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_678008AC4016F5C16D167CA8FCB59A98",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 548120,
-      "EndTime": 548120,
-      "SizeInBytes": 128,
-      "Position": 8904993
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_BD088BB54A7A86A19CAAC09C4D4584B4",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 550422,
-      "EndTime": 550422,
-      "SizeInBytes": 128,
-      "Position": 8905246
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_968C38C245B0C94D6F12F48FC22B0BC9",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 554517,
-      "EndTime": 554517,
-      "SizeInBytes": 128,
-      "Position": 8905499
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_26DB3E7A42D4BB25D2A9298EE15213F8",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 561982,
-      "EndTime": 561982,
-      "SizeInBytes": 128,
-      "Position": 9164384
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_92D6808A49B21EB2D53487A7809FF0F7",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 564074,
-      "EndTime": 564074,
-      "SizeInBytes": 128,
-      "Position": 9164637
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_D4CA78DE4E6DF1D85C1B46896160CC07",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 568337,
-      "EndTime": 568337,
-      "SizeInBytes": 128,
-      "Position": 9164890
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_06A7C25D409E132BE7A00BB0A8701F3F",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 643303,
-      "EndTime": 643303,
-      "SizeInBytes": 128,
-      "Position": 10312321
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_C4369A374D1186564A5C3A898F5FE707",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 646366,
-      "EndTime": 646366,
-      "SizeInBytes": 128,
-      "Position": 10312574
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_F9283E04471BE0B7E0C17C9EECDF263D",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 646975,
-      "EndTime": 646975,
-      "SizeInBytes": 128,
-      "Position": 10312827
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_8F2F51DE47F013AA88DDC0860699998D",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 647173,
-      "EndTime": 647173,
-      "SizeInBytes": 128,
-      "Position": 10313080
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_8C4162C64BF2EBB593A881B4CB4AB5CC",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 656779,
-      "EndTime": 656779,
-      "SizeInBytes": 128,
-      "Position": 10313333
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_C01409B54C6D6B226AE214BF9F034F37",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 670299,
-      "EndTime": 670299,
-      "SizeInBytes": 128,
-      "Position": 10889837
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_364409A94A4DC302B31A2EAA80802B8A",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 678932,
-      "EndTime": 678932,
-      "SizeInBytes": 128,
-      "Position": 10890090
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_408765A84C3927AF8802959CD96AB546",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 693365,
-      "EndTime": 693365,
-      "SizeInBytes": 128,
-      "Position": 11035775
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_B533F7F24C76DB4AC93614AA6C68A25F",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 700948,
-      "EndTime": 700948,
-      "SizeInBytes": 128,
-      "Position": 11290356
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_DA3C30004261DDE85FBE6E847C753E83",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 740052,
-      "EndTime": 740052,
-      "SizeInBytes": 128,
-      "Position": 12185164
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_2E6CA5B440E0BB773871B6ACFA781152",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 747811,
-      "EndTime": 747811,
-      "SizeInBytes": 128,
-      "Position": 12185417
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_D6EAC88F4C1DBF09E5517B8E95295D53",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 753248,
-      "EndTime": 753248,
-      "SizeInBytes": 128,
-      "Position": 12185670
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_8FB379CC4BEBFCAADA22A9AB6E9F460D",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 753344,
-      "EndTime": 753344,
-      "SizeInBytes": 128,
-      "Position": 12185923
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_C80408874B2E4265DD526EA237909A7C",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 753516,
-      "EndTime": 753516,
-      "SizeInBytes": 128,
-      "Position": 12186176
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_1D0240B74DA1FAADC7CCEAAEAAB8C8F7",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 757886,
-      "EndTime": 757886,
-      "SizeInBytes": 128,
-      "Position": 12186429
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_6EA232914E8CA230010BB89B4ADDA326",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 786878,
-      "EndTime": 786878,
-      "SizeInBytes": 128,
-      "Position": 13041309
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_AA7024A9496606E477E82EAD0AE530A3",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 807745,
-      "EndTime": 807745,
-      "SizeInBytes": 128,
-      "Position": 13228882
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_FBD8309E486D16CB3923A4BF540B9DC7",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 809443,
-      "EndTime": 809443,
-      "SizeInBytes": 128,
-      "Position": 13229135
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_76C507724FDC7614F4E11D9DD50543BE",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 812072,
-      "EndTime": 812072,
-      "SizeInBytes": 128,
-      "Position": 13229388
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_1572243B40B83CC119F67F8AC35E8CEF",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 815475,
-      "EndTime": 815475,
-      "SizeInBytes": 128,
-      "Position": 13229641
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_E96B749840B12B6E0B0BF38AA3155CC2",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 815508,
-      "EndTime": 815508,
-      "SizeInBytes": 128,
-      "Position": 13229894
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_A46CA0C746DF551AA1F5888438D5A841",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 835941,
-      "EndTime": 835941,
-      "SizeInBytes": 128,
-      "Position": 13435499
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_F28C3C574643C83AEB9F309CFDBDD1F9",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 863649,
-      "EndTime": 863649,
-      "SizeInBytes": 128,
-      "Position": 14223715
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_ADBE1415473FA934E272799A57F884ED",
-      "Group": "playerElim",
-      "Metadata": "versionedEvent",
-      "StartTime": 898000,
-      "EndTime": 898000,
-      "SizeInBytes": 128,
-      "Position": 14417880
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_ReplayKey",
-      "Group": "PlayerStateEncryptionKey",
-      "Metadata": "PlayerStateEncryptionKey",
-      "StartTime": 1038872,
-      "EndTime": 1038872,
-      "SizeInBytes": 48,
-      "Position": 16899887
-    },
-    {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_AthenaMatchStats",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_AthenaMatchStats",
       "Group": "AthenaReplayBrowserEvents",
       "Metadata": "AthenaMatchStats",
-      "StartTime": 1038877,
-      "EndTime": 1038877,
+      "StartTime": 1236833,
+      "EndTime": 1236833,
       "SizeInBytes": 64,
-      "Position": 16900061
+      "Position": 15091695
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_AthenaMatchTeamStats",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_ReplayKey",
+      "Group": "PlayerStateEncryptionKey",
+      "Metadata": "PlayerStateEncryptionKey",
+      "StartTime": 1252804,
+      "EndTime": 1252804,
+      "SizeInBytes": 48,
+      "Position": 15091885
+    },
+    {
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_AthenaMatchTeamStats",
       "Group": "AthenaReplayBrowserEvents",
       "Metadata": "AthenaMatchTeamStats",
-      "StartTime": 1038891,
-      "EndTime": 1038891,
+      "StartTime": 1236867,
+      "EndTime": 1236867,
       "SizeInBytes": 16,
-      "Position": 16900259
+      "Position": 15092067
     },
     {
-      "Id": "UnsavedReplay-2021.04.01-08.03.19_EF6B88724B404A9746E598BF6912F600",
+      "Id": "UnsavedReplay-2022.06.28-15.05.43_7C0A699B44C85365398FFB8C34FFC364",
       "Group": "playerElim",
       "Metadata": "versionedEvent",
-      "StartTime": 1039015,
-      "EndTime": 1039015,
+      "StartTime": 1236997,
+      "EndTime": 1236997,
       "SizeInBytes": 128,
-      "Position": 16900400
+      "Position": 15092208
     }
   ],
   "Data": [
     {
       "Start": 0,
-      "End": 20113,
-      "Length": 424368,
-      "Size": 1192839
+      "End": 20223,
+      "Length": 267520,
+      "Size": 768886
     },
     {
-      "Start": 20113,
-      "End": 40116,
-      "Length": 328080,
-      "Size": 914125
+      "Start": 20223,
+      "End": 40227,
+      "Length": 122816,
+      "Size": 335052
     },
     {
-      "Start": 40116,
-      "End": 60001,
-      "Length": 130688,
-      "Size": 604383
+      "Start": 40227,
+      "End": 60233,
+      "Length": 140880,
+      "Size": 353383
     },
     {
-      "Start": 60001,
-      "End": 80073,
-      "Length": 244976,
-      "Size": 978370
+      "Start": 60233,
+      "End": 80235,
+      "Length": 144944,
+      "Size": 438124
     },
     {
-      "Start": 80073,
-      "End": 100069,
-      "Length": 298640,
-      "Size": 1019248
+      "Start": 80235,
+      "End": 100242,
+      "Length": 98304,
+      "Size": 259117
     },
     {
-      "Start": 100069,
-      "End": 120067,
-      "Length": 359056,
-      "Size": 1237932
+      "Start": 100242,
+      "End": 120247,
+      "Length": 128640,
+      "Size": 308455
     },
     {
-      "Start": 120067,
-      "End": 140067,
-      "Length": 351904,
-      "Size": 1251518
+      "Start": 120247,
+      "End": 140248,
+      "Length": 158128,
+      "Size": 375937
     },
     {
-      "Start": 140067,
-      "End": 160068,
-      "Length": 333424,
-      "Size": 1173516
+      "Start": 140248,
+      "End": 160251,
+      "Length": 138000,
+      "Size": 357798
     },
     {
-      "Start": 160068,
-      "End": 180062,
-      "Length": 257696,
-      "Size": 1015740
+      "Start": 160251,
+      "End": 180256,
+      "Length": 130144,
+      "Size": 341933
     },
     {
-      "Start": 180062,
-      "End": 200061,
-      "Length": 232928,
-      "Size": 866951
+      "Start": 180256,
+      "End": 200260,
+      "Length": 123056,
+      "Size": 338872
     },
     {
-      "Start": 200061,
-      "End": 220057,
-      "Length": 257600,
-      "Size": 1025853
+      "Start": 200260,
+      "End": 220272,
+      "Length": 98176,
+      "Size": 281169
     },
     {
-      "Start": 220057,
-      "End": 240057,
-      "Length": 161504,
-      "Size": 742799
+      "Start": 220272,
+      "End": 240288,
+      "Length": 92528,
+      "Size": 253097
     },
     {
-      "Start": 240057,
-      "End": 260065,
-      "Length": 198768,
-      "Size": 863969
+      "Start": 240288,
+      "End": 260298,
+      "Length": 122256,
+      "Size": 300872
     },
     {
-      "Start": 260065,
-      "End": 280107,
-      "Length": 169440,
-      "Size": 812411
+      "Start": 260298,
+      "End": 280297,
+      "Length": 113504,
+      "Size": 306813
     },
     {
-      "Start": 280107,
-      "End": 300010,
-      "Length": 217680,
-      "Size": 943483
+      "Start": 280297,
+      "End": 300298,
+      "Length": 93840,
+      "Size": 268296
     },
     {
-      "Start": 300010,
-      "End": 320198,
-      "Length": 201856,
-      "Size": 875227
+      "Start": 300298,
+      "End": 320297,
+      "Length": 103808,
+      "Size": 285288
     },
     {
-      "Start": 320198,
-      "End": 340256,
-      "Length": 165840,
-      "Size": 795729
+      "Start": 320297,
+      "End": 340303,
+      "Length": 80944,
+      "Size": 227435
     },
     {
-      "Start": 340256,
-      "End": 360012,
-      "Length": 184544,
-      "Size": 832981
+      "Start": 340303,
+      "End": 360309,
+      "Length": 77888,
+      "Size": 206124
     },
     {
-      "Start": 360012,
-      "End": 380182,
-      "Length": 144880,
-      "Size": 730119
+      "Start": 360309,
+      "End": 380307,
+      "Length": 151280,
+      "Size": 373203
     },
     {
-      "Start": 380182,
-      "End": 400226,
-      "Length": 122016,
-      "Size": 668602
+      "Start": 380307,
+      "End": 400322,
+      "Length": 131024,
+      "Size": 290141
     },
     {
-      "Start": 400226,
-      "End": 420014,
-      "Length": 99440,
-      "Size": 611642
+      "Start": 400322,
+      "End": 420326,
+      "Length": 106160,
+      "Size": 257212
     },
     {
-      "Start": 420014,
-      "End": 440147,
-      "Length": 184800,
-      "Size": 843933
+      "Start": 420326,
+      "End": 440331,
+      "Length": 121872,
+      "Size": 314189
     },
     {
-      "Start": 440147,
-      "End": 460165,
-      "Length": 239120,
-      "Size": 934436
+      "Start": 440331,
+      "End": 460342,
+      "Length": 140560,
+      "Size": 360593
     },
     {
-      "Start": 460165,
-      "End": 480015,
-      "Length": 254272,
-      "Size": 974210
+      "Start": 460342,
+      "End": 480340,
+      "Length": 98848,
+      "Size": 272513
     },
     {
-      "Start": 480015,
-      "End": 500218,
-      "Length": 251056,
-      "Size": 902266
+      "Start": 480340,
+      "End": 500349,
+      "Length": 124672,
+      "Size": 315935
     },
     {
-      "Start": 500218,
-      "End": 520223,
-      "Length": 196048,
-      "Size": 807435
+      "Start": 500349,
+      "End": 520348,
+      "Length": 125504,
+      "Size": 329024
     },
     {
-      "Start": 520223,
-      "End": 540166,
-      "Length": 221584,
-      "Size": 889332
+      "Start": 520348,
+      "End": 540346,
+      "Length": 134560,
+      "Size": 344477
     },
     {
-      "Start": 540166,
-      "End": 560135,
-      "Length": 258608,
-      "Size": 909872
+      "Start": 540346,
+      "End": 560353,
+      "Length": 122352,
+      "Size": 318048
     },
     {
-      "Start": 560135,
-      "End": 580079,
-      "Length": 224944,
-      "Size": 823437
+      "Start": 560353,
+      "End": 580357,
+      "Length": 135168,
+      "Size": 317447
     },
     {
-      "Start": 580079,
-      "End": 600054,
-      "Length": 185680,
-      "Size": 737299
+      "Start": 580357,
+      "End": 600369,
+      "Length": 126592,
+      "Size": 300331
     },
     {
-      "Start": 600054,
-      "End": 620027,
-      "Length": 182864,
-      "Size": 635121
+      "Start": 600369,
+      "End": 620378,
+      "Length": 117312,
+      "Size": 303886
     },
     {
-      "Start": 620027,
-      "End": 640012,
-      "Length": 191664,
-      "Size": 672530
+      "Start": 620378,
+      "End": 640384,
+      "Length": 92800,
+      "Size": 265681
     },
     {
-      "Start": 640012,
-      "End": 659980,
-      "Length": 211984,
-      "Size": 789459
+      "Start": 640384,
+      "End": 660386,
+      "Length": 85632,
+      "Size": 243522
     },
     {
-      "Start": 659980,
-      "End": 660022,
-      "Length": 656,
-      "Size": 1295
+      "Start": 660386,
+      "End": 680394,
+      "Length": 99504,
+      "Size": 283283
     },
     {
-      "Start": 660022,
-      "End": 680155,
-      "Length": 145408,
-      "Size": 554179
+      "Start": 680394,
+      "End": 700394,
+      "Length": 155696,
+      "Size": 403214
     },
     {
-      "Start": 680155,
-      "End": 700106,
-      "Length": 254304,
-      "Size": 875578
+      "Start": 700394,
+      "End": 720400,
+      "Length": 142352,
+      "Size": 360391
     },
     {
-      "Start": 700106,
-      "End": 720039,
-      "Length": 241088,
-      "Size": 816895
+      "Start": 720400,
+      "End": 740394,
+      "Length": 165664,
+      "Size": 394643
     },
     {
-      "Start": 720039,
-      "End": 740025,
-      "Length": 244640,
-      "Size": 791035
+      "Start": 740394,
+      "End": 760406,
+      "Length": 134896,
+      "Size": 345435
     },
     {
-      "Start": 740025,
-      "End": 759985,
-      "Length": 241920,
-      "Size": 810916
+      "Start": 760406,
+      "End": 780406,
+      "Length": 114672,
+      "Size": 295527
     },
     {
-      "Start": 759985,
-      "End": 779917,
-      "Length": 182080,
-      "Size": 636144
+      "Start": 780406,
+      "End": 800412,
+      "Length": 102112,
+      "Size": 294771
     },
     {
-      "Start": 779917,
-      "End": 780029,
-      "Length": 1616,
-      "Size": 2730
+      "Start": 800412,
+      "End": 820419,
+      "Length": 127184,
+      "Size": 382453
     },
     {
-      "Start": 780029,
-      "End": 800215,
-      "Length": 187296,
-      "Size": 632051
+      "Start": 820419,
+      "End": 840422,
+      "Length": 164736,
+      "Size": 445421
     },
     {
-      "Start": 800215,
-      "End": 820182,
-      "Length": 205328,
-      "Size": 710754
+      "Start": 840422,
+      "End": 860427,
+      "Length": 163232,
+      "Size": 420538
     },
     {
-      "Start": 820182,
-      "End": 840165,
-      "Length": 168880,
-      "Size": 544867
+      "Start": 860427,
+      "End": 880428,
+      "Length": 141936,
+      "Size": 342114
     },
     {
-      "Start": 840165,
-      "End": 860115,
-      "Length": 179008,
-      "Size": 573326
+      "Start": 880428,
+      "End": 900431,
+      "Length": 107248,
+      "Size": 295985
     },
     {
-      "Start": 860115,
-      "End": 880062,
-      "Length": 193888,
-      "Size": 631772
+      "Start": 900431,
+      "End": 920430,
+      "Length": 143616,
+      "Size": 389488
     },
     {
-      "Start": 880062,
-      "End": 900002,
-      "Length": 172128,
-      "Size": 599239
+      "Start": 920430,
+      "End": 940436,
+      "Length": 130544,
+      "Size": 318571
     },
     {
-      "Start": 900002,
-      "End": 900036,
-      "Length": 576,
-      "Size": 1116
+      "Start": 940436,
+      "End": 960440,
+      "Length": 110576,
+      "Size": 286781
     },
     {
-      "Start": 900036,
-      "End": 920239,
-      "Length": 148656,
-      "Size": 518856
+      "Start": 960440,
+      "End": 980444,
+      "Length": 103696,
+      "Size": 278832
     },
     {
-      "Start": 920239,
-      "End": 940177,
-      "Length": 140064,
-      "Size": 529247
+      "Start": 980444,
+      "End": 1000447,
+      "Length": 100624,
+      "Size": 260432
     },
     {
-      "Start": 940177,
-      "End": 960110,
-      "Length": 149968,
-      "Size": 543350
+      "Start": 1000447,
+      "End": 1020453,
+      "Length": 87760,
+      "Size": 237675
     },
     {
-      "Start": 960110,
-      "End": 980039,
-      "Length": 162000,
-      "Size": 631477
+      "Start": 1020453,
+      "End": 1040453,
+      "Length": 87856,
+      "Size": 230528
     },
     {
-      "Start": 980039,
-      "End": 999975,
-      "Length": 185968,
-      "Size": 643896
+      "Start": 1040453,
+      "End": 1060462,
+      "Length": 47696,
+      "Size": 159362
     },
     {
-      "Start": 999975,
-      "End": 1019912,
-      "Length": 157120,
-      "Size": 586481
+      "Start": 1060462,
+      "End": 1080466,
+      "Length": 58208,
+      "Size": 166088
     },
     {
-      "Start": 1019912,
-      "End": 1020041,
-      "Length": 1360,
-      "Size": 2353
+      "Start": 1080466,
+      "End": 1100474,
+      "Length": 77296,
+      "Size": 196418
     },
     {
-      "Start": 1020041,
-      "End": 1039040,
-      "Length": 211568,
-      "Size": 691075
+      "Start": 1100474,
+      "End": 1120475,
+      "Length": 57440,
+      "Size": 167791
     },
     {
-      "Start": 1039040,
-      "End": 1058222,
-      "Length": 88896,
-      "Size": 476199
+      "Start": 1120475,
+      "End": 1140486,
+      "Length": 58576,
+      "Size": 168627
     },
     {
-      "Start": 1058222,
-      "End": 1078143,
-      "Length": 59632,
-      "Size": 414658
+      "Start": 1140486,
+      "End": 1160493,
+      "Length": 51696,
+      "Size": 157389
     },
     {
-      "Start": 1078143,
-      "End": 1080044,
-      "Length": 5936,
-      "Size": 39583
+      "Start": 1160493,
+      "End": 1180527,
+      "Length": 52432,
+      "Size": 151039
     },
     {
-      "Start": 1080044,
-      "End": 1088610,
-      "Length": 29232,
-      "Size": 180353
+      "Start": 1180527,
+      "End": 1200536,
+      "Length": 42752,
+      "Size": 133247
+    },
+    {
+      "Start": 1200536,
+      "End": 1220534,
+      "Length": 49984,
+      "Size": 152926
+    },
+    {
+      "Start": 1220534,
+      "End": 1238505,
+      "Length": 56480,
+      "Size": 163342
+    },
+    {
+      "Start": 1238505,
+      "End": 1252886,
+      "Length": 14912,
+      "Size": 77075
     }
   ],
   "Checkpoints": [
@@ -1910,164 +4981,182 @@
       "Id": "checkpoint0",
       "Group": "checkpoint",
       "Metadata": "3",
-      "StartTime": 60001,
-      "EndTime": 60001,
-      "SizeInBytes": 182720,
-      "Position": 884527
+      "StartTime": 60233,
+      "EndTime": 60233,
+      "SizeInBytes": 208208,
+      "Position": 532783
     },
     {
       "Id": "checkpoint1",
       "Group": "checkpoint",
       "Metadata": "6",
-      "StartTime": 120067,
-      "EndTime": 120067,
-      "SizeInBytes": 270704,
-      "Position": 1973574
+      "StartTime": 120247,
+      "EndTime": 120247,
+      "SizeInBytes": 277056,
+      "Position": 1114779
     },
     {
       "Id": "checkpoint2",
       "Group": "checkpoint",
       "Metadata": "9",
-      "StartTime": 180062,
-      "EndTime": 180062,
-      "SizeInBytes": 301792,
-      "Position": 3198025
+      "StartTime": 180256,
+      "EndTime": 180256,
+      "SizeInBytes": 304464,
+      "Position": 1825067
     },
     {
       "Id": "checkpoint3",
       "Group": "checkpoint",
       "Metadata": "12",
-      "StartTime": 240057,
-      "EndTime": 240057,
-      "SizeInBytes": 295856,
-      "Position": 4160328
+      "StartTime": 240288,
+      "EndTime": 240288,
+      "SizeInBytes": 295504,
+      "Position": 2446710
     },
     {
       "Id": "checkpoint4",
       "Group": "checkpoint",
       "Metadata": "15",
-      "StartTime": 300010,
-      "EndTime": 300010,
-      "SizeInBytes": 297840,
-      "Position": 5043214
+      "StartTime": 300298,
+      "EndTime": 300298,
+      "SizeInBytes": 308032,
+      "Position": 3073715
     },
     {
       "Id": "checkpoint5",
       "Group": "checkpoint",
       "Metadata": "18",
-      "StartTime": 360012,
-      "EndTime": 360012,
-      "SizeInBytes": 302944,
-      "Position": 5895448
+      "StartTime": 360309,
+      "EndTime": 360309,
+      "SizeInBytes": 313104,
+      "Position": 3645023
     },
     {
       "Id": "checkpoint6",
       "Group": "checkpoint",
       "Metadata": "21",
-      "StartTime": 420014,
-      "EndTime": 420014,
-      "SizeInBytes": 302032,
-      "Position": 6567388
+      "StartTime": 420326,
+      "EndTime": 420326,
+      "SizeInBytes": 337872,
+      "Position": 4347227
     },
     {
       "Id": "checkpoint7",
       "Group": "checkpoint",
       "Metadata": "24",
-      "StartTime": 480015,
-      "EndTime": 480015,
-      "SizeInBytes": 334640,
-      "Position": 7550019
+      "StartTime": 480340,
+      "EndTime": 480340,
+      "SizeInBytes": 396752,
+      "Position": 5047774
     },
     {
       "Id": "checkpoint8",
       "Group": "checkpoint",
       "Metadata": "27",
-      "StartTime": 540166,
-      "EndTime": 540166,
-      "SizeInBytes": 348608,
-      "Position": 8555501
+      "StartTime": 540346,
+      "EndTime": 540346,
+      "SizeInBytes": 401088,
+      "Position": 5830657
     },
     {
       "Id": "checkpoint9",
       "Group": "checkpoint",
       "Metadata": "30",
-      "StartTime": 600054,
-      "EndTime": 600054,
-      "SizeInBytes": 361872,
-      "Position": 9575748
+      "StartTime": 600369,
+      "EndTime": 600369,
+      "SizeInBytes": 408992,
+      "Position": 6617505
     },
     {
       "Id": "checkpoint10",
       "Group": "checkpoint",
-      "Metadata": "34",
-      "StartTime": 660022,
-      "EndTime": 660022,
-      "SizeInBytes": 363504,
-      "Position": 10526208
+      "Metadata": "33",
+      "StartTime": 660386,
+      "EndTime": 660386,
+      "SizeInBytes": 402272,
+      "Position": 7323384
     },
     {
       "Id": "checkpoint11",
       "Group": "checkpoint",
-      "Metadata": "37",
-      "StartTime": 720039,
-      "EndTime": 720039,
-      "SizeInBytes": 408720,
-      "Position": 11531655
+      "Metadata": "36",
+      "StartTime": 720400,
+      "EndTime": 720400,
+      "SizeInBytes": 428656,
+      "Position": 8123339
     },
     {
       "Id": "checkpoint12",
       "Group": "checkpoint",
-      "Metadata": "41",
-      "StartTime": 780029,
-      "EndTime": 780029,
-      "SizeInBytes": 428880,
-      "Position": 12612304
+      "Metadata": "39",
+      "StartTime": 780406,
+      "EndTime": 780406,
+      "SizeInBytes": 428640,
+      "Position": 8968370
     },
     {
       "Id": "checkpoint13",
       "Group": "checkpoint",
-      "Metadata": "44",
-      "StartTime": 840165,
-      "EndTime": 840165,
-      "SizeInBytes": 439968,
-      "Position": 13604590
+      "Metadata": "42",
+      "StartTime": 840422,
+      "EndTime": 840422,
+      "SizeInBytes": 485328,
+      "Position": 9791173
     },
     {
       "Id": "checkpoint14",
       "Group": "checkpoint",
-      "Metadata": "48",
-      "StartTime": 900036,
-      "EndTime": 900036,
-      "SizeInBytes": 447184,
-      "Position": 14590819
+      "Metadata": "45",
+      "StartTime": 900431,
+      "EndTime": 900431,
+      "SizeInBytes": 508400,
+      "Position": 10690297
     },
     {
       "Id": "checkpoint15",
       "Group": "checkpoint",
-      "Metadata": "51",
-      "StartTime": 960110,
-      "EndTime": 960110,
-      "SizeInBytes": 451904,
-      "Position": 15476822
+      "Metadata": "48",
+      "StartTime": 960440,
+      "EndTime": 960440,
+      "SizeInBytes": 519408,
+      "Position": 11584323
     },
     {
       "Id": "checkpoint16",
       "Group": "checkpoint",
-      "Metadata": "55",
-      "StartTime": 1020041,
-      "EndTime": 1020041,
-      "SizeInBytes": 464432,
-      "Position": 16435329
+      "Metadata": "51",
+      "StartTime": 1020453,
+      "EndTime": 1020453,
+      "SizeInBytes": 534848,
+      "Position": 12396195
     },
     {
       "Id": "checkpoint17",
       "Group": "checkpoint",
-      "Metadata": "59",
-      "StartTime": 1080044,
-      "EndTime": 1080044,
-      "SizeInBytes": 455856,
-      "Position": 17266715
+      "Metadata": "54",
+      "StartTime": 1080466,
+      "EndTime": 1080466,
+      "SizeInBytes": 528160,
+      "Position": 13125187
+    },
+    {
+      "Id": "checkpoint18",
+      "Group": "checkpoint",
+      "Metadata": "57",
+      "StartTime": 1140486,
+      "EndTime": 1140486,
+      "SizeInBytes": 524192,
+      "Position": 13846790
+    },
+    {
+      "Id": "checkpoint19",
+      "Group": "checkpoint",
+      "Metadata": "60",
+      "StartTime": 1200536,
+      "EndTime": 1200536,
+      "SizeInBytes": 523568,
+      "Position": 14517993
     }
   ],
-  "ParseTime": 33
+  "ParseTime": 31
 }
